@@ -66,7 +66,7 @@
 
 ## Protein Data formatted files processing
 *online tools to proccess the protein data*
-* [3D View (rcsb.org)](https://www.rcsb.org/3d-view) - 
+* [3D View (rcsb.org)](https://www.rcsb.org/3d-view) - 3D View Protein Data.
 
 
 ## Membrane Proteins GitHub Projects
@@ -174,6 +174,7 @@
 
 
 ## NMR spectrum data libraries
+* [NMR Natural Product Data](https://np-mrd.org/downloads) - The Natural Product Magnetic Resonance Database Project
 * [BMRB](https://bmrb.io/) - BMRB makes bio-NMR data FAIR.
 * [SDBS Spectral Database for Organic Compounds](https://sdbs.db.aist.go.jp/sdbs/cgi-bin/direct_frame_top.cgi) - Japan SDBS Compounds and Spectral Search
 * [Wiley Free Spectral Database](https://spectrabase.com/) - Free, fast text access to hundreds of thousands of NMR, IR, Raman, UV-Vis, and Mass Spectra.
@@ -181,7 +182,7 @@
 * [NMRium](https://www.nmrium.org/nmrium) - NMRium handles advanced NMR spectra processing in the browser.
 * [GitHubNMRium](https://github.com/cheminfo/nmrium) - React component to display and process nuclear magnetic resonance (NMR) spectra.
 * [NMReDATA initiative](https://nmredata.org/) - GENERATE, STORE AND SHARE THE DATA EXTRACTED FROM SET OF NMR SPECTRA ASSOCIATED TO A COMPOUND.
-* [NMR Natural Product Data](https://np-mrd.org/downloads) - The Natural Product Magnetic Resonance Database Project
+
 
 ## JCAMP-DX-formatted files
 * [jcamp pypi.org - Python utilities for reading JCAMP-DX files](https://pypi.org/project/jcamp/) - The [GitHub](https://github.com/nzhagen/jcamp) repository comes with four folders containing JCAMP-format files. hnmr_spectra, infrared_spectra, mass_spectra, neutron_scattering_spectra, raman_spectra, uvvis_spectra can be processed.
