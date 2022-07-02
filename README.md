@@ -1,4 +1,4 @@
-# Awesome Chemistry  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+## Awesome Chemistry  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 A curated list of chemistry libraries and software. Please feel free to contribute!
@@ -7,26 +7,14 @@ A curated list of chemistry libraries and software. Please feel free to contribu
 
 
 
-- [Bayesian Statistics](#bayesian-statistics)
-  - [Keywords](#keywords)
-  - [Books](#books)
-  - [Bayesian Project used link](#bayesian-project-used-link)
-- [Membrane Proteins](#membrane-proteins)
-  - [Keywords](#keywords-1)
+
+- [GitHub Repositories](#github-repositories)
+  - [Python for Science GitHub Repositories](#python-for-science-github-repositories)
+  - [Awesome Chemistry Repositories in Github](#awesome-chemistry-repositories-in-github)
 
 
-# [Bayesian Statistics](#bayesian-statistics)
-
-## Keywords
-* Bayesian models
-* Bayesian statistics
-* Bayesian inference
-
-
-## Books
-*GitHub Bayesian books*
-* [Bayesian Methods for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers) - : An introduction to Bayesian methods + 
-
+# GitHub Repositories
+*Python for Science GitHub Repositories & Awesome Chemistry Repositories in Github*
 ## Python for Science GitHub Repositories
 * [Python Resources](https://github.com/zhutaosheng/pylibs) - A curated list of python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
 * [Python-for-Scientists](https://github.com/TomNicholas/Python-for-Scientists) - A curated list of recommended Python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
