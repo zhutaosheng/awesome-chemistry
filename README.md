@@ -6,7 +6,7 @@ A curated list of chemistry libraries and software. Please feel free to contribu
 [//]: # (I am a comment and will not be displayed.)
 
 
-- [Awesome Chemistry Repositories  ![Awesome](https://github.com/sindresorhus/awesome)](#awesome-chemistry-repositories--)
+
 - [Bayesian Statistics](#bayesian-statistics)
   - [Keywords](#keywords)
   - [Books](#books)
@@ -27,10 +27,19 @@ A curated list of chemistry libraries and software. Please feel free to contribu
 *GitHub Bayesian books*
 * [Bayesian Methods for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers) - : An introduction to Bayesian methods + 
 
-# Science
+## Python for Science GitHub Repositories
+* [Python Resources](https://github.com/zhutaosheng/pylibs) - A curated list of python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
+* [Python-for-Scientists](https://github.com/TomNicholas/Python-for-Scientists) - A curated list of recommended Python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
+* [The Algorithms - Python](https://github.com/TheAlgorithms/Python) - All Algorithms implemented in Python.
+* [Homemade Machine Learning](https://github.com/trekhleb/homemade-machine-learning) - Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained.
+* [Best of Python](https://github.com/ml-tooling/best-of-python) - A ranked list of awesome Python open-source libraries and tools. Updated weekly.
+* [Awesome Python](https://github.com/vinta/awesome-python) - A curated list of awesome Python frameworks, libraries, software and resources.
+* [Awesome C++](https://github.com/fffaraz/awesome-cpp) - A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things.
+* [Awesome C++ Chemistry](https://github.com/fffaraz/awesome-cpp#chemistry) - Chemistry, Quantum Chemistry, Solid-State Chemistry/Physics, Geochemistry, Biochemistry. 
+* [Awesome R](https://github.com/qinwf/awesome-R) - A curated list of awesome R packages, frameworks and software.
 
-# Awesome Chemistry Repositories in Github
-* Awesome Chemistry - A curated list of chemistry libraries and software. 
+## Awesome Chemistry Repositories in Github
+* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software. 
 * [Awesome Python Chemistry](https://github.com/lmmentel/awesome-python-chemistry) - A curated list of awesome Python frameworks, libraries, software and resources related to Chemistry.
 * [Quantum Chemistry Dev Kit](https://github.com/givingg/quantum-chemistry-dev-kit) - Docker box for Quantum chem tools with a curated list of awesome frameworks, libraries, software and resources.
 * [Awesome List of Open Science Resources](https://github.com/chemistrydatachampions/awesome-chemistry-info) - Getting your data.
