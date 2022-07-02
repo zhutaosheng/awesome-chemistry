@@ -138,7 +138,7 @@
 
 [Wiki NMR](https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance) - Nuclear magnetic resonance 
 ## Keywords
-*Fluorescence Resonance Energy Transfer (FRET) Keywords*
+*NMR (Nuclear magnetic resonance) Keywords*
 * NMR analysis
 * NMR Spectroscopy
 * NMR databases

@@ -1,16 +1,20 @@
 ## Awesome Chemistry  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 
-A curated list of chemistry libraries and software. View [online](https://zhutaosheng.github.io/awesome-chemistry/). Please feel free to contribute!
+*A curated list of chemistry libraries and software. View [online](https://zhutaosheng.github.io/awesome-chemistry/). Please feel free to contribute!*
 
 
 - [Chemistry GitHub Repositories](#chemistry-github-repositories)
+  - [Awesome Chemistry GitHub Repositories Branch](#awesome-chemistry-github-repositories-branch)
   - [Python for Science GitHub Repositories](#python-for-science-github-repositories)
   - [Awesome Chemistry Repositories in Github](#awesome-chemistry-repositories-in-github)
 
 
 # Chemistry GitHub Repositories
 *Python for Science GitHub Repositories & Awesome Chemistry Repositories in Github*
+## Awesome Chemistry GitHub Repositories Branch 
+* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software. [Awesome Chemistry Deployment Webpage](https://zhutaosheng.github.io/awesome-chemistry/) - View online one page.
+* Awesome Chemistry - NMR (Nuclear magnetic resonance) - A curated list of all NMR (Nuclear magnetic resonance) libraries and resources.
 ## Python for Science GitHub Repositories
 * [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - A curated list of python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
 * [Python-for-Scientists](https://github.com/TomNicholas/Python-for-Scientists) - A curated list of recommended Python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
