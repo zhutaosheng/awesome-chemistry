@@ -1,4 +1,4 @@
-## Python Resources
+## [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries)
 ### [Project Libraries](#project-libraries) - *A curated list of Projects libraries.*
 ### [Personal Libraries](#personal-libraries) - *A personal librariess.*
 ### [Python for Scientists](#python-for-scientists) - *A curated list of recommended Python frameworks, libraries, software and resources, all particularly useful for scientific Python users*
@@ -160,6 +160,7 @@
 ## Project Libraries
 *A curated list of Projects libraries.*
 * [Project Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md)
+* [Softwares](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/softwares.md) - A curated list of all softwares and resources.
 
 ## Personal Libraries
 
