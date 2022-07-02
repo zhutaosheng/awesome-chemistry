@@ -14,7 +14,7 @@
 *Python for Science GitHub Repositories & Awesome Chemistry Repositories in Github*
 ## Awesome Chemistry GitHub Repositories Branch 
 * [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software. [Awesome Chemistry Deployment Webpage](https://zhutaosheng.github.io/awesome-chemistry/) - View online one page.
-* Awesome Chemistry - NMR (Nuclear magnetic resonance) - A curated list of all NMR (Nuclear magnetic resonance) libraries and resources.
+* [Awesome Chemistry - NMR (Nuclear magnetic resonance)](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-nmr-nuclear-magnetic-resonanc.md) - A curated list of all NMR (Nuclear magnetic resonance) libraries and resources.
 ## Python for Science GitHub Repositories
 * [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - A curated list of python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
 * [Python-for-Scientists](https://github.com/TomNicholas/Python-for-Scientists) - A curated list of recommended Python frameworks, libraries, software and resources, all particularly useful for scientific Python users.

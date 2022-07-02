@@ -159,7 +159,7 @@
 
 ## Project Libraries
 *A curated list of Projects libraries.*
-* [Project Libraries](https://github.com/zhutaosheng/pylibs/blob/main/projects.md)
+* [Project Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md)
 
 ## Personal Libraries
 

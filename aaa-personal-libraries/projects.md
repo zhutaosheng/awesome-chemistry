@@ -1,5 +1,5 @@
 ## Projects Libraries
-### [Python Resources](https://github.com/zhutaosheng/pylibs/blob/main/README.md) - *A curated list of all Python frameworks, libraries and resources.*
+### [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - *A curated list of all Python frameworks, libraries and resources.*
 ### [Projects Libraries](#projects-libraries) - *A curated list of Projects libraries.*
 
 [//]: # (I am a comment and will not be displayed.)
