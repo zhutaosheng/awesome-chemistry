@@ -6,6 +6,7 @@
 
 - [Chemistry Websites](#chemistry-websites)
   - [The Top Visited Chemistry Websites](#the-top-visited-chemistry-websites)
+  - [Periodic table](#periodic-table)
   - [Other Chemistry Websites](#other-chemistry-websites)
   - [Online View Textbook](#online-view-textbook)
   - [Journals](#journals)
@@ -21,8 +22,6 @@
 ## The Top Visited Chemistry Websites
 * [Acs.Org](https://www.acs.org/content/acs/en.html) - The American Chemical Society is a scientific society based in the United States that supports scientific inquiry in the field of chemistry.
 * [Rsc.Org](https://www.rsc.org/) - Advancing excellence, connecting chemical scientists and shaping the future of the chemical sciences for the benefit of humanity.
-* [Ptable.Com - best periodic table](https://ptable.com/#Properties) - Interactive periodic table with dynamic layouts showing names, electrons, oxidation, trend visualization, orbitals, isotopes, and compound search. Full descriptions from write-up sources.
-* [Periodictable.Com](https://periodictable.com/) - The definitive online periodic table reference site including technical data, and photographs and descriptions of thousands of samples of the chemical.
 * [Webqc.Org](https://www.webqc.org/) - Chemical portal: a place for chemistry enthusiasts and professionals alike. Chemistry tools, periodic table, unit converters and more.
 * [Chemguide.Co.Uk](https://chemguide.co.uk/) - Main menu of a site aimed to help advanced level chemistry students to understand chemistry
 * [Cas.Org](https://cas.org/) - reliable access to chemical and scientific information from databases covering topics such as chemistry, engineering, patents, medicine, and regulatory data.
@@ -30,8 +29,18 @@
 * [Rcsb.Org](https://www.rcsb.org/) - Protein data bank.
 * [Organic-Chemistry.Org](https://organic-chemistry.org/) - The Organic Chemistry Portal offers an overview of recent topics, interesting reactions and information on important chemicals for organic chemists.
 
-## Other Chemistry Websites
+## Periodic table
+* [Ptable.Com - best periodic table](https://ptable.com/#Properties) - Interactive periodic table with dynamic layouts showing names, electrons, oxidation, trend visualization, orbitals, isotopes, and compound search. Full descriptions from write-up sources.
+* [Periodictable.Com](https://periodictable.com/) - The definitive online periodic table reference site including technical data, and photographs and descriptions of thousands of samples of the chemical.
+
 * [periodic table with a video on every element](http://periodicvideos.com/) - A good UK based one is www.chemguide.co.uk The University of Nottingham have a periodic table with a video on every element.
+* [Printable Periodic Table of Elements](https://www.vertex42.com/ExcelTemplates/periodic-table-of-elements.html) - [Periodic Table (Color) (.PDF)](https://www.vertex42.com/Files/pdfs/2/periodic-table_color.pdf). print a Periodic Table with Names, Atomic mass, Charges, and other properties.
+* [ Elements Database](http://www.elementsdatabase.com/) - There are better Periodic Tables if you want atomic information, but this one gives you a mass of general information about each element.
+
+
+## Other Chemistry Websites
+
+
 * [National Library of Medicine nlm.nih.gov](https://pubchem.ncbi.nlm.nih.gov/) - National Center for Biotechnology Information
 
 
