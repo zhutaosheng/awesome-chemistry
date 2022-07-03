@@ -3,9 +3,10 @@
 
 - [Computer Software](#computer-software)
   - [Keywords](#keywords)
-  - [Text Programming](#text-programming)
+  - [Data Programming](#data-programming)
   - [Science Paper Software](#science-paper-software)
   - [Others](#others)
+  - [Configuration links](#configuration-links)
   - [Chinese softwares](#chinese-softwares)
 - [iPhone Apple Store](#iphone-apple-store)
 
@@ -16,7 +17,7 @@
 - Chinese softwares
 - Apple Store
 
-## Text Programming
+## Data Programming
 - [GitHub Desktop](https://desktop.github.com/)
 - [Git](https://git-scm.com/downloads) - local-branching-on-the-cheap
 - [FileZilla](https://filezilla-project.org/) - The free FTP solution.
@@ -57,6 +58,12 @@
 - [Anydesk](https://anydesk.com/en) - The Fast Remote Desktop Application – AnyDesk.
 - [Office Tool Plus](https://otp.landian.vip/en-us/) - Office Tool Plus is highly integrated with a variety of useful tools to help users deploy Office.
 - [Adobe](https://www.adobe.com/products/catalog.html)- Adobe Acrobat, Adobe Acrobat DC, Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe Premiere
+- [ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager/releases) - 
+- [屏幕录制 LiceCap 简单小巧 输出GIF](https://github.com/JustVita/Excellent-software/blob/master/Windows/Effectiveness/Recording/licecap123-install.exe)
+
+## Configuration links
+- [win11 Restore Legacy Right Click menu](https://answers.microsoft.com/en-us/windows/forum/all/restore-legacy-right-click-menu-for-file-explorer/a62e797c-eaf3-411b-aeec-e460e6e5a82a) - old context menu in win 10.
+- [如何设置让软件开机自启动](https://zhuanlan.zhihu.com/p/265076894)
 
 ## Chinese softwares
 - [xunlei.com](https://www.xunlei.com/) - Xunlei is the pioneer of shared.
