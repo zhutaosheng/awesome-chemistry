@@ -68,6 +68,7 @@
 - [formatfactory 格式工厂](http://formatfactory.cn/)
 - [Baidu cloud disk 百度网盘](https://pan.baidu.com/)
 - [Wps Office CN](https://www.wps.cn/)
+- [Levono Computer Manager](https://guanjia.lenovo.com.cn/)
 
 # iPhone Apple Store
 - [apple apps](http://www.apple.com) - books, edge, outlook, qq, wechat, google podcast, reminder, simple notes, netease music, alipay, duolingo, clock, photo, sendanywhere, google map, gmail, venmo, walmart, waze, onedrive, voice google, anydesk, paypal, quora,messager facebook, whatsapp, zelle, apple podcast, payoneer, vpn super, imaging edge, zoom, pocket, freelancer, cameraconnect, snapseed, translate google, unzip, garageband, audio editor, canvas, melodista, acrobat, camscanner, astool pro, enigma, web app-wetransfer, web app-qrcode generator, web app-single mp3, 中国建设银行，中国银行，中国工行银行，中国农业银行，掌上生活，云闪付，哈喽，淘宝，美团，qq, qq 邮箱，高德地图，饿了么，迅雷,携程，去哪儿， 闲鱼，王者，wps office CN, 百度网盘， 诗歌本，剪映，铁路 12306，喜马拉雅，中国领事，电信营业厅，天翼云盘
