@@ -1,4 +1,4 @@
-## Awesome Chemistry - Get Your Paper Published  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+## [Awesome Chemistry - Get Your Paper Published](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-get-your-paper-published.md)  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 *A curated of guides to publishing – a systematic overview of the process of communicating your research results, with resources to help you along the way.*
