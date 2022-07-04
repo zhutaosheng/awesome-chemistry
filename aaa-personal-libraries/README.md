@@ -229,14 +229,17 @@
 
 
 ## Awesome Libraries
-
+* [Awesome Python Data Science](https://github.com/krzjoa/awesome-python-data-science#readme) - Probably the best curated list of data science software in Python.
+* [Awesome Theoretical Computer Science](https://github.com/mostafatouny/awesome-theoretical-computer-science#readme) - The interdicplinary of Mathematics and Computer Science, Distinguisehed by its emphasis on mathemtical technique and rigour.
 * [Awesome Python](https://github.com/vinta/awesome-python) - A curated list of awesome Python frameworks, libraries, software and resources.
 * [Awesome C++](https://github.com/fffaraz/awesome-cpp) - A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things.
 * [Awesome C++ Chemistry](https://github.com/fffaraz/awesome-cpp#chemistry) - Chemistry, Quantum Chemistry, Solid-State Chemistry/Physics, Geochemistry, Biochemistry.
 * [Awesome C](https://github.com/inputsh/awesome-c) - A curated list of C good stuff. 
 * [Awesome lists](https://github.com/sindresorhus/awesome) - Awesome lists about all kinds of interesting topics.
 * [Awesome R](https://github.com/qinwf/awesome-R) - A curated list of awesome R packages, frameworks and software.
-
+* [Awesome LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Curated list of LaTeX awesomeness
+* [Awesome TikZ](https://github.com/xiaohanyu/awesome-tikz#readme) - A curated list of awesome TikZ documentations, libraries and resources.
+* [awesome-vscode](https://github.com/viatsko/awesome-vscode#readme) - A curated list of delightful VS Code packages and resources.
 
 
 ## Some useful links from Dr. Colin
@@ -273,6 +276,8 @@
 *Professional*
 * [SciENcv - NIH/NSF biosketches](https://www.ncbi.nlm.nih.gov/sciencv/)
 * [DMPTool - Build your data management plan](https://dmptool.org)
+
+
 
 ## Online Science Software
 * [MolView-Molecular modeling software](https://molview.org/) - Free molecular modeling software for chemistry

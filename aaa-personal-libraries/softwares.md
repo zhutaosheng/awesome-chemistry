@@ -26,7 +26,9 @@
 - [Vim](https://www.vim.org/download.php) - Vim is an advanced text editor.
 
 ## Science Paper Software
+*There is a back up in Awesome Chemistry - Get Your Paper Published about Science Paper Software*
 - [Origin and OriginPro](https://www.originlab.com/Origin) - data analysis and graphing software
+- SigmaPlot
 - [MATLAB - MathWorks](https://www.mathworks.com/products/matlab.html)
 - [Mathematica](https://www.wolfram.com/mathematica/)
 - [Mathtype](https://www.wiris.com/en/mathtype/)
@@ -37,6 +39,7 @@
 
 ## Others
 - [7-Zip](https://www.7-zip.org/) - is a file archiver with a high compression ratio.
+- [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader) - PDF, eBook (epub, mobi), comic book (cbz/cbr), DjVu, XPS, CHM, image viewer for Windows. Small, fast, customizable, free.
   computing and blockchain in China.
 - [motrix.app](https://motrix.app/) - A full-featured download manager. Support downloading HTTP, FTP, BitTorrent, Magnet, etc.
 - [Microsoft Edge](https://www.microsoft.com/en-us/edge) - Choose the web browser that puts you first.
