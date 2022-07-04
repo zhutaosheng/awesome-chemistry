@@ -32,10 +32,9 @@
 *coming soon*
 ## Awesome chemistry libraries collection - to public
 *A curated list of Awesome Projects libraries.*
-* [Awesome Github Single Page](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries/awesome-github-single-page) - Create One Github Page Website from ```README.md``` file.
 * [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software.
 * [Awesome Chemistry - Get Your Paper Published](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-get-your-paper-published.md) - A curated of guides to publishing
-
+* [Awesome Github Single Page](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries/awesome-github-single-page) - Create One Github Page Website from ```README.md``` file.
 
 ## Personal libraries collection - to private
 * [Personal Libraries](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - A personal libraries.
