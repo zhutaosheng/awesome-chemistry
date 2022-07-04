@@ -1,6 +1,5 @@
-## [Projects Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md)
-### [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - *A curated list of all Python frameworks, libraries and resources.*
-### [Projects Libraries](#projects-libraries) - *A curated list of Projects libraries.*
+## [Projects](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md)
+*A curated list of Projects libraries.*
 
 [//]: # (I am a comment and will not be displayed.)
 

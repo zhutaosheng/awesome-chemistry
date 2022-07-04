@@ -1,16 +1,13 @@
-## [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries)
-### [Project Libraries](#project-libraries) - *A curated list of Projects libraries.*
-### [Personal Libraries](#personal-libraries) - *A personal librariess.*
-
+## [Personal Libraries](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - *A personal librariess.*
 
 
 [//]: # (I am a comment and will not be displayed. The contributing list under the document has been changed)
 [//]: # (Every file is clear)
 
 
+- [Personal Libraries Collection](#personal-libraries-collection)
 - [Personal Libraries](#personal-libraries)
-  - [Project Libraries](#project-libraries)
-  - [Personal Libraries](#personal-libraries-1)
+  - [Personal Python Libraries](#personal-python-libraries)
   - [Exercises](#exercises)
   - [blogs, pages, webpages](#blogs-pages-webpages)
   - [data](#data)
@@ -25,18 +22,20 @@
   - [Offline Science Software](#offline-science-software)
 
 
-# [Personal Libraries](#personal-libraries)
 
-## Project Libraries
-*A curated list of Projects libraries.*
-* [Projects Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md)
+# Personal Libraries Collection
+*A curated list of Awesome Projects libraries.*
+* [Projects](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md)
 * [Softwares](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/softwares.md) - A curated list of all softwares and resources.
 * [Awesome Github Single Page](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries/awesome-github-single-page) - Create One Github Page Website from ```README.md``` file.
 * [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry)
 * [Awesome Chemistry - Get Your Paper Published](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-get-your-paper-published.md)
 * [Python for Scientists & Python Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/python-for-scientists-and-python-libraries.md)
 
-## Personal Libraries
+
+# Personal Libraries
+
+## Personal Python Libraries
 
 *Libraries used frequently.*
 * [The Python Standard Library](https://docs.python.org/3/library/index.html) - docs.python.org
