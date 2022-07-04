@@ -5,10 +5,12 @@
 
 
 - [Chemistry Websites](#chemistry-websites)
+  - [Wikipedia Chemistry](#wikipedia-chemistry)
   - [The Top Visited Chemistry Websites](#the-top-visited-chemistry-websites)
   - [Periodic table](#periodic-table)
   - [Other Chemistry Websites](#other-chemistry-websites)
   - [Online View Textbook](#online-view-textbook)
+  - [The Video Textbook](#the-video-textbook)
   - [Journals](#journals)
 - [Chemistry GitHub Repositories](#chemistry-github-repositories)
   - [Awesome Chemistry GitHub Repositories Branch](#awesome-chemistry-github-repositories-branch)
@@ -19,6 +21,16 @@
   - [NMR spectrum data libraries](#nmr-spectrum-data-libraries)
 
 # Chemistry Websites
+## Wikipedia Chemistry
+* [Chemistry](https://en.wikipedia.org/wiki/Chemistry)
+* [Inorganic chemistry](https://en.wikipedia.org/wiki/Inorganic_chemistry)
+* [Organic chemistry](https://en.wikipedia.org/wiki/Organic_chemistry)
+* [Physical chemistry](https://en.wikipedia.org/wiki/Physical_chemistry)
+* [Analytical chemistry](https://en.wikipedia.org/wiki/Analytical_chemistry)
+* [Biochemistry](https://en.wikipedia.org/wiki/Biochemistry)
+* [Theoretical chemistry](https://en.wikipedia.org/wiki/Theoretical_chemistry)
+* [Quantum chemistry](https://en.wikipedia.org/wiki/Quantum_chemistry)
+
 ## The Top Visited Chemistry Websites
 * [Acs.Org](https://www.acs.org/content/acs/en.html) - The American Chemical Society is a scientific society based in the United States that supports scientific inquiry in the field of chemistry.
 * [Rsc.Org](https://www.rsc.org/) - Advancing excellence, connecting chemical scientists and shaping the future of the chemical sciences for the benefit of humanity.
@@ -45,13 +57,31 @@
 
 
 ## Online View Textbook
+```
+1. Analytical Chemistry
+2. Biochemistry
+3. Physical Chemistry
+4. Inorganic Chemistry
+5. Organic Chemistry
+```
+*From [libretexts.org](https://chem.libretexts.org)*
 * [chem.libretexts.org](https://chem.libretexts.org/Bookshelves) - hub of the Chem LibreTexts project
 * [General Chemistry](https://chem.libretexts.org/Bookshelves/General_Chemistry) - General chemistry courses often taught at the high school and introductory.
 * [Organic Chemistry](https://chem.libretexts.org/Bookshelves/Organic_Chemistry) - Organic chemistry studies the structure, properties and reactions of organic compounds.
 * [Inorganic Chemistry](https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry) - Inorganic chemistry deals with the synthesis and behavior of inorganic and organometallic compounds and covers all chemical compounds except the myriad organic compounds (carbon-based compounds).
 * [Analytical Chemistry](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry) - tools and methods to measure physical properties of substances.
 * [Biological Chemistry](https://chem.libretexts.org/Bookshelves/Biological_Chemistry) - tools of chemistry and synthesis to understand biology and disease pathways at the molecular leve
+* [Biophysical Chemistry](https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Concepts_in_Biophysical_Chemistry_(Tokmakoff)) - biophysics for chemists.
+
+*From [Open textbooks Library](https://open.umn.edu/opentextbooks/)*
+* [Chemistry Textbooks](https://open.umn.edu/opentextbooks/subjects/chemistry) - Open textbooks
+
+
+*Others*
 * [Virtual Textbook of Organic Chemistry](https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/intro1.htm)
+
+## The Video Textbook
+* [The Video Textbook of General Chemistry](https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_The_Video_Textbook_of_General_Chemistry_(Farmer)) - This project was preformed to supply Libretext authors with videos on General Chemistry topics
 
 ## Journals
 * [arXiv](https://arxiv.org/) - arXiv is a free distribution service and an open-access archive for 2,090,013 scholarly articles
@@ -61,7 +91,7 @@
 # Chemistry GitHub Repositories
 *Python for Science GitHub Repositories & Awesome Chemistry Repositories in Github*
 ## Awesome Chemistry GitHub Repositories Branch 
-* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software. [Awesome Chemistry Deployment Webpage](https://zhutaosheng.github.io/awesome-chemistry/) - View online one page.
+* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software. [Awesome Chemistry Deployment Webpage](https://zhutaosheng.github.io/awesome-chemistry/) - View online single page.
 * [Awesome Chemistry - NMR (Nuclear magnetic resonance)](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-nmr-nuclear-magnetic-resonanc.md) - A curated list of all NMR (Nuclear magnetic resonance) libraries and resources.
 ## Python for Science GitHub Repositories
 * [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - A curated list of python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
