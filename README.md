@@ -11,6 +11,7 @@
   - [Other Chemistry Websites](#other-chemistry-websites)
   - [Online View Textbook](#online-view-textbook)
   - [The Video Textbook](#the-video-textbook)
+  - [Practice Chemistry Tests](#practice-chemistry-tests)
   - [Journals](#journals)
 - [Chemistry GitHub Repositories](#chemistry-github-repositories)
   - [Awesome Chemistry GitHub Repositories Branch](#awesome-chemistry-github-repositories-branch)
@@ -82,6 +83,11 @@
 
 ## The Video Textbook
 * [The Video Textbook of General Chemistry](https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_The_Video_Textbook_of_General_Chemistry_(Farmer)) - This project was preformed to supply Libretext authors with videos on General Chemistry topics
+
+## Practice Chemistry Tests
+* [20 Practice Chemistry Tests](https://www.thoughtco.com/chemistry-practice-tests-604113) - This collection of chemistry test questions is grouped according to subject. 
+* [Chemistry Quizzes](https://www.softschools.com/quizzes/chemistry/)
+* [Chemistry worksheets and online exercises](https://www.liveworksheets.com/worksheets/en/Chemistry)
 
 ## Journals
 * [arXiv](https://arxiv.org/) - arXiv is a free distribution service and an open-access archive for 2,090,013 scholarly articles
