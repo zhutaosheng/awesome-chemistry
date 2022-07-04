@@ -35,13 +35,13 @@
 * [Awesome Github Single Page](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries/awesome-github-single-page) - Create One Github Page Website from ```README.md``` file.
 * [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software.
 * [Awesome Chemistry - Get Your Paper Published](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-get-your-paper-published.md) - A curated of guides to publishing
-* [Python for Scientists & Python Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/python-for-scientists-and-python-libraries.md) - A curated list of awesome Python frameworks, libraries and resources
+
 
 ## Personal libraries collection - to private
 * [Personal Libraries](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - A personal libraries.
-* [Projects](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md) - A curated list of Projects libraries.
-* [Softwares](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/softwares.md) - A curated list of all softwares and resources.
-
+* [Projects](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md) - A curated list of personal projects.
+* [Softwares](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/softwares.md) - A curated list of all personal softwares and resources.
+* [Python for Scientists & Python Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/python-for-scientists-and-python-libraries.md) - A curated list of Python frameworks, libraries and resources
 
 # Personal Libraries
 
