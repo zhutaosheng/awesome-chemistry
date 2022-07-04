@@ -10,7 +10,6 @@
   - [Periodic table](#periodic-table)
   - [Other Chemistry Websites](#other-chemistry-websites)
   - [Online View Textbook](#online-view-textbook)
-  - [The Video Textbook](#the-video-textbook)
   - [Practice Chemistry Tests](#practice-chemistry-tests)
   - [Journals](#journals)
 - [Chemistry GitHub Repositories](#chemistry-github-repositories)
@@ -31,6 +30,9 @@
 * [Biochemistry](https://en.wikipedia.org/wiki/Biochemistry)
 * [Theoretical chemistry](https://en.wikipedia.org/wiki/Theoretical_chemistry)
 * [Quantum chemistry](https://en.wikipedia.org/wiki/Quantum_chemistry)
+
+*Sci-Hub journal - latest sci-hub mirror links*
+* [Sci-Hub 1](https://www.sci-hub.st/), [Sci-Hub 2](https://sci-hub.se/), [Sci-Hub 3](https://sci-hub.st/), [Sci-Hub 4](https://sci-hub.hkvisa.net/)
 
 ## The Top Visited Chemistry Websites
 * [Acs.Org](https://www.acs.org/content/acs/en.html) - The American Chemical Society is a scientific society based in the United States that supports scientific inquiry in the field of chemistry.
@@ -81,7 +83,7 @@
 *Others*
 * [Virtual Textbook of Organic Chemistry](https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/intro1.htm)
 
-## The Video Textbook
+*The Video Textbook*
 * [The Video Textbook of General Chemistry](https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_The_Video_Textbook_of_General_Chemistry_(Farmer)) - This project was preformed to supply Libretext authors with videos on General Chemistry topics
 
 ## Practice Chemistry Tests
