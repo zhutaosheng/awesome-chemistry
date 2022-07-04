@@ -1,11 +1,7 @@
 
-## Python for Scientists & Python Libraries
-### [Python for Scientists](#python-for-scientists) - *A curated list of recommended Python frameworks, libraries, software and resources, all particularly useful for scientific Python users*
-### [Python Libraries](#python-libraries) - *A curated list of awesome Python frameworks, libraries, software and resources.*
-
-
-[//]: # (I am a comment and will not be displayed. The contributing list under the document has been changed)
-[//]: # (Every file is clear)
+## [Python for Scientists & Python Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/python-for-scientists-and-python-libraries.md)
+### [Python for Scientists](#python-for-scientists) - *A curated list of recommended Python frameworks, libraries, software and resources, all particularly useful for scientific Python users* [downloaded from](https://github.com/TomNicholas/Python-for-Scientists)
+### [Python Libraries](#python-libraries) - *A curated list of awesome Python frameworks, libraries, software and resources.* [downloaded from](https://github.com/vinta/awesome-python)
 
 - [Python for Scientists](#python-for-scientists)
   - [Algebra](#algebra)
