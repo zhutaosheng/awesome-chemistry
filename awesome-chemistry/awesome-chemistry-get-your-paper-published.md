@@ -14,6 +14,7 @@
   - [About LaTeX tools](#about-latex-tools)
   - [Other tools](#other-tools)
   - [Science Software Tutorials](#science-software-tutorials)
+  - [Journals](#journals)
 
 #  Get Your Paper Published
 
@@ -54,8 +55,11 @@ Step 3: Submit Your Manuscript
 * [Endnote](https://endnote.com/downloads) - The best reference management tool
 
 ## About LaTeX tools
-* [Overleaf](https://www.overleaf.com/) - The easy to use, online, collaborative LaTeX editor
+* [Overleaf](https://www.overleaf.com/) - The easy to use, online, collaborative LaTeX editor. overleaf [learn/how-to](https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf)
+* [JaxEdit](https://zohooo.github.io/jaxedit/) - online, The JaxEdit project is separated as two parts: one is the LaTeX editor, and the other is the LaTeX typesetter named TypeJax. [featured-templates](https://www.authorea.com/featured-templates)
+* [MiKTeX](https://miktex.org/download) - keep your TeX installation as minimal as possible (“Just enough TeX”).
 * [TeXstudio](https://www.texstudio.org/) - TeXstudio is an integrated writing environment for creating LaTeX documents.
+* TikZiT - TikZiT is a super simple GUI editor for graphs and string diagrams. 
 * [JabRef](https://www.jabref.org/) - JabRef - Free Reference Manager.
 * [TeX Live](https://tug.org/texlive/) - LaTeX, TeX Live
 
@@ -73,6 +77,17 @@ Step 3: Submit Your Manuscript
 * [LaTeX-Awesome LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Curated list of LaTeX awesomeness
 * [TikZ-Awesome TikZ](https://github.com/xiaohanyu/awesome-tikz#readme) - A curated list of awesome TikZ documentations, libraries and resources.
 * [vscode-awesome-vscode](https://github.com/viatsko/awesome-vscode#readme) - A curated list of delightful VS Code packages and resources.
+
+
+* [PGF/TikZ Manual](https://tikz.dev/) - The TikZ and PGF Packages
+* [tikz-examples - Texample.net](https://texample.net/tikz/examples/) - TikZ and PGF examples
+
+## Journals
+* [arXiv](https://arxiv.org/) - arXiv is a free distribution service and an open-access archive for 2,090,013 scholarly articles. available download source file.
+* [authorea.com](https://www.authorea.com/preprints)  - Discover and publish cutting edge, open research. available download source file.
+* [Chemisty Scimago Journal & Country Rank](https://www.scimagojr.com/journalrank.php?area=1600) - The ranking spans 391 research centers representing the 22 countries in the MENA region. It examines 16 indicators from 3 dimensions: Research, Innovation and Society.
+* [Best Top 30 chemistry journals 2022](https://journalrw.org/best-top-chemistry-journals/) - Chemical Reviews, Nature Reviews Chemistry, Chemical Society Reviews, Nature Materials, Nature Chemistry, ACS Energy Letters, Accounts of Chemical Research, Trends in Chemistry, Journal of the American Chemical Society, Chem, Advanced Functional Materials, Progress in Polymer Science, Angewandte Chemie – International Edition, Nature Communications...
+
 
 
 Useful links

@@ -34,6 +34,7 @@
 - [Mathtype](https://www.wiris.com/en/mathtype/)
 - [Endnote](https://endnote.com/downloads) - The best reference management tool
 - [TeXstudio](https://www.texstudio.org/) - TeXstudio is an integrated writing environment for creating LaTeX documents.
+- [MiKTeX](https://miktex.org/download) - keep your TeX installation as minimal as possible (“Just enough TeX”).
 - [JabRef](https://www.jabref.org/) - JabRef - Free Reference Manager.
 - [TeX Live](https://tug.org/texlive/) - TeX Live
 

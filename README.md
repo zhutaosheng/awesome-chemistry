@@ -11,7 +11,6 @@
   - [Other Chemistry Websites](#other-chemistry-websites)
   - [Online View Textbook](#online-view-textbook)
   - [Practice Chemistry Tests](#practice-chemistry-tests)
-  - [Journals](#journals)
 - [Chemistry GitHub Repositories](#chemistry-github-repositories)
   - [Awesome Chemistry GitHub Repositories Branch](#awesome-chemistry-github-repositories-branch)
   - [Python for Science GitHub Repositories](#python-for-science-github-repositories)
@@ -91,10 +90,6 @@
 * [Chemistry Quizzes](https://www.softschools.com/quizzes/chemistry/)
 * [Chemistry worksheets and online exercises](https://www.liveworksheets.com/worksheets/en/Chemistry)
 
-## Journals
-* [arXiv](https://arxiv.org/) - arXiv is a free distribution service and an open-access archive for 2,090,013 scholarly articles
-* [Chemisty Scimago Journal & Country Rank](https://www.scimagojr.com/journalrank.php?area=1600) - The ranking spans 391 research centers representing the 22 countries in the MENA region. It examines 16 indicators from 3 dimensions: Research, Innovation and Society.
-* [Best Top 30 chemistry journals 2022](https://journalrw.org/best-top-chemistry-journals/) - Chemical Reviews, Nature Reviews Chemistry, Chemical Society Reviews, Nature Materials, Nature Chemistry, ACS Energy Letters, Accounts of Chemical Research, Trends in Chemistry, Journal of the American Chemical Society, Chem, Advanced Functional Materials, Progress in Polymer Science, Angewandte Chemie – International Edition, Nature Communications...
 
 # Chemistry GitHub Repositories
 *Python for Science GitHub Repositories & Awesome Chemistry Repositories in Github*

@@ -1,4 +1,4 @@
-## [Personal Libraries](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - *A personal libraries.*
+## [Personal Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/README.md) - *A personal libraries.*
 
 
 [//]: # (I am a comment and will not be displayed. The contributing list under the document has been changed)
