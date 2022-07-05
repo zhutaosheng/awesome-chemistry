@@ -83,14 +83,17 @@ Step 3: Submit Your Manuscript
 * [tikz-examples - Texample.net](https://texample.net/tikz/examples/) - TikZ and PGF examples
 
 ## Journals
-* [arXiv](https://arxiv.org/) - arXiv is a free distribution service and an open-access archive for 2,090,013 scholarly articles. available download source file.
-* [authorea.com](https://www.authorea.com/preprints)  - Discover and publish cutting edge, open research. available download source file.
+* [arXiv](https://arxiv.org/) - arXiv is a free distribution service and an open-access archive for 2,090,013 scholarly articles. available download source file. [Submission and Revision](https://arxiv.org/help/submit)
+* [biorxiv.org](https://www.biorxiv.org/) - the preprint server for biology. [bioRxiv manuscript processing system.](https://submit.biorxiv.org/)
+* [elifesciences.org](https://elifesciences.org/) - eLife is a non-profit organisation inspired by research funders and led by scientists.
+* [authorea.com](https://www.authorea.com/preprints)  - Discover and publish cutting edge, open research. available download source file. [featured-templates](https://www.authorea.com/featured-templates)
 * [Chemisty Scimago Journal & Country Rank](https://www.scimagojr.com/journalrank.php?area=1600) - The ranking spans 391 research centers representing the 22 countries in the MENA region. It examines 16 indicators from 3 dimensions: Research, Innovation and Society.
 * [Best Top 30 chemistry journals 2022](https://journalrw.org/best-top-chemistry-journals/) - Chemical Reviews, Nature Reviews Chemistry, Chemical Society Reviews, Nature Materials, Nature Chemistry, ACS Energy Letters, Accounts of Chemical Research, Trends in Chemistry, Journal of the American Chemical Society, Chem, Advanced Functional Materials, Progress in Polymer Science, Angewandte Chemie – International Edition, Nature Communications...
 
 
 
 Useful links
+* [orcid](https://orcid.org/) - Connecting research and researchers.
 * [How to Get Your Paper Published](https://chemistry-europe.onlinelibrary.wiley.com/hub/writing-tips-how-to-get-published)
 * [The Publishing Process](https://publish.acs.org/publish/pub_process)
 
