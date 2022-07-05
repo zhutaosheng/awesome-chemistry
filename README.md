@@ -94,7 +94,9 @@
 # Chemistry GitHub Repositories
 *Python for Science GitHub Repositories & Awesome Chemistry Repositories in Github*
 ## Awesome Chemistry GitHub Repositories Branch 
-* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software. [Awesome Chemistry Deployment Webpage](https://zhutaosheng.github.io/awesome-chemistry/) - View online single page.
+* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry/blob/main/README.md) - A curated list of chemistry libraries and software.
+* [Awesome Chemistry - Get Your Paper Published](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-get-your-paper-published.md) - A curated of guides to publishing
+* [Awesome Github Single Page](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/awesome-github-single-page/README.md) - Create One Github Page Website from ```README.md``` file.
 * [Awesome Chemistry - NMR (Nuclear magnetic resonance)](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-nmr-nuclear-magnetic-resonanc.md) - A curated list of all NMR (Nuclear magnetic resonance) libraries and resources.
 ## Python for Science GitHub Repositories
 * [Python Resources](https://github.com/zhutaosheng/awesome-chemistry/tree/main/aaa-personal-libraries) - A curated list of python frameworks, libraries, software and resources, all particularly useful for scientific Python users.
@@ -108,9 +110,10 @@
 * [Awesome R](https://github.com/qinwf/awesome-R) - A curated list of awesome R packages, frameworks and software.
 
 ## Awesome Chemistry Repositories in Github
-* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry) - A curated list of chemistry libraries and software. 
-* [Awesome Chemistry Deployment Webpage](https://zhutaosheng.github.io/awesome-chemistry/) - View online one page.
-* [Awesome Chemistry - Get Your Paper Published](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-get-your-paper-published.md)
+*A curated list of Awesome Projects libraries.*
+* [Awesome Chemistry](https://github.com/zhutaosheng/awesome-chemistry/blob/main/README.md) - A curated list of chemistry libraries and software.
+* [Awesome Chemistry - Get Your Paper Published](https://github.com/zhutaosheng/awesome-chemistry/blob/main/awesome-chemistry/awesome-chemistry-get-your-paper-published.md) - A curated of guides to publishing
+* [Awesome Github Single Page](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/awesome-github-single-page/README.md) - Create One Github Page Website from ```README.md``` file.
 * [Awesome Python Chemistry](https://github.com/lmmentel/awesome-python-chemistry) - A curated list of awesome Python frameworks, libraries, software and resources related to Chemistry.
 * [Quantum Chemistry Dev Kit](https://github.com/givingg/quantum-chemistry-dev-kit) - Docker box for Quantum chem tools with a curated list of awesome frameworks, libraries, software and resources.
 * [Awesome List of Open Science Resources](https://github.com/chemistrydatachampions/awesome-chemistry-info) - Getting your data.
