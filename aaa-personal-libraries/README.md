@@ -45,27 +45,11 @@
 
 # Personal Libraries
 
-## Personal Python Libraries
-
-*Libraries used frequently.*
-* [The Python Standard Library](https://docs.python.org/3/library/index.html) - docs.python.org
-* [math](https://docs.python.org/3/library/math.html) - Mathematical functions in docs.python.org
-* [statistics](https://docs.python.org/3/library/statistics.html) - Mathematical statistics functions in docs.python.org
-
-
-*Libraries for data analyzing & visualization.*
-* [Orange](https://orange.biolab.si/) - Data mining, data visualization, analysis and machine learning through visual programming or scripts.
-* [Pandas](http://pandas.pydata.org/) - A library providing high-performance, easy-to-use data structures and data analysis tools.
-* [Matplotlib](https://matplotlib.org/stable/tutorials/index.html) - Plotting with Python.
-*Libraries for scientific computing.*
-* [NumPy](http://www.numpy.org/) - A fundamental package for scientific computing with Python.
-* [SciPy](https://www.scipy.org/) - A Python-based ecosystem of open-source software for mathematics, science, and engineering.
-* [Plotly - Python lib](https://plotly.com/) - Plotly，Dash apps go where traditional BI cannot. NLP, object detection, predictive analytics, and more. With 1M+ downloads/month, Dash is the new standard for AI & data science apps. [Graphing Library examples for Python](https://plotly.com/python/)
+*Libraries used frequently. others will be update in Awesome Chemistry - Get Your Paper Published*
 
 *Other's Libraries*
 * [emcee](https://emcee.readthedocs.io/en/stable/) - An MIT licensed pure-Python implementation of Goodman & Weare’s Affine Invariant Markov chain Monte Carlo (MCMC) Ensemble sampler.
 
-## Exercises
 * [Pandas Exercises from GitHub](https://github.com/guipsamora/pandas_exercises) - Practice your pandas skills!
 
 ## blogs, pages, webpages
@@ -73,7 +57,6 @@
 * [A Jekyll theme for academia](https://github.com/LeNPaul/academic) - A Jekyll theme for academia.
 
 ## data
-
 *data libraries used frequently.*
 
 ## Share Jupyter Notebooks

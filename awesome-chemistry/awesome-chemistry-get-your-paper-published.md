@@ -5,8 +5,6 @@
 
 
 - [Get Your Paper Published](#get-your-paper-published)
-  - [Keywords](#keywords)
-  - [The Publishing Process](#the-publishing-process)
 - [Paper Tools](#paper-tools)
   - [Tools to write a chemistry paper](#tools-to-write-a-chemistry-paper)
   - [Chemistry paper format](#chemistry-paper-format)
@@ -18,20 +16,15 @@
 
 #  Get Your Paper Published
 
-## Keywords
 *Get Your Paper Published Keywords*
 * Manuscript
 * Science Software
 * Paper Tools
 
-## The Publishing Process
-
-Step 1: Stay Informed
-
-Step 2: Prepare Your Manuscript
-
-Step 3: Submit Your Manuscript
-
+*The Publishing Process*
+* Step 1: Stay Informed
+* Step 2: Prepare Your Manuscript
+* Step 3: Submit Your Manuscript
 
 # Paper Tools
 *Tip: choose tools depending on personal habits*
