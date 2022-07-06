@@ -33,7 +33,6 @@ Step 2: Prepare Your Manuscript
 Step 3: Submit Your Manuscript
 
 
-
 # Paper Tools
 *Tip: choose tools depending on personal habits*
 
@@ -43,18 +42,26 @@ Step 3: Submit Your Manuscript
 *ref some links chemistry paper format*
 
 ## Plot tools
+*data analyzing & visualization.*
 * [Origin and OriginPro](https://www.originlab.com/Origin) - data analysis and graphing software
-* [SigmaPlot](https://systatsoftware.com/sigmaplot/) -  
+* [SigmaPlot](https://systatsoftware.com/sigmaplot/)
 * [MATLAB - MathWorks](https://www.mathworks.com/products/matlab.html)
 * [Mathematica](https://www.wolfram.com/mathematica/)
-* Python and python libraries
 * Visio
-* [Matplotlib](https://matplotlib.org/stable/tutorials/index.html) - Plotting with Python. [Gallery Examples](https://matplotlib.org/stable/gallery/index)
+
+*python data analyzing libraries*
+* Python and python libraries:[docs.python.org](https://docs.python.org/3/library/index.html), [math-docs.python.org](https://docs.python.org/3/library/math.html), [statistics-docs.python.org](https://docs.python.org/3/library/statistics.html)
+* [Matplotlib](https://matplotlib.org/stable/tutorials/index.html) - Plotting with Python. [Gallery Examples](https://matplotlib.org/stable/gallery/index) and [Tutorials with examples](https://matplotlib.org/stable/tutorials/index.html)
+* [Orange](https://orange.biolab.si/) - Data mining, data visualization, analysis and machine learning through visual programming or scripts.
+* [Pandas](http://pandas.pydata.org/) - A library providing high-performance, easy-to-use data structures and data analysis tools.
+* [NumPy](http://www.numpy.org/) - A fundamental package for scientific computing with Python.
+* [SciPy](https://www.scipy.org/) - A Python-based ecosystem of open-source software for mathematics, science, and engineering.
+* [Plotly - Python lib](https://plotly.com/) - Dash is the new standard for AI & data science apps. [Graphing Library examples for Python](https://plotly.com/python/)
+
 
 
 *structure plot tools*
 * ChemOffice - Chemdraw
-
 * [Mathtype](https://www.wiris.com/en/mathtype/) - formula editor and equation writer
 * [Endnote](https://endnote.com/downloads) - The best reference management tool
 
@@ -79,7 +86,6 @@ Step 3: Submit Your Manuscript
 
 ## Science Software Tutorials
 * [vscode-awesome-vscode](https://github.com/viatsko/awesome-vscode#readme) - A curated list of delightful VS Code packages and resources.
-
 
 
 ## Journals
