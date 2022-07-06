@@ -64,6 +64,7 @@
 - [Adobe](https://www.adobe.com/products/catalog.html)- Adobe Acrobat, Adobe Acrobat DC, Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe Premiere
 - [ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager/releases) - 
 - [屏幕录制 LiceCap 简单小巧 输出GIF](https://github.com/JustVita/Excellent-software/blob/master/Windows/Effectiveness/Recording/licecap123-install.exe)
+- [simplenote-electron](https://github.com/Automattic/simplenote-electron/releases)
 
 ## Configuration links
 - [win11 Restore Legacy Right Click menu](https://answers.microsoft.com/en-us/windows/forum/all/restore-legacy-right-click-menu-for-file-explorer/a62e797c-eaf3-411b-aeec-e460e6e5a82a) - old context menu in win 10.

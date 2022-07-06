@@ -60,6 +60,7 @@
 *Libraries for scientific computing.*
 * [NumPy](http://www.numpy.org/) - A fundamental package for scientific computing with Python.
 * [SciPy](https://www.scipy.org/) - A Python-based ecosystem of open-source software for mathematics, science, and engineering.
+* * [Plotly - Python lib](https://plotly.com/) - Plotly，Dash apps go where traditional BI cannot. NLP, object detection, predictive analytics, and more. With 1M+ downloads/month, Dash is the new standard for AI & data science apps. [Graphing Library examples for Python](https://plotly.com/python/)
 
 *Other's Libraries*
 * [emcee](https://emcee.readthedocs.io/en/stable/) - An MIT licensed pure-Python implementation of Goodman & Weare’s Affine Invariant Markov chain Monte Carlo (MCMC) Ensemble sampler.
@@ -167,7 +168,7 @@
 
 ## Offline Science Software
 * [ACD/ChemSketch -Molecular modeling software](http://www.acdlabs.com/resources/freeware/chemsketch/) - a chemical drawing package that you can either download for free or purchase if you aim to use it for commercial purposes.
-* [Plotly - Python lib](https://plotly.com/) - Plotly，Dash apps go where traditional BI cannot. NLP, object detection, predictive analytics, and more. With 1M+ downloads/month, Dash is the new standard for AI & data science apps.
+
 
 * [Single Molecule Dataset (SMD)](https://smdata.github.io/) - A file format for publication and exchange of data from experiments in single-molecule biophysics.
 

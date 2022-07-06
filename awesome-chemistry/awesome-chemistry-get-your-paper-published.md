@@ -25,11 +25,14 @@
 * Paper Tools
 
 ## The Publishing Process
-```
+
 Step 1: Stay Informed
+
 Step 2: Prepare Your Manuscript
+
 Step 3: Submit Your Manuscript
-```
+
+
 
 # Paper Tools
 *Tip: choose tools depending on personal habits*
@@ -41,11 +44,13 @@ Step 3: Submit Your Manuscript
 
 ## Plot tools
 * [Origin and OriginPro](https://www.originlab.com/Origin) - data analysis and graphing software
-* SigmaPlot
+* [SigmaPlot](https://systatsoftware.com/sigmaplot/) -  
 * [MATLAB - MathWorks](https://www.mathworks.com/products/matlab.html)
 * [Mathematica](https://www.wolfram.com/mathematica/)
 * Python and python libraries
 * Visio
+* [Matplotlib](https://matplotlib.org/stable/tutorials/index.html) - Plotting with Python. [Gallery Examples](https://matplotlib.org/stable/gallery/index)
+
 
 *structure plot tools*
 * ChemOffice - Chemdraw
