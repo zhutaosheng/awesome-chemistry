@@ -1,6 +1,8 @@
-## quickcode
+## [QuickCode](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/quickcode.md)
 
-*A curated of using the following basic syntax to process data*
+*QuickCode can quick find the most often used code*
+
+*Personal usage*
 
 
 - [NumPy array CSV](#numpy-array-csv)

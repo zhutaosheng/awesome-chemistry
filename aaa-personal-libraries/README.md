@@ -10,8 +10,6 @@
   - [Awesome chemistry libraries collection - to public](#awesome-chemistry-libraries-collection---to-public)
   - [Personal libraries collection - to private](#personal-libraries-collection---to-private)
 - [Personal Libraries](#personal-libraries)
-  - [Personal Python Libraries](#personal-python-libraries)
-  - [Exercises](#exercises)
   - [blogs, pages, webpages](#blogs-pages-webpages)
   - [data](#data)
   - [Share Jupyter Notebooks](#share-jupyter-notebooks)
@@ -40,6 +38,7 @@
 * [Personal Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/README.md) - A personal libraries.
 * [Projects](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/projects.md) - A curated list of personal projects.
 * [LaTeX templates](https://github.com/zhutaosheng/latex-templates/blob/main/README.md) - A collection of LaTeX templates used for research, courses, and miscellanea.
+* [QuickCode](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/quickcode.md) - QuickCode can quick find the most often used code.
 * [Softwares](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/softwares.md) - A curated list of all personal softwares and resources.
 * [Python for Scientists & Python Libraries](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/python-for-scientists-and-python-libraries.md) - A curated list of Python frameworks, libraries and resources
 
