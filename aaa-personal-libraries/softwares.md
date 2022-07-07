@@ -37,6 +37,8 @@
 - [MiKTeX](https://miktex.org/download) - keep your TeX installation as minimal as possible (“Just enough TeX”).
 - [JabRef](https://www.jabref.org/) - JabRef - Free Reference Manager.
 - [TeX Live](https://tug.org/texlive/) - TeX Live
+- [Java SE Development Kit 8u333](https://www.oracle.com/java/technologies/downloads/#java8-windows) also download [here](https://www.techspot.com/downloads/5198-java-jre.html)
+- [LanguageTool jar](https://languagetool.org/download/) [Configuration](https://blog.csdn.net/weixin_43748786/article/details/111119432)
 
 ## Others
 - [7-Zip](https://www.7-zip.org/) - is a file archiver with a high compression ratio.

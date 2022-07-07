@@ -21,10 +21,15 @@
 * Science Software
 * Paper Tools
 
-*The Publishing Process*
+*The publishing process*
 * Step 1: Stay Informed
 * Step 2: Prepare Your Manuscript
 * Step 3: Submit Your Manuscript
+
+*The graph plot process*
+* Step 1: Draw the separated graph pdf file. matplotlib, origin, sigmaplot, ai, or.
+* Step 2: combine the graph pdf file together. matplotlib, ppt,origin, ai, other.
+* Step 3: insert the graph to latex
 
 # Paper Tools
 *Tip: choose tools depending on personal habits*
@@ -49,7 +54,7 @@
 * [Pandas](http://pandas.pydata.org/) - A library providing high-performance, easy-to-use data structures and data analysis tools.
 * [NumPy](http://www.numpy.org/) - A fundamental package for scientific computing with Python.
 * [SciPy](https://www.scipy.org/) - A Python-based ecosystem of open-source software for mathematics, science, and engineering.
-* [Plotly - Python lib](https://plotly.com/) - Dash is the new standard for AI & data science apps. [Graphing Library examples for Python](https://plotly.com/python/)
+* [Plotly](https://plotly.com/) - Dash is the new standard for AI & data science apps. [Graphing Library examples for Python](https://plotly.com/python/)
 
 
 
@@ -58,6 +63,8 @@
 * [Mathtype](https://www.wiris.com/en/mathtype/) - formula editor and equation writer
 * [Endnote](https://endnote.com/downloads) - The best reference management tool
 
+
+* [Science Plots](https://github.com/garrettj403/SciencePlots) - Matplotlib styles for scientific figures
 ## About LaTeX tools
 *all about LaTeX has been updated*
 * [Overleaf](https://www.overleaf.com/) - The easy to use, online, collaborative LaTeX editor. overleaf [learn/how-to](https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf)
@@ -67,6 +74,7 @@
 * TikZiT - TikZiT is a super simple GUI editor for graphs and string diagrams. 
 * [JabRef](https://www.jabref.org/) - JabRef - Free Reference Manager.
 * [TeX Live](https://tug.org/texlive/) - LaTeX, TeX Live
+
 
 ## Other tools
 * [Office](https://www.office.com/) - Collaborate for free with online versions of Microsoft Word, PowerPoint, Excel, and OneNote.
