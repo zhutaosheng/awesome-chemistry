@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\input{preamble/preamble_lecture}
+
+% Take the four files below from papers/preamble.
+\input{preamble/preamble}
+\input{preamble/preamble_acronyms}
+\input{preamble/preamble_math}
+\input{preamble/preamble_tikz}
+
+\newcommand{\xnewcommand}[2]{\newcommand{#1}{#2\xspace}}
+\xnewcommand{\coursenum}{CS 282r}
+\xnewcommand{\coursetitle}{Reinforcement Learning}
+\xnewcommand{\instructor}{Finale Doshi-Velez}
+\xnewcommand{\term}{Spring 2015}
+
+\title{%
+\textbf{\coursenum \coursetitle}
+}
+
+\author{
+Dustin Tran \\
+Harvard University \\
+\\
+Instructor: \\
+\instructor \\
+Harvard University \\
+}
+
+\begin{document}
+
+\maketitle
+\bigskip
+
+\begin{abstract}
+This document is a compilation of lecture notes for \instructor's
+\coursenum course in \coursetitle, during the term of \term. Please
+send feedback and/or corrections to \texttt{dustinviettran@gmail.com}.
+More broadly, I can be reached at \url{dustintran.com}.
+\end{abstract}
+
+% \emph{Keywords:}
+
+\clearpage
+\glsresetall{}
+\tableofcontents
+\clearpage
+
+\input{lecture_01}
+
+\clearpage
+
+\bibliographystyle{apalike}
+\bibliography{bib}
+
+\clearpage
+\appendix
+
+%\input{sec_appendix}
+
+\end{document}

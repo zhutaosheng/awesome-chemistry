@@ -8,6 +8,7 @@
 - [NumPy array CSV](#numpy-array-csv)
   - [NumPy array to a CSV file:](#numpy-array-to-a-csv-file)
   - [NumPy CSV to array file:](#numpy-csv-to-array-file)
+  - [NumPy binary files (NPY, NPZ)](#numpy-binary-files-npy-npz)
 - [Matplotlib graphs](#matplotlib-graphs)
   - [A simple example link](#a-simple-example-link)
   - [Generating visualizations with pyplot is very quick, link:](#generating-visualizations-with-pyplot-is-very-quick-link)
@@ -41,7 +42,34 @@ arr = np.loadtxt("sample_data.csv",
                  delimiter=",", dtype=str)
 display(arr)
 ```
+## NumPy binary files (NPY, NPZ)
+Save x into temp.npy and load it.
 
+
+Q1. Save x into temp.npy and load it.  True
+```
+x = np.arange(10)
+np.save('temp.npy', x) # Actually you can omit the extension. If so, it will be added automatically.
+
+# Check if there exists the 'temp.npy' file.
+import os
+if os.path.exists('temp.npy'):
+    x2 = np.load('temp.npy')
+    print(np.array_equal(x, x2))
+```
+
+Q2. Save x and y into a single file 'temp.npz' and load it.
+```
+x = np.arange(10)
+y = np.arange(11, 20)
+np.savez('temp.npz', x=x, y=y)
+# np.savez_compressed('temp.npz', x=x, y=y) # If you want to save x and y into a single file in compressed .npz format.
+with np.load('temp.npz') as data:
+    x2 = data['x']
+    y2 = data['y']
+    print(np.array_equal(x, x2))
+    print(np.array_equal(y, y2))
+```
 # Matplotlib graphs
 [Parts of a Figure](https://matplotlib.org/stable/tutorials/introductory/usage.html#parts-of-a-figure) - the components of a Matplotlib Figure.
 

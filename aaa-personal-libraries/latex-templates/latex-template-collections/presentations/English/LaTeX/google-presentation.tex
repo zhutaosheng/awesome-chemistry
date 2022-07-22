@@ -1,0 +1,38 @@
+\documentclass[hyperref={pdfpagelabels=false},usepdftitle=false]{beamer}
+\usepackage{../templates/myStyle}
+
+\begin{document}
+\selectlanguage{english}
+
+\title{\titleText}
+\subtitle{History of searching and the PageRank algorithm}
+\author{\tutor}
+\date{7th of February, 2013}
+%\subject{Programmieren}
+
+\frame{\titlepage}
+
+\frame{
+    \frametitle{Contents}
+    \setcounter{tocdepth}{1}
+    \tableofcontents
+    \setcounter{tocdepth}{2}
+}
+
+%\AtBeginSection[]{
+%    \InsertToC[sections={\thesection}]  % shows only subsubsections of one subsection
+%}
+
+\section{Introduction}
+\input{introduction}
+
+\section{PageRank}
+\input{PageRank}
+
+\section{End}
+\input{end}
+\input{wrapup}
+\input{sources}
+\framedgraphic{Thanks for Your Attention!}{../images/Teach-yourself-C++-in-21-days.png}
+
+\end{document}

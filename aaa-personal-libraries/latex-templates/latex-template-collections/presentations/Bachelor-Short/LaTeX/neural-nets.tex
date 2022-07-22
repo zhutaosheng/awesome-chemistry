@@ -1,0 +1,41 @@
+\subsection{Neural Net experiments}
+\begin{frame}{Experiments}
+    \textbf{Preprocessing:} Scaling, shifting and linear interpolation\\
+    \textbf{Features:} Coordinates of 80 points (4 strokes with 20 points each)\\
+    \textbf{Learning:} MLP, 300 epochs, LR of 0.1, Momentum 0.1
+
+\begin{table}[h]
+    \begin{tabular}{lrl}
+    \toprule
+    Topology                & Error    & Training time \\ \midrule
+    160:500:369             & 30.62 \% & \hphantom{0}9min 08s      \\
+    160:500:500:369         & 27.73 \% & 11min 49s     \\
+    160:500:500:500:369     & 34.79 \% & 14min 09s     \\
+    160:500:500:500:500:369 & 33.61 \% & 14min 06s     \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]{Examples of confusable symbols}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{lc|lc}
+        \textbf{\LaTeX}& \textbf{Rendered}   & \textbf{\LaTeX}& \textbf{Rendered} \\\midrule
+        \verb+\sum+    & $\sum$         & \verb+$\Sigma$+        & $\Sigma$\\
+        \verb+\coprod+ & $\coprod$      & \verb+$\amalg$+        & $\amalg$\\
+        \verb+\perp+   & $\perp$        & \verb+$\bot$+          & $\bot$\\
+        \verb+\models+ & $\models$      & \verb+$\vDash$+        & $\vDash$\\
+        \verb+\emptyset+ & $\emptyset$  & \verb+$\diameter$+     & $\diameter$\\
+        ~              & ~              & \verb+$\o$+            & $\o$\\
+        ~              & ~              & \verb+$\varnothing$+   & $\varnothing$\\
+        \verb+\Delta+  & $\Delta$       & \verb+$\triangle$+     & $\triangle$\\
+        \verb+\varepsilon+ & $\varepsilon$ & \verb+$\mathcal{E}$+ & $\mathcal{E}$\\
+    \end{tabular}
+\end{table}
+
+When those confusions are not counted as errors, the current best system
+has an classification error rate of $12.7 \%$ (otherwise $22.2 \%$).
+
+\end{frame}

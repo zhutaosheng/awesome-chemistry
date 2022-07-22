@@ -1,0 +1,725 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{55}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Taylor}\ \emph {et~al.}(1999)\citenamefont {Taylor},
+  \citenamefont {Zhulin},\ and\ \citenamefont {Johnson}}]{Taylor1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont
+  {Taylor}}, \bibinfo {author} {\bibfnamefont {I.~B.}\ \bibnamefont {Zhulin}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont {Johnson}},\
+  }\bibfield  {title} {\bibinfo {title} {Aerotaxis and other energy-sensing
+  behavior in bacteria},\ }\href
+  {https://doi.org/10.1146/annurev.micro.53.1.103} {\bibfield  {journal}
+  {\bibinfo  {journal} {Annual Review of Microbiology}\ }\textbf {\bibinfo
+  {volume} {53}},\ \bibinfo {pages} {103} (\bibinfo {year} {1999})},\ \bibinfo
+  {note} {pMID: 10547687}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Engelmann}(1881)}]{engelmann1881}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~W.}\ \bibnamefont
+  {Engelmann}},\ }\bibfield  {title} {\bibinfo {title} {Neue method zur
+  untersuchung der sauerstoffausscheidung pflanzilcher und thierischer
+  organismen},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Botanische Zeitung}\ }\textbf {\bibinfo {volume} {39}},\ \bibinfo {pages}
+  {441} (\bibinfo {year} {1881})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Baracchini}\ and\ \citenamefont
+  {Sherris}(1959)}]{Baracchini1959}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Baracchini}}\ and\ \bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {Sherris}},\ }\bibfield  {title} {\bibinfo {title} {The chemotactic effect of
+  oxygen on bacteria},\ }\href
+  {https://doi.org/https://doi.org/10.1002/path.1700770228} {\bibfield
+  {journal} {\bibinfo  {journal} {The Journal of Pathology and Bacteriology}\
+  }\textbf {\bibinfo {volume} {77}},\ \bibinfo {pages} {565} (\bibinfo {year}
+  {1959})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Menolascina}\ \emph {et~al.}(2017)\citenamefont
+  {Menolascina}, \citenamefont {Rusconi}, \citenamefont {Fernandez},
+  \citenamefont {Smriga}, \citenamefont {Aminzare}, \citenamefont {Sontag},\
+  and\ \citenamefont {Stocker}}]{menolascina2017logarithmic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Menolascina}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Rusconi}}, \bibinfo {author} {\bibfnamefont {V.~I.}\ \bibnamefont
+  {Fernandez}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Smriga}},
+  \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Aminzare}}, \bibinfo
+  {author} {\bibfnamefont {E.~D.}\ \bibnamefont {Sontag}},\ and\ \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Stocker}},\ }\bibfield  {title}
+  {\bibinfo {title} {Logarithmic sensing in \emph{Bacillus subtilis}
+  aerotaxis},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {NPJ
+  systems biology and applications}\ }\textbf {\bibinfo {volume} {3}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Adler}\ \emph {et~al.}(2012)\citenamefont {Adler},
+  \citenamefont {Erickstad}, \citenamefont {Gutierrez},\ and\ \citenamefont
+  {Groisman}}]{Adler2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Adler}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Erickstad}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Gutierrez}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Groisman}},\ }\bibfield
+  {title} {\bibinfo {title} {Studies of bacterial aerotaxis in a microfluidic
+  device},\ }\href {https://doi.org/10.1039/C2LC21006A} {\bibfield  {journal}
+  {\bibinfo  {journal} {Lab Chip}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo
+  {pages} {4835} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Morse}\ \emph {et~al.}(2016)\citenamefont {Morse},
+  \citenamefont {Colin}, \citenamefont {Wilson},\ and\ \citenamefont
+  {Tang}}]{morse2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Morse}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Colin}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Wilson}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Tang}},\ }\bibfield  {title}
+  {\bibinfo {title} {The aerotactic response of \emph{Caulobacter
+  crescentus}},\ }\href {https://doi.org/10.1016/j.bpj.2016.03.028} {\bibfield
+  {journal} {\bibinfo  {journal} {Biophysical Journal}\ }\textbf {\bibinfo
+  {volume} {110}},\ \bibinfo {pages} {2076} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Taylor}(1983)}]{Taylor1983}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont
+  {Taylor}},\ }\bibfield  {title} {\bibinfo {title} {How do bacteria find the
+  optimal concentration of oxygen?},\ }\href
+  {https://doi.org/10.1016/0968-0004(83)90030-0} {\bibfield  {journal}
+  {\bibinfo  {journal} {Trends in Biochemical Sciences}\ }\textbf {\bibinfo
+  {volume} {8}},\ \bibinfo {pages} {438} (\bibinfo {year} {1983})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Stricker}\ \emph {et~al.}(2020)\citenamefont
+  {Stricker}, \citenamefont {Guido}, \citenamefont {Breithaupt}, \citenamefont
+  {Mazza},\ and\ \citenamefont {Vollmer}}]{Stricker2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Stricker}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Guido}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Breithaupt}}, \bibinfo
+  {author} {\bibfnamefont {M.~G.}\ \bibnamefont {Mazza}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Vollmer}},\ }\bibfield  {title}
+  {\bibinfo {title} {Hybrid sideways/longitudinal swimming in the
+  monoflagellate \emph{Shewanella oneidensis}: from aerotactic band to
+  biofilm},\ }\href {https://doi.org/10.1098/rsif.2020.0559} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of The Royal Society Interface}\
+  }\textbf {\bibinfo {volume} {17}},\ \bibinfo {pages} {20200559} (\bibinfo
+  {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Frankel}\ \emph {et~al.}(1997)\citenamefont
+  {Frankel}, \citenamefont {Bazylinski}, \citenamefont {Johnson},\ and\
+  \citenamefont {Taylor}}]{Frankel1997}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~B.}\ \bibnamefont
+  {Frankel}}, \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Bazylinski}}, \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Johnson}},\ and\ \bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont
+  {Taylor}},\ }\bibfield  {title} {\bibinfo {title} {Magneto-aerotaxis in
+  marine coccoid bacteria},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Biophysical Journal}\ }\textbf {\bibinfo {volume} {73}} (\bibinfo
+  {year} {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Popp}\ \emph {et~al.}(2014)\citenamefont {Popp},
+  \citenamefont {Armitage},\ and\ \citenamefont
+  {Sch{\"u}ler}}]{popp2014polarity}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Popp}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Armitage}},\
+  and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sch{\"u}ler}},\
+  }\bibfield  {title} {\bibinfo {title} {Polarity of bacterial magnetotaxis is
+  controlled by aerotaxis through a common sensory pathway},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature communications}\ }\textbf
+  {\bibinfo {volume} {5}},\ \bibinfo {pages} {1} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fischer}\ and\ \citenamefont
+  {Cypionka}(2006)}]{Fischer2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Fischer}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Cypionka}},\ }\bibfield  {title} {\bibinfo {title} {{Analysis of aerotactic
+  band formation by \emph{Desulfovibrio desulfuricans} in a stopped-flow
+  diffusion chamber}},\ }\href
+  {https://doi.org/10.1111/j.1574-695X.2005.00024.x} {\bibfield  {journal}
+  {\bibinfo  {journal} {FEMS Microbiology Ecology}\ }\textbf {\bibinfo {volume}
+  {55}},\ \bibinfo {pages} {186} (\bibinfo {year} {2006})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Mazzag}\ \emph {et~al.}(2003)\citenamefont {Mazzag},
+  \citenamefont {Zhulin},\ and\ \citenamefont {Mogilner}}]{mazzag2003model}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Mazzag}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Zhulin}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mogilner}},\
+  }\bibfield  {title} {\bibinfo {title} {Model of bacterial band formation in
+  aerotaxis},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Biophysical journal}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages}
+  {3558} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Armitano}\ \emph {et~al.}(2013)\citenamefont
+  {Armitano}, \citenamefont {M\'ejean},\ and\ \citenamefont
+  {Jourlin-Castelli}}]{Armitano2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Armitano}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {M\'ejean}},\
+  and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Jourlin-Castelli}},\
+  }\bibfield  {title} {\bibinfo {title} {Aerotaxis governs floating biofilm
+  formation in \emph{Shewanella oneidensis}},\ }\href
+  {https://doi.org/10.1111/1462-2920.12158} {\bibfield  {journal} {\bibinfo
+  {journal} {Environmental Microbiology}\ }\textbf {\bibinfo {volume} {15}},\
+  \bibinfo {pages} {3108} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ardr{\'{e}}}\ \emph {et~al.}(2015)\citenamefont
+  {Ardr{\'{e}}}, \citenamefont {Henry}, \citenamefont {Douarche},\ and\
+  \citenamefont {Plapp}}]{Ardre2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Ardr{\'{e}}}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Henry}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Douarche}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Plapp}},\ }\bibfield
+  {title} {\bibinfo {title} {An individual-based model for biofilm formation at
+  liquid surfaces},\ }\href {https://doi.org/10.1088/1478-3975/12/6/066015}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Biology}\ }\textbf
+  {\bibinfo {volume} {12}},\ \bibinfo {pages} {066015} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Holscher}\ \emph {et~al.}(2015)\citenamefont
+  {Holscher}, \citenamefont {Bartels}, \citenamefont {Lin}, \citenamefont
+  {Gallegos-Monterrosa}, \citenamefont {Price-Whelan}, \citenamefont {Kolter},
+  \citenamefont {Dietrich},\ and\ \citenamefont {Kovacs}}]{Holscher2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Holscher}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Bartels}},
+  \bibinfo {author} {\bibfnamefont {Y.-C.}\ \bibnamefont {Lin}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Gallegos-Monterrosa}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Price-Whelan}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Kolter}}, \bibinfo {author} {\bibfnamefont
+  {L.~E.~P.}\ \bibnamefont {Dietrich}},\ and\ \bibinfo {author} {\bibfnamefont
+  {A.~T.}\ \bibnamefont {Kovacs}},\ }\bibfield  {title} {\bibinfo {title}
+  {Motility, chemotaxis and aerotaxis contribute to competitiveness during
+  bacterial pellicle biofilm development.},\ }\href
+  {https://doi.org/10.1016/j.jmb.2015.06.014.} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Molecular Biology}\ }\textbf {\bibinfo {volume}
+  {427}},\ \bibinfo {pages} {3695} (\bibinfo {year} {2015})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Wu}\ and\ \citenamefont {Jin}(2019)}]{Wu2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Wu}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Jin}},\
+  }\bibfield  {title} {\bibinfo {title} {Pellicle development of
+  \emph{Shewanella oneidensis} is an aerotaxis-piloted and energy-dependent
+  process},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.bbrc.2019.08.144} {\bibfield
+  {journal} {\bibinfo  {journal} {Biochemical and Biophysical Research
+  Communications}\ }\textbf {\bibinfo {volume} {519}},\ \bibinfo {pages} {127 }
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Alexandre}\ \emph {et~al.}(2004)\citenamefont
+  {Alexandre}, \citenamefont {Greer-Phillips},\ and\ \citenamefont
+  {Zhulin}}]{alexandre_2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Alexandre}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Greer-Phillips}},\ and\ \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Zhulin}},\ }\bibfield  {title} {\bibinfo {title} {Ecological role of energy
+  taxis in microorganisms},\ }\bibfield  {journal} {\bibinfo  {journal} {FEMS
+  Microbiology Reviews}\ }\textbf {\bibinfo {volume} {28}},\ \href
+  {https://doi.org/10.1016/j.femsre.2003.10.003} {10.1016/j.femsre.2003.10.003}
+  (\bibinfo {year} {2004})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tamar}\ \emph {et~al.}(2016)\citenamefont {Tamar},
+  \citenamefont {Koler},\ and\ \citenamefont {Vaknin}}]{Tamar2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Tamar}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Koler}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Vaknin}},\ }\bibfield
+  {title} {\bibinfo {title} {The role of motility and chemotaxis in the
+  bacterial colonization of protected surfaces},\ }\bibfield  {journal}
+  {\bibinfo  {journal} {Scientific Reports}\ }\textbf {\bibinfo {volume} {6}},\
+  \href {https://doi.org/10.1038/srep19616} {10.1038/srep19616} (\bibinfo
+  {year} {2016})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Felfoul}\ \emph {et~al.}(2016)\citenamefont
+  {Felfoul}, \citenamefont {Mohammadi}, \citenamefont {Taherkhani},
+  \citenamefont {de~Lanauze}, \citenamefont {Zhong~Xu}, \citenamefont {Loghin},
+  \citenamefont {Essa}, \citenamefont {Jancik}, \citenamefont {Houle},
+  \citenamefont {Lafleur}, \citenamefont {Gaboury}, \citenamefont {Tabrizian},
+  \citenamefont {Kaou}, \citenamefont {Atkin}, \citenamefont {Vuong},
+  \citenamefont {Batist}, \citenamefont {Beauchemin}, \citenamefont
+  {Radzioch},\ and\ \citenamefont {Martel}}]{felfoul_magneto-aerotactic_2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Felfoul}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mohammadi}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Taherkhani}}, \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {de~Lanauze}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Zhong~Xu}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Loghin}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Essa}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Jancik}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Houle}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Lafleur}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Gaboury}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Tabrizian}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Kaou}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Atkin}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Vuong}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Batist}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Beauchemin}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {Radzioch}},\ and\ \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Martel}},\ }\bibfield  {title} {\bibinfo {title}
+  {Magneto-aerotactic bacteria deliver drug-containing nanoliposomes to tumour
+  hypoxic regions},\ }\href {https://doi.org/10.1038/nnano.2016.137} {\bibfield
+   {journal} {\bibinfo  {journal} {Nature Nanotechnology}\ }\textbf {\bibinfo
+  {volume} {11}},\ \bibinfo {pages} {941} (\bibinfo {year} {2016})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Baban}\ \emph {et~al.}(2010)\citenamefont {Baban},
+  \citenamefont {Cronin}, \citenamefont {O’Hanlon}, \citenamefont
+  {O’Sullivan},\ and\ \citenamefont {Tangney}}]{baban_bacteria_2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~K.}\ \bibnamefont
+  {Baban}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Cronin}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {O’Hanlon}}, \bibinfo
+  {author} {\bibfnamefont {G.~C.}\ \bibnamefont {O’Sullivan}},\ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Tangney}},\ }\bibfield  {title}
+  {\bibinfo {title} {Bacteria as vectors for gene therapy of cancer},\ }\href
+  {https://doi.org/10.4161/bbug.1.6.13146} {\bibfield  {journal} {\bibinfo
+  {journal} {Bioengineered Bugs}\ }\textbf {\bibinfo {volume} {1}},\ \bibinfo
+  {pages} {385} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shirai}\ \emph {et~al.}(2017)\citenamefont {Shirai},
+  \citenamefont {Datta},\ and\ \citenamefont {Oshita}}]{Shirai2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Shirai}}, \bibinfo {author} {\bibfnamefont {A.~K.}\ \bibnamefont {Datta}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Oshita}},\
+  }\bibfield  {title} {\bibinfo {title} {Penetration of aerobic bacteria into
+  meat: A mechanistic understanding},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.jfoodeng.2016.10.012} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Food Engineering}\ }\textbf
+  {\bibinfo {volume} {196}},\ \bibinfo {pages} {193 } (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hou}\ \emph {et~al.}(2000)\citenamefont {Hou},
+  \citenamefont {Larsen},\ and\ \citenamefont {Boudko}}]{Hou2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Hou}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Larsen}},\ and\
+  \bibinfo {author} {\bibfnamefont {D.~e.~a.}\ \bibnamefont {Boudko}},\
+  }\bibfield  {title} {\bibinfo {title} {Myoglobin-like aerotaxis transducers
+  in archaea and bacteria},\ }\href {https://doi.org/10.1038/35000570}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo
+  {volume} {403}},\ \bibinfo {pages} {540–544} (\bibinfo {year}
+  {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stock}(1997)}]{Stock1997}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Stock}},\ }\bibfield  {title} {\bibinfo {title} {Energy sensors for
+  aerotaxis in \emph{Escherichia coli}: Something old, something new},\ }\href
+  {https://doi.org/10.1073/pnas.94.20.10487} {\bibfield  {journal} {\bibinfo
+  {journal} {Proceedings of the National Academy of Sciences}\ }\textbf
+  {\bibinfo {volume} {94}},\ \bibinfo {pages} {10487} (\bibinfo {year}
+  {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rebbapragada}\ \emph {et~al.}(1997)\citenamefont
+  {Rebbapragada}, \citenamefont {Johnson}, \citenamefont {Harding},
+  \citenamefont {Zuccarelli}, \citenamefont {Fletcher}, \citenamefont
+  {Zhulin},\ and\ \citenamefont {Taylor}}]{rebbapragada1997aer}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Rebbapragada}}, \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Johnson}}, \bibinfo {author} {\bibfnamefont {G.~P.}\ \bibnamefont
+  {Harding}}, \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {Zuccarelli}}, \bibinfo {author} {\bibfnamefont {H.~M.}\ \bibnamefont
+  {Fletcher}}, \bibinfo {author} {\bibfnamefont {I.~B.}\ \bibnamefont
+  {Zhulin}},\ and\ \bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont
+  {Taylor}},\ }\bibfield  {title} {\bibinfo {title} {The aer protein and the
+  serine chemoreceptor tsr independently sense intracellular energy levels and
+  transduce oxygen, redox, and energy signals for \emph{Escherichia coli}
+  behavior},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Proceedings of the National Academy of Sciences}\ }\textbf {\bibinfo
+  {volume} {94}},\ \bibinfo {pages} {10541} (\bibinfo {year}
+  {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bibikov}\ \emph {et~al.}(1997)\citenamefont
+  {Bibikov}, \citenamefont {Biran}, \citenamefont {Rudd},\ and\ \citenamefont
+  {Parkinson}}]{bibikov1997signal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~I.}\ \bibnamefont
+  {Bibikov}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Biran}},
+  \bibinfo {author} {\bibfnamefont {K.~E.}\ \bibnamefont {Rudd}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont {Parkinson}},\
+  }\bibfield  {title} {\bibinfo {title} {A signal transducer for aerotaxis in
+  \emph{Escherichia coli}.},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of bacteriology}\ }\textbf {\bibinfo {volume} {179}},\
+  \bibinfo {pages} {4075} (\bibinfo {year} {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yu}\ \emph {et~al.}(2002)\citenamefont {Yu},
+  \citenamefont {Saw}, \citenamefont {Hou}, \citenamefont {Larsen},
+  \citenamefont {Watts}, \citenamefont {Johnson}, \citenamefont {Zimmer},
+  \citenamefont {Ordal}, \citenamefont {Taylor},\ and\ \citenamefont
+  {Alam}}]{yu_aerotactic_2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~S.}\ \bibnamefont
+  {Yu}}, \bibinfo {author} {\bibfnamefont {J.~H.}\ \bibnamefont {Saw}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Hou}}, \bibinfo {author}
+  {\bibfnamefont {R.~W.}\ \bibnamefont {Larsen}}, \bibinfo {author}
+  {\bibfnamefont {K.~J.}\ \bibnamefont {Watts}}, \bibinfo {author}
+  {\bibfnamefont {M.~S.}\ \bibnamefont {Johnson}}, \bibinfo {author}
+  {\bibfnamefont {M.~A.}\ \bibnamefont {Zimmer}}, \bibinfo {author}
+  {\bibfnamefont {G.~W.}\ \bibnamefont {Ordal}}, \bibinfo {author}
+  {\bibfnamefont {B.~L.}\ \bibnamefont {Taylor}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Alam}},\ }\bibfield  {title} {\bibinfo
+  {title} {Aerotactic responses in bacteria to photoreleased oxygen},\ }\href
+  {https://doi.org/10.1111/j.1574-6968.2002.tb11481.x} {\bibfield  {journal}
+  {\bibinfo  {journal} {FEMS Microbiology Letters}\ }\textbf {\bibinfo {volume}
+  {217}},\ \bibinfo {pages} {237} (\bibinfo {year} {2002})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Sherris}\ \emph {et~al.}(1957)\citenamefont
+  {Sherris}, \citenamefont {Preston},\ and\ \citenamefont
+  {Shoesmith}}]{sherris_influence_1957}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {Sherris}}, \bibinfo {author} {\bibfnamefont {N.~W.}\ \bibnamefont
+  {Preston}},\ and\ \bibinfo {author} {\bibfnamefont {J.~G.}\ \bibnamefont
+  {Shoesmith}},\ }\bibfield  {title} {\bibinfo {title} {The {Influence} of
+  {Oxygen} and {Arginine} on the {Motility} of a {Strain} of {Pseudomonas}
+  sp.},\ }\href {https://doi.org/10.1099/00221287-16-1-86} {\bibfield
+  {journal} {\bibinfo  {journal} {Microbiology,}\ }\textbf {\bibinfo {volume}
+  {16}},\ \bibinfo {pages} {86} (\bibinfo {year} {1957})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Adler}(1966{\natexlab{a}})}]{adler1966chemotaxis}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Adler}},\ }\bibfield  {title} {\bibinfo {title} {Chemotaxis in bacteria},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Science}\ }\textbf
+  {\bibinfo {volume} {153}},\ \bibinfo {pages} {708} (\bibinfo {year}
+  {1966}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Adler}(1966{\natexlab{b}})}]{adler1966effect}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Adler}},\ }\bibfield  {title} {\bibinfo {title} {Effect of amino acids and
+  oxygen on chemotaxis in \emph{Escherichia coli}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of bacteriology}\ }\textbf {\bibinfo
+  {volume} {92}},\ \bibinfo {pages} {121} (\bibinfo {year}
+  {1966}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Keller}\ and\ \citenamefont
+  {Segel}(1971)}]{keller1971traveling}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~F.}\ \bibnamefont
+  {Keller}}\ and\ \bibinfo {author} {\bibfnamefont {L.~A.}\ \bibnamefont
+  {Segel}},\ }\bibfield  {title} {\bibinfo {title} {Traveling bands of
+  chemotactic bacteria: a theoretical analysis},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of theoretical biology}\ }\textbf
+  {\bibinfo {volume} {30}},\ \bibinfo {pages} {235} (\bibinfo {year}
+  {1971})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rivero}\ \emph {et~al.}(1989)\citenamefont {Rivero},
+  \citenamefont {Tranquillo}, \citenamefont {Buettner},\ and\ \citenamefont
+  {Lauffenburger}}]{rivero1989transport}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Rivero}}, \bibinfo {author} {\bibfnamefont {R.~T.}\ \bibnamefont
+  {Tranquillo}}, \bibinfo {author} {\bibfnamefont {H.~M.}\ \bibnamefont
+  {Buettner}},\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Lauffenburger}},\ }\bibfield  {title} {\bibinfo {title} {Transport models
+  for chemotactic cell populations based on individual cell behavior},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Chemical
+  engineering science}\ }\textbf {\bibinfo {volume} {44}},\ \bibinfo {pages}
+  {2881} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ford}\ and\ \citenamefont
+  {Lauffenburger}(1991)}]{ford1991measurement2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~M.}\ \bibnamefont
+  {Ford}}\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Lauffenburger}},\ }\bibfield  {title} {\bibinfo {title} {Measurement of
+  bacterial random motility and chemotaxis coefficients: Ii. application of
+  single-cell-based mathematical model},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Biotechnology and bioengineering}\ }\textbf {\bibinfo
+  {volume} {37}},\ \bibinfo {pages} {661} (\bibinfo {year} {1991})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lewus}\ and\ \citenamefont
+  {Ford}(2001)}]{lewus2001quantification}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Lewus}}\ and\ \bibinfo {author} {\bibfnamefont {R.~M.}\ \bibnamefont
+  {Ford}},\ }\bibfield  {title} {\bibinfo {title} {Quantification of random
+  motility and chemotaxis bacterial transport coefficients using
+  individual-cell and population-scale assays},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Biotechnology and bioengineering}\ }\textbf
+  {\bibinfo {volume} {75}},\ \bibinfo {pages} {292} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lapidus}\ and\ \citenamefont
+  {Schiller}(1976)}]{lapidus1976model}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~R.}\ \bibnamefont
+  {Lapidus}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Schiller}},\ }\bibfield  {title} {\bibinfo {title} {Model for the
+  chemotactic response of a bacterial population},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Biophysical journal}\ }\textbf {\bibinfo
+  {volume} {16}},\ \bibinfo {pages} {779} (\bibinfo {year} {1976})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Brown}\ and\ \citenamefont
+  {Berg}(1974)}]{brown1974temporal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Brown}}\ and\ \bibinfo {author} {\bibfnamefont {H.~C.}\ \bibnamefont
+  {Berg}},\ }\bibfield  {title} {\bibinfo {title} {Temporal stimulation of
+  chemotaxis in \emph{Escherichia coli}},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Proceedings of the National Academy of Sciences}\
+  }\textbf {\bibinfo {volume} {71}},\ \bibinfo {pages} {1388} (\bibinfo {year}
+  {1974})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shioi}\ \emph {et~al.}(1987)\citenamefont {Shioi},
+  \citenamefont {Dang},\ and\ \citenamefont {Taylor}}]{shioi1987oxygen}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Shioi}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Dang}},\ and\
+  \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Taylor}},\ }\bibfield
+  {title} {\bibinfo {title} {Oxygen as attractant and repellent in bacterial
+  chemotaxis},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Bacteriology}\ }\textbf {\bibinfo {volume} {169}},\ \bibinfo
+  {pages} {3118} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kalinin}\ \emph {et~al.}(2009)\citenamefont
+  {Kalinin}, \citenamefont {Jiang}, \citenamefont {Tu},\ and\ \citenamefont
+  {Wu}}]{kalinin2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.~V.}\ \bibnamefont
+  {Kalinin}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Jiang}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Tu}},\ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Wu}},\ }\bibfield  {title}
+  {\bibinfo {title} {Logarithmic sensing in escherichia coli bacterial
+  chemotaxis},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.bpj.2008.10.027} {\bibfield
+  {journal} {\bibinfo  {journal} {Biophysical Journal}\ }\textbf {\bibinfo
+  {volume} {96}},\ \bibinfo {pages} {2439 } (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhuang}\ \emph {et~al.}(2014)\citenamefont {Zhuang},
+  \citenamefont {Wei}, \citenamefont {Carlsen}, \citenamefont {Edwards},
+  \citenamefont {Marculescu}, \citenamefont {Bogdan},\ and\ \citenamefont
+  {Sitti}}]{zhuang2014analytical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Zhuang}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Wei}},
+  \bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont {Carlsen}}, \bibinfo
+  {author} {\bibfnamefont {M.~R.}\ \bibnamefont {Edwards}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Marculescu}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Bogdan}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Sitti}},\ }\bibfield  {title} {\bibinfo
+  {title} {Analytical modeling and experimental characterization of chemotaxis
+  in serratia marcescens},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review E}\ }\textbf {\bibinfo {volume} {89}},\ \bibinfo
+  {pages} {052704} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kirkegaard}\ \emph {et~al.}(2016)\citenamefont
+  {Kirkegaard}, \citenamefont {Bouillant}, \citenamefont {Marron},
+  \citenamefont {Leptos},\ and\ \citenamefont {R.E.}}]{kirkegaard_2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Kirkegaard}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bouillant}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Marron}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Leptos}},\ and\ \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {R.E.}},\ }\bibfield  {title}
+  {\bibinfo {title} {Aerotaxis in the closest relatives of animals},\
+  }\bibfield  {journal} {\bibinfo  {journal} {eLife}\ }\textbf {\bibinfo
+  {volume} {5}},\ \href {https://doi.org/10.7554/eLife.18109}
+  {10.7554/eLife.18109} (\bibinfo {year} {2016})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ahmed}\ \emph {et~al.}(2010)\citenamefont {Ahmed},
+  \citenamefont {Shimizu},\ and\ \citenamefont
+  {Stocker}}]{ahmed2010microfluidics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Ahmed}}, \bibinfo {author} {\bibfnamefont {T.~S.}\ \bibnamefont {Shimizu}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Stocker}},\
+  }\bibfield  {title} {\bibinfo {title} {Microfluidics for bacterial
+  chemotaxis},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Integrative Biology}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages}
+  {604} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Douarche}\ \emph {et~al.}(2009)\citenamefont
+  {Douarche}, \citenamefont {Buguin}, \citenamefont {Salman},\ and\
+  \citenamefont {Libchaber}}]{douarche2009coli}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Douarche}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Buguin}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Salman}},\ and\ \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Libchaber}},\ }\bibfield  {title}
+  {\bibinfo {title} {\emph{E. coli} and oxygen: a motility transition},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical review
+  letters}\ }\textbf {\bibinfo {volume} {102}},\ \bibinfo {pages} {198101}
+  (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tinevez}\ \emph {et~al.}(2017)\citenamefont
+  {Tinevez}, \citenamefont {Perry}, \citenamefont {Schindelin}, \citenamefont
+  {Hoopes}, \citenamefont {Reynolds}, \citenamefont {Laplantine}, \citenamefont
+  {Bednarek}, \citenamefont {Shorte},\ and\ \citenamefont
+  {Eliceiri}}]{tinevez2017trackmate}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-Y.}\ \bibnamefont
+  {Tinevez}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Perry}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Schindelin}}, \bibinfo
+  {author} {\bibfnamefont {G.~M.}\ \bibnamefont {Hoopes}}, \bibinfo {author}
+  {\bibfnamefont {G.~D.}\ \bibnamefont {Reynolds}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Laplantine}}, \bibinfo {author}
+  {\bibfnamefont {S.~Y.}\ \bibnamefont {Bednarek}}, \bibinfo {author}
+  {\bibfnamefont {S.~L.}\ \bibnamefont {Shorte}},\ and\ \bibinfo {author}
+  {\bibfnamefont {K.~W.}\ \bibnamefont {Eliceiri}},\ }\bibfield  {title}
+  {\bibinfo {title} {Trackmate: An open and extensible platform for
+  single-particle tracking},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Methods}\ }\textbf {\bibinfo {volume} {115}},\ \bibinfo {pages}
+  {80} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bouvard}(2022)}]{bouvard2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Bouvard}},\ }\emph {\bibinfo {title} {Dynamics of bacterial suspensions,
+  from aerotaxis to cluster formation}},\ \href@noop {} {Ph.D. thesis},\
+  \bibinfo  {school} {Universit\'e Paris-Saclay} (\bibinfo {year}
+  {2022})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Berg}\ and\ \citenamefont
+  {Brown}(1972)}]{berg1972chemotaxis}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~C.}\ \bibnamefont
+  {Berg}}\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Brown}},\ }\bibfield  {title} {\bibinfo {title} {Chemotaxis in
+  \emph{Escherichia coli} analysed by three-dimensional tracking},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo
+  {volume} {239}},\ \bibinfo {pages} {500} (\bibinfo {year}
+  {1972})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Berg}(1993)}]{berg1993random}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~C.}\ \bibnamefont
+  {Berg}},\ }\href@noop {} {\emph {\bibinfo {title} {Random Walks in
+  Biology}}}\ (\bibinfo  {publisher} {Princeton University Press},\ \bibinfo
+  {year} {1993})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Barbara}\ and\ \citenamefont
+  {Mitchell}(2003)}]{barbara2003bacterial}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~M.}\ \bibnamefont
+  {Barbara}}\ and\ \bibinfo {author} {\bibfnamefont {J.~G.}\ \bibnamefont
+  {Mitchell}},\ }\bibfield  {title} {\bibinfo {title} {Bacterial tracking of
+  motile algae},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {FEMS microbiology ecology}\ }\textbf {\bibinfo {volume} {44}},\ \bibinfo
+  {pages} {79} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Taktikos}\ \emph {et~al.}(2013)\citenamefont
+  {Taktikos}, \citenamefont {Stark},\ and\ \citenamefont
+  {Zaburdaev}}]{taktikos2013motility}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Taktikos}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Stark}},\
+  and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Zaburdaev}},\
+  }\bibfield  {title} {\bibinfo {title} {How the motility pattern of bacteria
+  affects their dispersal and chemotaxis},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {PloS one}\ }\textbf {\bibinfo {volume} {8}},\
+  \bibinfo {pages} {e81936} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Grognot}\ and\ \citenamefont
+  {Taute}(2021{\natexlab{a}})}]{grognot2021multiscale}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Grognot}}\ and\ \bibinfo {author} {\bibfnamefont {K.~M.}\ \bibnamefont
+  {Taute}},\ }\bibfield  {title} {\bibinfo {title} {A multiscale 3d chemotaxis
+  assay reveals bacterial navigation mechanisms},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Communications biology}\ }\textbf {\bibinfo
+  {volume} {4}},\ \bibinfo {pages} {1} (\bibinfo {year}
+  {2021}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Grognot}\ and\ \citenamefont
+  {Taute}(2021{\natexlab{b}})}]{grognot_2021_propellers}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Grognot}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Taute}},\ }\bibfield  {title} {\bibinfo {title} {More than propellers: how
+  flagella shape bacterial motility behaviors},\ }\bibfield  {journal}
+  {\bibinfo  {journal} {Current Opinion in Microbiology}\ }\textbf {\bibinfo
+  {volume} {61}},\ \href {https://doi.org/10.1016/j.mib.2021.02.005}
+  {10.1016/j.mib.2021.02.005} (\bibinfo {year}
+  {2021}{\natexlab{b}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gerritsen}\ \emph {et~al.}(1997)\citenamefont
+  {Gerritsen}, \citenamefont {Sanders}, \citenamefont {Draaijer}, \citenamefont
+  {Ince},\ and\ \citenamefont {Levine}}]{gerritsen1997fluorescence}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~C.}\ \bibnamefont
+  {Gerritsen}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Sanders}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Draaijer}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Ince}},\ and\ \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Levine}},\ }\bibfield  {title} {\bibinfo
+  {title} {Fluorescence lifetime imaging of oxygen in living cells},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
+  Fluorescence}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {11}
+  (\bibinfo {year} {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sud}\ \emph {et~al.}(2006)\citenamefont {Sud},
+  \citenamefont {Zhong}, \citenamefont {Beer},\ and\ \citenamefont
+  {Mycek}}]{sud2006time}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Sud}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Zhong}}, \bibinfo
+  {author} {\bibfnamefont {D.~G.}\ \bibnamefont {Beer}},\ and\ \bibinfo
+  {author} {\bibfnamefont {M.-A.}\ \bibnamefont {Mycek}},\ }\bibfield  {title}
+  {\bibinfo {title} {Time-resolved optical imaging provides a molecular
+  snapshot of altered metabolic function in living human cancer cell models},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Optics Express}\
+  }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages} {4412} (\bibinfo {year}
+  {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Polinkovsky}\ \emph {et~al.}(2009)\citenamefont
+  {Polinkovsky}, \citenamefont {Gutierrez}, \citenamefont {Levchenko},\ and\
+  \citenamefont {Groisman}}]{polinkovsky2009fine}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Polinkovsky}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Gutierrez}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Levchenko}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Groisman}},\ }\bibfield  {title} {\bibinfo {title} {Fine temporal control of
+  the medium gas content and acidity and on-chip generation of series of oxygen
+  concentrations for cell cultures},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Lab on a Chip}\ }\textbf {\bibinfo {volume} {9}},\
+  \bibinfo {pages} {1073} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kim}\ \emph {et~al.}(2016)\citenamefont {Kim},
+  \citenamefont {Chu}, \citenamefont {Jusuf}, \citenamefont {Kuo},
+  \citenamefont {TerAvest}, \citenamefont {Angenent},\ and\ \citenamefont
+  {Wu}}]{kim2016oxygen}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~J.}\ \bibnamefont
+  {Kim}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Chu}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Jusuf}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Kuo}}, \bibinfo {author} {\bibfnamefont
+  {M.~A.}\ \bibnamefont {TerAvest}}, \bibinfo {author} {\bibfnamefont {L.~T.}\
+  \bibnamefont {Angenent}},\ and\ \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Wu}},\ }\bibfield  {title} {\bibinfo {title} {Oxygen
+  tension and riboflavin gradients cooperatively regulate the migration of
+  shewanella oneidensis mr-1 revealed by a hydrogel-based microfluidic
+  device},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Frontiers in microbiology}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo
+  {pages} {1438} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lovely}\ and\ \citenamefont
+  {Dahlquist}(1975)}]{lovely1975statistical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~S.}\ \bibnamefont
+  {Lovely}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Dahlquist}},\ }\bibfield  {title} {\bibinfo {title} {Statistical measures of
+  bacterial motility and chemotaxis},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of theoretical biology}\ }\textbf {\bibinfo
+  {volume} {50}},\ \bibinfo {pages} {477} (\bibinfo {year} {1975})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lauga}(2020)}]{lauga2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Lauga}},\ }\href@noop {} {\emph {\bibinfo {title} {The Fluid Dynamics of
+  Cell Motility}}}\ (\bibinfo  {publisher} {Cambridge University Press},\
+  \bibinfo {year} {2020})\BibitemShut {NoStop}%
+\end{thebibliography}%

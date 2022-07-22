@@ -8,7 +8,7 @@
   - [Others](#others)
   - [Configuration links](#configuration-links)
   - [Chinese softwares](#chinese-softwares)
-- [iPhone Apple Store](#iphone-apple-store)
+- [Phone apps](#phone-apps)
 
 # Computer Software
 ## Keywords
@@ -66,7 +66,8 @@
 - [Adobe](https://www.adobe.com/products/catalog.html)- Adobe Acrobat, Adobe Acrobat DC, Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe Premiere
 - [ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager/releases) - 
 - [屏幕录制 LiceCap 简单小巧 输出GIF](https://github.com/JustVita/Excellent-software/blob/master/Windows/Effectiveness/Recording/licecap123-install.exe)
-- [simplenote-electron](https://github.com/Automattic/simplenote-electron/releases)
+- [simplenote-electron](https://github.com/Automattic/simplenote-electron/releases) - [official website](https://simplenote.com/)
+- [AVIRA FREE SECURITY](https://www.avira.com/en/downloads)
 
 ## Configuration links
 - [win11 Restore Legacy Right Click menu](https://answers.microsoft.com/en-us/windows/forum/all/restore-legacy-right-click-menu-for-file-explorer/a62e797c-eaf3-411b-aeec-e460e6e5a82a) - old context menu in win 10.
@@ -84,5 +85,6 @@
 - [Wps Office CN](https://www.wps.cn/)
 - [Levono Computer Manager](https://guanjia.lenovo.com.cn/)
 
-# iPhone Apple Store
+# Phone apps
 - [apple apps](http://www.apple.com) - books, edge, outlook, qq, wechat, google podcast, reminder, simple notes, netease music, alipay, duolingo, clock, photo, sendanywhere, google map, gmail, venmo, walmart, waze, onedrive, voice google, anydesk, paypal, quora,messager facebook, whatsapp, zelle, apple podcast, payoneer, vpn super, imaging edge, zoom, pocket, freelancer, cameraconnect, snapseed, translate google, unzip, garageband, audio editor, canvas, melodista, acrobat, camscanner, astool pro, enigma, web app-wetransfer, web app-qrcode generator, web app-single mp3, 中国建设银行，中国银行，中国工行银行，中国农业银行，掌上生活，云闪付，哈喽，淘宝，美团，qq, qq 邮箱，高德地图，饿了么，迅雷,携程，去哪儿， 闲鱼，王者，wps office CN, 百度网盘， 诗歌本，剪映，铁路 12306，喜马拉雅，中国领事，电信营业厅，天翼云盘
+- android apps - 

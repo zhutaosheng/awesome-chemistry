@@ -1,0 +1,36 @@
+\documentclass[hyperref={pdfpagelabels=false},usepdftitle=false]{beamer}
+\usepackage{../templates/myStyle}
+
+\begin{document}
+
+\title{\titleText}
+\subtitle{}
+\author{\tutor}
+\date{2. Juli 2013}
+\subject{Diskrete Mathematik}
+
+\frame{\titlepage}
+
+\frame{
+    \frametitle{Inhalte}
+    \setcounter{tocdepth}{1}
+    \tableofcontents
+    \setcounter{tocdepth}{2}
+}
+
+\section{Grundlagen}
+\input{Grundlagen}
+
+\section{Spezielle Graphen}
+\input{Spezielle-Graphen}
+
+\section{Strukturen in Graphen}
+\input{Strukturen}
+
+\section{Königsberger Brückenproblem}
+\input{Koenigsberger-Brueckenproblem}
+
+\section{Ende}
+\input{Ende}
+
+\end{document}

@@ -1,0 +1,23 @@
+%!TEX root = main.tex
+
+\appendix
+\section*{Obtaining the data}
+The data can be found at \dbDownloadURL. It is a \verb+tar.gz+ file of
+\SI{\dbSizeMB}{\mega\byte}. The file can be verified with the MD5sum
+
+\texttt{\dbMDfivesum}
+
+The data is published under the ODbL~license. If you use
+the \dbName~dataset, please cite this paper.
+
+The \verb+tar.gz+ archive contains all data as png images and CSV files with
+labels. The CSV files have the
+columns \verb+path,symbol_id,latex,user_id+ with a header row. The \verb+path+ is the
+relative path to a training example to the CSV file, e.g. \verb+../hasy-data/v2-00000.png+. The
+\verb+symbol_id+ is an internal numeric identifier for the symbol class. The
+website \href{http://write-math.com/symbol/?id=968}{write-math.com/symbol/?id=[symbol\_id]}
+gives information related to the symbol. The column \verb+latex+ contains the
+\LaTeX{} command associated with the class.
+\onecolumn
+\input{used-latex-symbols}
+\twocolumn

@@ -1,0 +1,369 @@
+\subsection{Königsberger Brückenproblem}
+
+\framedgraphic{Königsberg heute}{../images/koenigsberg-bruecken-luftbild}
+
+\framedgraphic{Königsberger Brückenproblem}{../images/Konigsberg_bridges.png}
+
+\framedgraphic{Übersetzung in einen Graphen}{../images/Konigsberg_bridges-graph.png}
+
+\begin{frame}{Übersetzung in einen Graphen}
+\begin{center}
+\adjustbox{max size={\textwidth}{0.8\textheight}}{
+\input{koenigsberg/koenigsberg-1}
+}
+\end{center}
+\end{frame}
+
+\begin{frame}{Eulerscher Kreis}
+\begin{block}{Eulerscher Kreis}
+Sei $G$ ein Graph und $A$ ein Kreis in $G$.
+
+$A$ heißt \textbf{eulerscher Kreis} $:\Leftrightarrow \forall_{k \in K}: k \in A$.
+\end{block}
+
+\begin{block}{Eulerscher Graph}
+Ein Graph heißt \textbf{eulersch}, wenn er einen eulerschen Kreis enthält.
+\end{block}
+\end{frame}
+
+\begin{frame}{Hamiltonkreis}
+\begin{alertblock}{Achtung}
+Verwechslungsgefahr: Hamiltonkreis $\neq$ Eulerkreis
+\end{alertblock}
+\pause
+\begin{block}{Hamiltonkreis}
+Sei $G$ ein Graph und $A$ ein Kreis in $G$.
+
+$A$ heißt \textbf{Hamilton-Kreis} $:\Leftrightarrow \forall_{e \in E}: e \text{ ist genau ein mal in } A$.
+\end{block}
+
+\begin{block}{Eulerscher Kreis}
+Sei $G$ ein Graph und $A$ ein Kreis in $G$.
+
+$A$ heißt \textbf{eulerscher Kreis} $:\Leftrightarrow \forall_{k \in K}: k \in A$.
+\end{block}
+\end{frame}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+\begin{frame}{Eulerscher Kreis}
+    \newcommand\n{5}
+    \begin{center}
+    \adjustbox{max size={\textwidth}{0.8\textheight}}{
+    \begin{tikzpicture}
+        \foreach \number in {1,...,\n}{
+            \node[vertex] (N-\number) at ({\number*(360/\n)}:5.4cm) {};
+        }
+
+        \foreach \number in {1,...,\n}{
+            \foreach \y in {1,...,\n}{
+                \draw (N-\number) -- (N-\y);
+            }
+        }
+
+        \node<2->[vertex,red] (N-1) at ({1*(360/\n)}:5.4cm) {};
+
+        \begin{pgfonlayer}{background}
+            \path<2->[selected edge] (N-1.center) edge node {} (N-2.center);
+            \path<3->[selected edge] (N-2.center) edge node {} (N-3.center);
+            \path<4->[selected edge] (N-3.center) edge node {} (N-4.center);
+            \path<5->[selected edge] (N-4.center) edge node {} (N-5.center);
+            \path<6->[selected edge] (N-5.center) edge node {} (N-1.center);
+            \path<7->[selected edge] (N-1.center) edge node {} (N-3.center);
+            \path<8->[selected edge] (N-3.center) edge node {} (N-5.center);
+            \path<9->[selected edge] (N-5.center) edge node {} (N-2.center);
+            \path<10->[selected edge] (N-2.center) edge node {} (N-4.center);
+            \path<11->[selected edge](N-4.center) edge node {} (N-1.center);
+        \end{pgfonlayer}
+    \end{tikzpicture}
+    }
+    \end{center}
+\end{frame}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+\begin{frame}{Hamilton-Kreis, kein EK}
+    \begin{center}
+    \adjustbox{max size={\textwidth}{0.8\textheight}}{
+      \begin{tikzpicture}
+          \node (a)[vertex] at (0,0) {};
+          \node (b)[vertex] at (2,0) {};
+          \node (c)[vertex] at (2,2) {};
+          \node (d)[vertex] at (0,2) {};
+
+          \foreach \from/\to in {a/b,b/c,c/d,d/a,a/c,b/d}
+            \draw[line width=2pt] (\from) -- (\to);
+
+        \node<2->[vertex,red] (a) at (0,0) {};
+        \node<3->[vertex,red] (b) at (2,0) {};
+        \node<4->[vertex,red] (c) at (2,2) {};
+        \node<5->[vertex,red] (d) at (0,2) {};
+        \begin{pgfonlayer}{background}
+            \path<3->[selected edge,black!50] (a.center) edge node {} (b.center);
+            \path<4->[selected edge,black!50] (b.center) edge node {} (c.center);
+            \path<5->[selected edge,black!50] (c.center) edge node {} (d.center);
+            \path<6->[selected edge,black!50] (d.center) edge node {} (a.center);
+        \end{pgfonlayer}
+      \end{tikzpicture}
+    }
+    \end{center}
+\end{frame}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+\begin{frame}{Eulerkreis, kein HK}
+    \begin{center}
+    \adjustbox{max size={\textwidth}{0.8\textheight}}{
+      \begin{tikzpicture}
+          \node (a)[vertex] at (0,0) {};
+          \node (b)[vertex] at (2,0) {};
+          \node (c)[vertex] at (2,2) {};
+          \node (d)[vertex] at (0,2) {};
+          \node (e)[vertex] at (1,1) {};
+
+          \foreach \from/\to in {a/b,b/c,c/d,d/a,b/e,e/d}
+            \draw[line width=2pt] (\from) -- (\to);
+          \draw[line width=2pt] (b) to[bend right] (d);
+
+            \node<2->[vertex,lime] (d) at (0,2) {};
+            \node<3->[vertex,red] (a) at (0,0) {};
+            \node<4->[vertex,red] (b) at (2,0) {};
+            \node<5->[vertex,red] (c) at (2,2) {};
+            \node<6->[vertex,lime] (d) at (0,2) {};
+            \node<7->[vertex,red] (e) at (1,1) {};
+            \node<8->[vertex,red] (b) at (2,0) {};
+            \begin{pgfonlayer}{background}
+                \path<3->[selected edge,black!50] (d.center) edge node {} (a.center);
+                \path<4->[selected edge,black!50] (a.center) edge node {} (b.center);
+                \path<5->[selected edge,black!50] (b.center) edge node {} (c.center);
+                \path<6->[selected edge,black!50] (c.center) edge node {} (d.center);
+                \path<7->[selected edge,black!50] (d.center) edge node {} (e.center);
+                \path<8->[selected edge,black!50] (e.center) edge node {} (b.center);
+                \path<9->[selected edge,black!50] (b.center) to[bend right] (d.center);
+            \end{pgfonlayer}
+      \end{tikzpicture}
+    }
+    \end{center}
+\end{frame}
+
+\subsection{Satz von Euler}
+\begin{frame}{Satz von Euler}
+\begin{block}{Satz von Euler}
+Wenn ein Graph $G$ eulersch ist, dann hat jede Ecke von $G$ geraden Grad.
+\end{block}
+
+\pause
+
+$\Rightarrow$ Wenn $G$ eine Ecke mit ungeraden Grad hat, ist $G$ nicht eulersch.
+
+\pause
+
+\begin{gallery}
+    \galleryimage{vollstaendig/k-5}
+    \galleryimage{koenigsberg/koenigsberg-1}
+\end{gallery}
+\end{frame}
+
+\begin{frame}{Beweis: Satz von Euler}
+\textbf{Beh.:} $G$ ist eulersch $\Rightarrow \forall e \in E: $ Grad($e$) $\equiv 0 \mod 2$ \pause \\
+\textbf{Bew.:} Eulerkreis geht durch jede Ecke $e \in E$\pause,  \\
+also geht der Eulerkreis (eventuell mehrfach) in $e$ hinein und hinaus \pause \\
+$\Rightarrow$ Grad($e$) $\equiv 0 \mod 2$
+\end{frame}
+
+\begin{frame}{Umkehrung des Satzes von Euler}
+\begin{block}{Umkehrung des Satzes von Euler}
+Wenn in einem zusammenhängenden Graphen $G$ jede Ecke geraden Grad hat, dann
+ist $G$ eulersch.
+\end{block}
+\pause
+\underline{Beweis:} Induktion über Anzahl $m$ der Kanten\\
+\pause
+\underline{I.A.:} $m=0$: $G$ ist eulersch. \cmark\\
+\pause
+$m=1$: Es gibt keinen Graphen in dem jede Ecke geraden Grad hat. \cmark\\
+\pause
+$m=2$: Nur ein Graph möglich. Dieser ist eulersch. \cmark\\
+\pause
+
+\underline{I.V.:} Sei $m \in \mathbb{N}_0$ beliebig, aber fest und
+es gelte: Für
+alle zusammenhängenden Graphen $G$ mit höchstens $m$ Kanten, bei
+denen jede Ecke geraden Grad hat, ist $G$ eulersch.
+
+\pause
+
+\underline{I.S.:} Sei $G=(E,K)$ mit $2 \leq m  = |K|$. $G$ ist zus. \pause
+$\Rightarrow$ Jede Ecke von $G$ hat min. Grad 2. \pause
+$\xRightarrow[]{A. 5}$ Es gibt einen Kreis $C$ in $G$.\pause
+
+\dots
+
+\end{frame}
+
+\begin{frame}{Umkehrung des Satzes von Euler}
+\begin{block}{Umkehrung des Satzes von Euler}
+Wenn in einem zusammenhängenden Graphen $G$ jede Ecke geraden Grad hat, dann
+ist $G$ eulersch.
+\end{block}
+\dots
+
+Sei
+\[G_C = (E_C, K_C) \]
+Graph zu Kreis $C$ und
+
+\[G^* = (E, K \setminus K_C).\] \pause
+$\Rightarrow$ Alle Knoten jeder Zusammenhangskomponente in $G^*$ haben geraden Grad\\
+\pause
+$\xRightarrow[]{I.V.}$ Alle $n$ Zhsgk. haben Eulerkreise $C_1, \dots, C_n$\\
+\pause
+$\Rightarrow$ $C_1, \dots, C_n$ können in $C$ \enquote{eingehängt} werden\\
+\pause
+$\Rightarrow G$ ist eulersch\pause $\Rightarrow $ Beh.
+\end{frame}
+
+\begin{frame}{Wie findet man Eulerkreise?}
+    \begin{algorithm}[H]
+        \begin{algorithmic}
+            \Require $G = (E, K)$ ein eulerscher Graph.
+            \\
+            \State $C \gets$ leerer Kreis
+            \Repeat
+                \State $C_\text{tmp} \gets \text{ein beliebiger Kreis}$ \Comment{vgl. Aufgabe 5}
+                \State $C \gets C $ vereinigt mit $C_\text{tmp}$
+                \State Entferne Kanten in $C_\text{tmp}$ aus $G$
+                \State Entferne isolierte Ecken
+            \Until{$C$ ist Eulerkreis}
+            \\
+            \State \textbf{Ergebnis:} Eulerkreis $C$
+        \end{algorithmic}
+    \caption{Algorithmus von Hierholzer}
+    \label{alg:Hierholzer}
+    \end{algorithm}
+\end{frame}
+
+\begin{frame}{Sind Eulerkreise eindeutig?}
+    \begin{center}
+        \large Sind Eulerkreise bis auf Rotation und Symmetrie eindeutig?
+    \end{center}
+\end{frame}
+
+\tikzstyle{markedCircle}=[blue,line width=1pt,rotate=90,decorate,decoration={snake, segment length=2mm, amplitude=0.4mm},->]
+\tikzstyle{markedCircle2}=[red,line width=1pt,rotate=90,decorate,decoration={snake, segment length=3mm, amplitude=0.4mm},->]
+\begin{frame}{Sind Eulerkreise eindeutig?}
+    \begin{tikzpicture}[scale=1.9]
+        \node[vertex,label=$a_1$] (a1) at (1,2) {};
+        \node[vertex,label=$b_1$] (b1) at (3,2) {};
+        \node[vertex,label=$c_1$] (c1) at (2,1) {};
+
+        \node[vertex,label=$b_2$] (b2) at (0,2) {};
+        \node[vertex,label=$c_2$] (c2) at (1,3) {};
+
+        \node[vertex,label=$c_3$] (c3) at (3,3) {};
+        \node[vertex,label=$a_3$] (a3) at (4,2) {};
+
+        \draw (a1) -- (b1) -- (c1) -- (a1) -- cycle;
+        \draw (a1) -- (b2) -- (c2) -- (a1) -- cycle;
+        \draw (b1) -- (c3) -- (a3) -- (b1) -- cycle;
+
+        \node<2->[vertex, red] (a1) at (1,2) {};
+
+        \draw<2->[color=blue, markedCircle,->] (a1.center) -- (b2.center);
+        \draw<3->[color=blue, markedCircle] (b2.center) -- (c2.center);
+        \draw<4->[color=blue, markedCircle] (c2.center) -- (a1.center);
+        \draw<5->[color=blue, markedCircle] (a1.center) -- (b1.center);
+        \draw<6->[color=blue, markedCircle] (b1.center) -- (c3.center);
+        \draw<7->[color=blue, markedCircle] (c3.center) -- (a3.center);
+        \draw<8->[color=blue, markedCircle] (a3.center) -- (b1.center);
+        \draw<9->[color=blue, markedCircle] (b1.center) -- (c1.center);
+        \draw<10->[color=blue, markedCircle] (c1.center) -- (a1.center);
+
+        \draw<11->[markedCircle2] (a1) -- (b2.center);
+        \draw<12->[markedCircle2] (b2.center) -- (c2.center);
+        \draw<13->[markedCircle2] (c2.center) -- (a1.center);
+        \draw<14->[markedCircle2] (a1.center) -- (b1.center);
+        \draw<15->[markedCircle2] (b1.center) -- (a3.center);
+        \draw<16->[markedCircle2] (a3.center) -- (c3.center);
+        \draw<17->[markedCircle2] (c3.center) -- (b1.center);
+        \draw<18->[markedCircle2] (b1.center) -- (c1.center);
+        \draw<19->[markedCircle2] (c1.center) -- (a1.center);
+    \end{tikzpicture}
+
+    \pause
+    $\Rightarrow$ Eulerkreise sind im Allgemeinen nicht eindeutig
+\end{frame}
+
+\begin{frame}{Offene eulersche Linie}
+\begin{block}{Offene eulersche Linie}
+Sei $G$ ein Graph und $A$ ein Weg, der kein Kreis ist.
+
+$A$ heißt \textbf{offene eulersche Linie} von $G :\Leftrightarrow$ Jede Kante
+in $G$ kommt genau ein mal in $A$ vor.
+\end{block}
+
+Ein Graph kann genau dann "`in einem Zug"' gezeichnet werden, wenn er eine
+offene eulersche Linie besitzt.
+\end{frame}
+
+\begin{frame}{Offene eulersche Linie}
+\begin{block}{Satz 8.2.3}
+Sei $G$ ein zusammenhängender Graph.
+
+$G$ hat eine offene eulersche Linie $:\Leftrightarrow G$ hat genau zwei Ecken
+ungeraden Grades.
+\end{block}
+
+\pause
+
+\begin{block}{Beweis "`$\Rightarrow"'$}
+Sei $G=(E, K)$ ein zusammenhängender Graph und $L = (e_0, \dots, e_s)$ eine offene
+eulersche Linie. \pause
+Sei $G^* = (E, K \cup \Set{e_s, e_0})$. \pause
+Es gibt einen Eulerkreis in $G^*$ \pause \\
+$\xLeftrightarrow{\text{Satz von Euler}}$ In $G^*$ hat jede Ecke geraden Grad \pause \\
+Der Grad von nur zwei Kanten wurde um jeweils 1 erhöht \pause \\
+$\Leftrightarrow$ in $G$ haben genau 2 Ecken ungeraden Grad. Diese heißen $e_0, e_s$. $\blacksquare$
+\end{block}
+
+\pause
+Rückrichtung analog
+\end{frame}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+\begin{frame}{Haus des Nikolaus}
+    \tikzstyle{selected edge} = [draw,line width=5pt,-,red!50]
+    \begin{center}
+    \adjustbox{max size={\textwidth}{0.8\textheight}}{
+    \begin{tikzpicture}
+        \node[vertex] (a) at (0,0) {};
+        \node[vertex] (b) at (2,0) {};
+        \node[vertex] (c) at (2,2) {};
+        \node[vertex] (d) at (0,2) {};
+        \node[vertex] (e) at (1,4) {};
+
+        \draw (a) -- (d);
+        \draw (d) -- (b);
+        \draw (b) -- (c);
+        \draw (c) -- (d);
+        \draw (d) -- (e);
+        \draw (e) -- (c);
+        \draw (c) -- (a);
+        \draw (a) -- (b);
+
+        \node<2->[vertex, red] (a) at (0,0) {};
+
+        \begin{pgfonlayer}{background}
+            \path<2->[selected edge] (a.center) edge node {} (d.center);
+            \path<3->[selected edge] (d.center) edge node {} (b.center);
+            \path<4->[selected edge] (b.center) edge node {} (c.center);
+            \path<5->[selected edge] (c.center) edge node {} (d.center);
+            \path<6->[selected edge] (d.center) edge node {} (e.center);
+            \path<7->[selected edge] (e.center) edge node {} (c.center);
+            \path<8->[selected edge] (c.center) edge node {} (a.center);
+            \path<9->[selected edge] (a.center) edge node {} (b.center);
+        \end{pgfonlayer}
+    \end{tikzpicture}
+    }
+    \end{center}
+\end{frame}

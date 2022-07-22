@@ -1,0 +1,15 @@
+In dieser Arbeit wird der DYCOS-Algorithmus, wie er in \cite{aggarwal2011}
+vorgestellt wurde, erklärt. Er arbeitet auf Graphen, deren Knoten teilweise mit
+Beschriftungen versehen sind und ergänzt automatisch Beschriftungen für Knoten,
+die bisher noch keine Beschriftung haben. Dieser Vorgang wird
+\enquote{Klassifizierung} genannt. Dazu verwendet er die Struktur des Graphen
+sowie textuelle Informationen, die den Knoten zugeordnet sind. Die in
+\cite{aggarwal2011} beschriebene experimentelle Analyse ergab, dass er auch auf
+dynamischen Graphen mit 19\,396 bzw. 806\,635 Knoten, von denen nur
+14\,814 bzw. 18\,999 beschriftet waren, innerhalb von weniger als
+einer Minute auf einem Kern einer Intel Xeon 2.5\,GHz~CPU mit 32\,G~RAM
+ausgeführt werden kann.\\
+Zusätzlich wird \cite{aggarwal2011} kritisch Erörtert und und es werden
+mögliche Erweiterungen des DYCOS-Algorithmus vorgeschlagen.
+
+\textbf{Keywords:} DYCOS, Label Propagation, Knotenklassifizierung

@@ -1,0 +1,113 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{amssymb, amsmath}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\usepackage[utf8]{inputenc} % this is needed for umlauts
+\usepackage[ngerman]{babel} % this is needed for umlauts
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+%layout
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{parskip}
+
+\pdfinfo{
+   /Author (Peter Merkert, Martin Thoma)
+   /Title  (Wichtige Formeln der Analysis I)
+   /CreationDate (D:20120221095400)
+   /Subject (Analysis I)
+   /Keywords (Analysis I; Formeln)
+}
+
+%\everymath={\displaystyle}
+
+\begin{document}
+
+\title{Analysis Formelsammlung}
+\author{Peter Merkert, Martin Thoma}
+\date{21. Februar 2012}
+
+\section{Grenzwerte}
+\begin{table}[ht]
+\begin{minipage}[b]{0.5\linewidth}\centering
+
+\begin{align*}
+    \lim_{x \to 0} \frac {\sin x}{x}  &= 1 \\
+    \lim_{x \to 0} \frac {e^x - 1}{x} &= 1 \\
+    \lim_{h \to 0} \frac {e^{{x_0} + h} - e^{x_0}}{h} &= e^{x_0} \\
+    \sum_{n = 0}^{\infty} (-1)^n \frac {(-1)^{n + 1}}{n} &= \log 2 \\
+    \cos x    &= \sum_{n = 0}^{\infty} (-1)^n \frac {x^{2n}}{(2n)!}  \\
+    \sin x    &= \sum_{n = 0}^{\infty} (-1)^n \frac {x^{2n + 1}}{(2n + 1)!}
+\end{align*}
+
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+
+\begin{align*}
+\cosh x = \frac {1}{2} (e^x + e^{-x}) &= \sum_{n = 0}^{\infty} \frac {x^{2n}}{(2n)!} \\
+\sinh x = \frac {1}{2} (e^x - e^{-x}) &= \sum_{n = 0}^{\infty} \frac {x^{2n + 1}}{(2n + 1)!} \\
+e^x &= \sum_{n = 0}^{\infty} \frac {x^n}{n!} = \lim_{n\to\infty} \left (1+\frac{x}{n} \right )^n\\
+\sum_{n = 0}^{\infty} (-1)^n \frac {x^{n + 1}}{n + 1} &= \log (1+x) \; x \in (-1,1) \\
+\sum_{n = 0}^{\infty} x^n &= \frac {1}{1 - x}    (x \in (-1,1)) \\
+0,\bar{3} &= \sum_{n = 1}^{\infty} \frac {3}{(10)^n}
+\end{align*}
+
+\end{minipage}
+\end{table}
+
+\section{Zusammenhänge}
+\begin{align*}
+    (\cos x)^2 + (\sin x)^2 &= 1 \\
+    (\cosh x)^2 - (\sinh x)^2 &= 1 \\
+    \tan x  &= \frac {\sin x}{\cos x} \\
+    \tanh x &= \frac {\sinh x}{\cosh x} \\
+  (x + y)^n &= \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k
+\end{align*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ableitungen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht]
+\begin{minipage}[b]{0.3\linewidth}\centering
+\begin{align*}
+    (\sin x)'    &= \cos x \\
+    (\cos x)'    &= -\sin x \\
+    (\tan x)'    &= \frac{1}{\cos^2 x} \\
+    (\sinh x)'   &= \cosh x \\
+    (\cosh x)'   &= \sinh x \\
+\end{align*}
+
+\end{minipage}
+\hspace{0.1cm}
+\begin{minipage}[b]{0.3\linewidth}
+\centering
+
+\begin{align*}
+    (\arcsin x)'  &=   \frac {1}{\sqrt{1-x^2}} \\
+    (\arccos x)'  &= - \frac {1}{\sqrt{1-x^2}} \\
+    (\arctan x)'  &=   \frac {1}{1 + x^2} \\
+    % (\arcsinh x)' &=   \frac {1}{\sqrt{1+x^2}} \\
+    % (\arccosh x)' &=   \frac {1}{\sqrt{(1-x^2) \cdot (1+x^2)}} \\
+    % (\arctanh x)' &=   \frac {1}{1 - x^2}
+\end{align*}
+\end{minipage}
+\hspace{0.1cm}
+\begin{minipage}[b]{0.3\linewidth}
+\centering
+\begin{align*}
+    (\log x)' &= \frac{1}{x} \\
+\end{align*}
+\end{minipage}
+\end{table}
+
+\section{Werte}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{llll}
+        \(\arctan(0) = 0\)             & \(\sin(0) = 0\)                & \(\cos(0) = 1\) \\
+        \(\arctan(1) = \frac{\pi}{4}\) & \(\sin(\frac{\pi}{2}) = 1\)    & \(\cos(\frac{\pi}{2}) = 0\)\\
+    \end{tabular}
+\end{table}
+
+\end{document}

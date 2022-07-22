@@ -1,0 +1,65 @@
+\subsection{Write Math}
+
+\begin{frame}{write-math.com}
+    \begin{itemize}
+        \item a website where users can add labeled training data and unlabeled
+              data which they want to classify. I call this data \enquote{recording}
+        \begin{figure}[ht]
+            \centering
+            \subfloat{
+                \includegraphics[height=0.1\textwidth]{../images/279952.pdf}
+            }%
+            \qquad
+            \subfloat{
+                \includegraphics[height=0.1\textwidth]{../images/281507.pdf}
+            }%
+            \qquad
+            \subfloat{
+                \includegraphics[height=0.1\textwidth]{../images/287612.pdf}
+            }%
+            \qquad
+            \subfloat{
+                \includegraphics[height=0.1\textwidth]{../images/292175.pdf}
+            }%
+            \caption*{4 recordings}
+        \end{figure}
+        \item works with desktop computers and touch devices
+        \item symbol recognition can be done by multiple classifiers
+        \item users can contribute formulas as recordings and as \LaTeX{} answers
+              for recordings
+        \item users can vote for \LaTeX{} answers:
+              \Large $\leq$, $\leqq$, $\leqslant$, \dots \normalsize
+        \item user who entered the recording can accept one answer
+    \end{itemize}
+\end{frame}
+
+\framedgraphic{Classify}{../images/classify.png}
+\framedgraphic{Workflow}{../images/workflow.png}
+% \framedgraphic{User page}{../images/user-page.png}
+% \framedgraphic{Information about recordings}{../images/view.png}
+% \framedgraphic{Symbol page}{../images/symbol.png}
+% \framedgraphic{Training}{../images/train.png}
+\framedgraphic{Ranking}{../images/ranking.png}
+
+
+\begin{frame}[fragile]{Statistics}
+    \begin{itemize}
+        \item 127 users with at least 5 recordings
+        \item $\num{1111}$ symbols, but only $\num{369}$ used for experiments
+        \item $\num{235831}$ recordings (e.g. $\num{3489}$ times \verb+\int+, but only 50 times \verb+X+)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{First classification worker}
+    \begin{itemize}
+        \item preprocessing: Scale to fit into unit square while keeping the aspect
+              ratio
+        \item applies greedy time warping
+        \item compares a new recording with every recording
+              in the database
+        \item[$\Rightarrow$] Classification time is in $\mathcal{O}(\text{recordings})$,
+              but we rather would like $\mathcal{O}(\text{symbols})$
+        \item the current server / workflow can only handle about 4000 recordings
+        \item[$\Rightarrow$] Another way to classify is necessary
+    \end{itemize}
+\end{frame}

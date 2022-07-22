@@ -1,0 +1,80 @@
+\documentclass[technote,a4paper,leqno]{IEEEtran}
+\pdfoutput=1
+%---- Sonderzeichen-------%
+\usepackage[utf8]{inputenc} % this is needed for umlauts
+\usepackage[ngerman]{babel} % this is needed for umlauts
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+%---- Codierung----%
+\usepackage{graphicx}
+\usepackage{url}
+%----- Mathematischer Zeichenvorrat---%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+% fuer die aktuelle Zeit
+\usepackage{scrtime}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{parskip}
+\usepackage[framed,amsmath,thmmarks,hyperref]{ntheorem}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{csquotes}
+\usepackage{subfig}         % multiple figures in one
+\usepackage{caption}
+\usepackage{tikz}
+\let\labelindent\relax
+\usepackage{enumitem}
+\usepackage[german]{cleveref} % nameinlink - arxiv has too old LaTeX :-(
+\usepackage{braket}
+\allowdisplaybreaks
+\usetikzlibrary{backgrounds}
+\usepackage[binary-units=true]{siunitx}
+\sisetup{range-phrase=--}
+\usepackage{mystyle}
+\usepackage{microtype}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\hypersetup{
+  pdftitle    = {Über die Klassifizierung von Knoten in dynamischen Netzwerken mit textuellen Inhalten},
+  pdfauthor   = {Martin Thoma}, % ORCID: http://orcid.org/0000-0002-6517-1690
+  pdfkeywords = {DYCOS}
+}
+
+\begin{document}
+
+\title{Über die Klassifizierung von Knoten in dynamischen Netzwerken mit Inhalt}
+\author{Martin Thoma}
+\date{17.01.2014}
+\maketitle
+
+\begin{abstract}%
+\input{abstract}
+\end{abstract}
+
+\section{Einleitung}
+\input{Einleitung}
+
+\section{Related Work}
+\input{Related-Work}
+
+\section{DYCOS}
+\input{DYCOS-Algorithmus}
+
+\section{Analyse des DYCOS-Algorithmus}
+\input{Analyse}
+
+\section{Probleme des DYCOS-Algorithmus}
+\input{SchwaechenVerbesserungen}
+
+\section{Ausblick}
+\input{Ausblick}
+
+\bibliographystyle{IEEEtranSA}
+\bibliography{literatur}
+
+\end{document}
+

@@ -1,0 +1,122 @@
+\subsection{Grundlagen}
+\begin{frame}{Graph}
+\begin{block}{Graph}
+Ein Graph ist ein Tupel $(E, K)$, wobei $E \neq \emptyset$ die Eckenmenge und
+$K \subseteq E \times E$ die
+Kantenmenge bezeichnet.
+\end{block}
+\pause
+\tikzstyle{vertex}=[draw,fill=black,circle,minimum size=10pt,inner sep=0pt]
+
+\begin{gallery}
+    \galleryimage[Green]{graphs/graph-1}
+    \galleryimage[Green]{graphs/graph-2}
+    \galleryimage[Green]{graphs/k-3-3}
+    \galleryimage[Green]{graphs/k-5}\\
+    \galleryimage[Green]{graphs/k-16}
+    \galleryimage[Green]{graphs/graph-6}
+    \galleryimage[Green]{graphs/star-graph}
+    \galleryimage[Green]{graphs/tree}
+\end{gallery}
+\end{frame}
+
+\begin{frame}{Synonyme}
+
+\begin{center}
+\Huge{Knoten $\Leftrightarrow$ Ecken}
+\end{center}
+
+\end{frame}
+
+\framedgraphic{Modellierung, Flüsse, Netzwerke}{../images/Unit_disk_graph.png}
+\framedgraphic{Karten}{../images/map.png}
+\framedgraphic{Good Will Hunting}{../images/good-will-hunting.jpg}
+\framedgraphic{Graham's Number}{../images/hypercube.png}
+
+\begin{frame}{Isomorphe Graphen}
+\begin{center}
+\href{http://www.martin-thoma.de/uni/graph.html}{martin-thoma.de/uni/graph.html}
+\end{center}
+\end{frame}
+
+\begin{frame}{Grad einer Ecke}
+\begin{block}{Grad einer Ecke}
+Der \textbf{Grad} einer Ecke ist die Anzahl der Kanten, die von dieser Ecke
+ausgehen.
+\end{block}
+
+\begin{block}{Isolierte Ecke}
+Hat eine Ecke den Grad 0, so nennt man sie \textbf{isoliert}.
+\end{block}
+
+\begin{gallery}
+    \galleryimage{graphs/graph-1}
+    \galleryimage{graphs/graph-2}
+    \galleryimage{graphs/k-3-3}
+    \galleryimage{graphs/k-5}\\
+    \galleryimage{graphs/k-16}
+    \galleryimage{graphs/graph-6}
+    \galleryimage{graphs/star-graph}
+    \galleryimage{graphs/tree}
+\end{gallery}
+\end{frame}
+
+\begin{frame}{Schlinge}
+\begin{block}{Schlinge}
+Sei $G=(E, K)$ ein Graph und $k=\Set{e_1, e_2} \in K$ eine Kante.
+
+$k$ heißt \textbf{Schlinge} $:\Leftrightarrow e_1 = e_2$
+\end{block}
+
+Ein Graph ohne Schlingen heißt \enquote{schlingenfrei}
+
+\begin{gallery}
+    \galleryimage{graphs/graph-1}
+    \galleryimage{graphs/graph-2-schlinge}
+    \galleryimage{graphs/k-3-3}
+    \galleryimage{graphs/k-5-schlinge}
+\end{gallery}
+\end{frame}
+
+\begin{frame}{Aufgabe 1}
+Zeichnen Sie alle schlingenfreien Graphen mit genau vier Ecken.
+
+\only<2>{
+    \begin{gallery}
+        \galleryimage{aufgabe-1/graph-8}    % vier einzelne Punkte
+        \galleryimage{aufgabe-1/graph-7}    % nur eine Kante
+        \galleryimage{aufgabe-1/graph-6}    % zwei Kanten
+        \galleryimage{aufgabe-1/graph-11}   % zwei Kanten -------------
+        \galleryimage{aufgabe-1/graph-12}   % drei Kanten: umgedrehtes u
+        \galleryimage{aufgabe-1/graph-5}    % drei Kanten
+        \galleryimage[red]{aufgabe-1/graph-4}    % drei Kanten: S3 - fehlt im Buch
+        \galleryimage{aufgabe-1/graph-10}   % vier Kanten: Viereck
+        \galleryimage{aufgabe-1/graph-3}    % vier Kanten: Dreieck mit Spitze
+        \galleryimage[red]{aufgabe-1/graph-2} % fünf kanten - fehlt im Buch
+        \galleryimage{aufgabe-1/graph-9}    %  fünf Kanten: nur Diagonale fehlt
+        \galleryimage{aufgabe-1/graph-1}    % sechs Kanten: K_4
+    \end{gallery}
+}
+\end{frame}
+
+\begin{frame}{Inzidenz}
+\begin{block}{Inzidenz}
+Sei $e \in E$ und $k = \Set{e_1, e_2} \in K$.
+
+$e$ heißt \textbf{inzident} zu $k :\Leftrightarrow e = e_1$ oder $e = e_2$
+\end{block}
+
+\pause
+\tikzstyle{vertex}=[draw,fill=black,circle,minimum size=10pt,inner sep=0pt]
+
+\begin{gallery}
+    \galleryimage[Green]{inzidenz/graph-1}
+    \galleryimage[Green]{inzidenz/graph-2}
+    \galleryimage[Green]{inzidenz/k-3-3}
+    \galleryimage[Green]{inzidenz/k-5}\\
+    \galleryimage[Green]{inzidenz/k-16}
+    \galleryimage[red]{inzidenz/graph-6}
+    \galleryimage[Green]{inzidenz/star-graph}
+    \galleryimage[Green]{inzidenz/tree}
+\end{gallery}
+\end{frame}

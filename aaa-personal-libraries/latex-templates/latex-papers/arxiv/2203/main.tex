@@ -1,0 +1,534 @@
+\documentclass[aps,a4paper,twocolumn,10pt,pre,showpacs]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+% Packages (Julien)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage[separate-uncertainty=true]{siunitx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{float}
+\usepackage{lmodern}% http://ctan.org/pkg/lm
+
+\sisetup{range-phrase=-,range-units=single,product-units = brackets-power}
+\DeclareSIUnit[number-unit-product = {}]{\bact}{bact}
+%\graphicspath{{./Figures/}}
+\newcommand{\cd}[1]{\textcolor{purple}{#1}}
+\newcommand{\fm}[1]{\textcolor{blue}{#1}}
+\newcommand{\com}[1]{\textcolor{red}{#1}}
+%\newcommand{\com}[1]{{#1}}
+
+\begin{document}
+
+\title{Direct measurement of the aerotactic response in a bacterial suspension}
+
+\author{J. Bouvard,$^1$  C. Douarche,$^1$ P. Mergaert,$^2$ H. Auradou,$^1$ and F. Moisy$^1$}
+\affiliation{%
+$^1$Universit\'{e} Paris-Saclay, CNRS, FAST, 91405, Orsay, France.\\
+$^2$Université Paris-Saclay, CEA, CNRS, Institute for Integrative Biology of the Cell (I2BC), 91198, Gif-sur-Yvette, France.}
+
+\date{\today}
+
+\begin{abstract}
+Aerotaxis is the ability of motile cells to navigate towards oxygen. A key question is the dependence of the aerotactic velocity with the local oxygen concentration $c$. Here we combine simultaneous bacteria tracking and local oxygen concentration measurements using Ruthenium encapsulated in micelles to characterise the aerotactic response of \emph{Burkholderia contaminans}, a motile bacterium ubiquitous in the environment and present in living organisms.  In our experiments, an oxygen gradient is produced by the bacterial respiration in a sealed glass capillary permeable to oxygen at one end, producing a bacterial band travelling towards the oxygen source. We compute the aerotactic response $\chi(c)$ both at the population scale, from the drift velocity in the bacterial band, and at the bacterial scale, from the angular modulation of the run times. Both methods are consistent with a power-law $\chi \propto c^{-2}$, in good agreement with existing models based on the biochemistry of bacterial membrane receptors.
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+
+\section{Introduction}
+
+Motile bacteria have the ability to bias their swimming in response to a gradient of chemicals in order to move towards an optimum environment~\cite{Taylor1999}. Aerotaxis~\cite{engelmann1881,Baracchini1959}, the specific response to oxygen, is a common feature of a large number of bacterial species~\cite{menolascina2017logarithmic,Adler2012,morse2016,Taylor1983,Stricker2020,Frankel1997,popp2014polarity,Fischer2006,mazzag2003model}. % It is vital for strict aerobic bacteria, although some avoid environments with too elevated oxygen concentrations~\cite{Taylor1983} and prefer low but finite level of oxygen~\cite{Frankel1997,popp2014polarity,Stricker2020,Fischer2006,mazzag2003model}.
+This phenomena was first highlighted by Engelmann~\cite{engelmann1881} in 1881 when he used bacteria to spot sites of oxygen produced by photosynthetic algae.
+
+Aerotaxis plays a key role in many biological processes such as biofilm formation~\cite{Armitano2013,Ardre2015,Holscher2015,Wu2019}, or in the bacterial distribution in the rhizosphere, the soil environment that is under the direct influence of plant roots, where the respiration and the metabolic activities of the roots % of the indigenous microflora 
+create oxygen gradients% to which soil bacteria must respond
+~\cite{alexandre_2004}. In the field of health, aerotaxis was recently suspected to influence the colonisation of epithelial surfaces~\cite{Tamar2016}. This ability to respond positively or negatively to oxygen gradients also opened the possibility to use bacteria to target hypoxic tumours that are resistant to drugs~\cite{felfoul_magneto-aerotactic_2016,baban_bacteria_2010}. It was observed that not all bacteria swim toward a high level of oxygen like the facultative anaerobe \emph{Escherichia coli}~\cite{Adler2012} or other strictly aerobic bacteria~\cite{morse2016,menolascina2017logarithmic}. Indeed, some strains avoid micro-environments too rich in oxygen~\cite{Taylor1983}, while others are microaerophilic and prefer a low but finite level of oxygen~\cite{Frankel1997,popp2014polarity,mazzag2003model,Fischer2006,Stricker2020}. A good qualitative description of aerotaxis is also important to prevent the quality deterioration of food~\cite{Shirai2017}, or to quantify bacterial flux towards regions contaminated by heavy metals~\cite{Stricker2020,Wu2019,Armitano2013}. 
+
+
+%In this paper, we address this issue using an original setup involving the simultaneous measurements of oxygen and bacterial density fluctuations over time.
+ %\sout{~\cite{Adler2012} ~\cite{morse2016} 
+%This was confirmed experimentally using microfluidic cells where gradients of oxygen can be generated. Combined with video microscopy and image analysis, this method allows to measure $\beta$ in different oxygen environment.This modulation of flagella activity induces a drift velocity $\mathbf{v_A}$ that allows bacteria to migrate along oxygen gradients. Assuming weak changes in local concentration~\cite{keller1971model}, the response to a temporal change in oxygen concentration sensed by a cell along its trajectory can be expressed in terms of spatial gradient, yielding an aerotactic velocity in the form $\mathbf{v_A} = \chi(c) \boldsymbol{\nabla} c$, with $\chi(c)$ the aerotactic sensitivity coefficient. 
+%\sout{A key question is the dependence of this coefficient with the oxygen concentration $c$. Larger $\chi$ for decreasing $c$ represents a clear evolutionary advantage, as it yields an enhanced aerotactic response in a strongly depleted environment.} 
+
+
+Even if the aerotactic behaviour of bacteria has been widely studied, questions concerning the exact dependence of the aerotactic response with the environmental conditions are still open.
+The  cellular basis of aerotaxis in swimming bacteria is the modulation of their flagellar activity in response to changes in the oxygen level sensed by their receptors~\cite{Hou2000,Stock1997,rebbapragada1997aer,bibikov1997signal,yu_aerotactic_2002}. This translates into a net aerotactic velocity $\bm{v_a}$ which writes, in the limit of small oxygen gradient $\boldsymbol{\nabla} c$, 
+\begin{equation}
+\label{eq:va}
+\bm{v_a} = \chi(c) \boldsymbol{\nabla} c,
+\end{equation}
+where $\chi(c)$ is the aerotactic response. As a result, aerotactic bacteria that swim towards oxygen-rich regions are able to collectively migrate, forming a travelling band at the population scale.
+
+Travelling bands have been widely investigated for various chemoattractants~\cite{sherris_influence_1957,Baracchini1959,adler1966chemotaxis,adler1966effect} - we restrict here the discussion to aerotaxis. Their dynamics is described by the Keller-Segel equations for the bacterial concentration $b({\bf x},t)$ and oxygen concentration $c({\bf x},t)$, that write in 1D~\cite{keller1971traveling}
+\begin{eqnarray}
+\dfrac{\partial b}{\partial t} + \dfrac{\partial J_x}{\partial x} =0 ,  \qquad J_x=b v_a - \mu(c) \dfrac{\partial b}{\partial x}, \\
+\dfrac{\partial c}{\partial t} = -k b + D_c \dfrac{\partial^2 c}{\partial x^2},
+\label{eq:ks}
+\end{eqnarray}
+with $J_x$ the bacterial flux. The first contribution in $J_x$ is the aerotactic flux, with $v_a = \chi(c) \partial c/\partial x$ the 1D form of the aerotactic velocity \eqref{eq:va}, and the second contribution is the diffusive flux, with $\mu(c)$ the diffusion coefficient due to random swimming (also called random motility coefficient~\cite{rivero1989transport,ford1991measurement2,lewus2001quantification}). The second equation describes the dynamics of the oxygen concentration, with $k$ the oxygen consumption rate by bacteria and $D_c$ the oxygen diffusivity.
+
+The dynamics of the bacterial migration critically depends on the dependence of $\chi$ with $c$. A minimum requirement for the formation of such a travelling band is a decrease of $\chi(c)$ as $c^{-1}$ or steeper~\cite{keller1971traveling}. Models based on the biochemistry of bacterial membrane receptors predict an aerotactic response in the form~\cite{lapidus1976model,rivero1989transport}
+\begin{equation}
+\label{eq:Chi_Kd_c2}
+\chi(c) \propto \dfrac{K_d}{(K_d+c)^2},
+\end{equation}
+with $K_d$ the dissociation constant of the considered chemoattractant from its receptor, i.e., the concentration of the chemoattractant such that half of the receptors are bound. Early experiments by Brown and Berg on the chemotaxis of \emph{E. coli}~\cite{brown1974temporal} are consistent with this form. For small molecules such as dioxygen, $K_d$ is usually much smaller than the ambient concentration~\cite{shioi1987oxygen}, yielding an effective scaling $\chi \propto c^{-2}$.
+
+It is possible in principle to infer the aerotactic response $\chi(c)$ from the dynamics of the bacterial concentration profile evolving in a 1D oxygen gradient, provided that the local oxygen concentration $c(x)$ and $\mu(c)$ are known. Recently, microfluidic setups where the oxygen gradient is fixed by imposing the concentration at the boundaries were developed~\cite{kalinin2009,zhuang2014analytical,kirkegaard_2016,menolascina2017logarithmic,ahmed2010microfluidics}. In this configuration, if the variations of $\mu$ with the oxygen concentration can be neglected, the steady solution of Eq.~\eqref{eq:ks} is an exponential profile $b(x)$ resulting from the balance between the diffusive and the aerotactic fluxes, from which $\chi$ can be obtained. However, accurate measurements can only be obtained for decay lengths falling between a few micrometers up to the channel size of a fraction of millimetres, limiting in turn the range of parameters that can be tested. These studies tend to show the existence of a "log-sensing" regime, $\chi(c) \propto c^{-1}$, for moderate oxygen gradients (the corresponding aerotactic velocity is $\partial(\ln c)/\partial x$), although other scalings like Eq.~\eqref{eq:Chi_Kd_c2} cannot be excluded over wider range of oxygen gradients.
+
+The recent development of O$_2$ bio-compatible sensors offers now the possibility to perform simultaneous measurements of oxygen concentration and bacterial velocity statistics. In this study, we use Ru-micelles, which consist of Ruthenium (an oxygen-quenched fluorophore) encapsulated in micelles~\cite{douarche2009coli,Adler2012}, to measure the oxygen concentration in a bacterial suspension enclosed in an elongated glass capillary. The glass capillary is closed at one end but permeable to air on the other, allowing an unidirectional oxygen gradient. The bacterial respiration lowers the oxygen concentration in the suspension, which in turn strengthens the gradient, resulting in a travelling band and a strong accumulation of bacteria near the oxygen source at large time. The simultaneous measurements of oxygen and bacterial tracks allow us to compute directly the aerotactic response $\chi(c)$, both at the population scale and at the bacterial scale. Our results suggest a robust $\chi(c) \propto c^{-2}$ scaling, consistent with Eq.~\eqref{eq:Chi_Kd_c2} for a dissociation constant $K_d$ much smaller than the ambient oxygen concentration level.
+
+
+
+\section{Material and methods}
+
+\subsection{Experimental setup}
+\label{sec:setup}
+
+The experimental setup is shown in  Fig.~\ref{fig:setup}(a). A homogeneous suspension of \emph{Burkholderia contaminans} bacteria is enclosed in a glass capillary (Vitrotubes) of rectangular cross section (\SI{0.4}{\mm} height, \SI{8}{\mm} width) and \SI{50}{\mm} long. The capillary is closed at one end by PDMS (polydimethylsiloxane) plug, a biocompatible cured polymer permeable to oxygen, and sealed at the other end by grease. The PDMS plug is made by dipping the capillary in liquid PDMS, resulting in a plug of $\SI{13\pm0.5}{\mm}$ long.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.48\textwidth, angle=0]{Fig01.pdf} 
+\caption{Aerotactic migration band in a glass capillary permeable to air on one side. (a) Experimental setup, made of a glass capillary of rectangular section, filled with both the bacterial suspension and the fluorescent oxygen dye. One side of the capillary is sealed with an oxygen-porous PDMS plug, while the other side is sealed with an oxygen-proof grease plug. (b) Fluorescence light intensity mapping the oxygen concentration field at large time, during the migration of the travelling band (dark: high O$_2$ concentration). (c) Images of bacteria at the same time, superimposed to the bacteria tracks (non-motile and motile bacteria are respectively in blue and red). (d), (e) Magnifications at two locations, showing the nearly random tracks at large oxygen concentration and the strongly biased tracks at low oxygen concentration.}
+\label{fig:setup}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The bacterial strain of \emph{B. contaminans} used in this study is an environmental strain isolated in the FAST laboratory. This strain was selected based on its aerotactic ability in a preliminary screening of several available strains, and characterised from the sequencing of 16S and recA gene fragments. Bacteria are grown overnight in YEB medium (Yeast Extract Beef: \SI{5}{\g\per\liter} beef extract, \SI{1}{\g\per\liter} yeast extract, \SI{5}{\g\per\liter} peptone, \SI{5}{\g\per\liter} sucrose, \SI{0.5}{\g\per\liter} MgCl$_2$) at \SI{28}{\celsius} in an orbital shaker running at \SI{200}{rpm} up to an optical density $\text{OD}_{600}=5.5\pm0.5$. The suspensions are then diluted in YEB to the desired concentration, and \SI{1}{\umol\per\liter} of Ru-micelles~\cite{douarche2009coli} is added to the suspension. The solution is finally homogenised with an orbital vortex mixer before injection in the capillary. Experiments were repeated for three bacterial concentrations, denoted hereafter by their optical densities $\text{OD}=0.05$, 0.1 and 0.2 ($\SI{1}{OD} \sim \SI{1.8e6}{\bact\per\uL}$).
+
+
+The capillary is located on the stage of an inverted microscope (Leica DMI4000B) equipped with a long working distance 10X objective and a Hamamatsu Orca Flash 4 camera allowing to record fields of view of \SI{1.33x1.33}{mm} with \SI{30}{\um} depth. Two imaging methods are used sequentially: fluorescence imaging, from which the oxygen concentration is computed (see Fig.~\ref{fig:setup}(b) and Appendix~\ref{sec:SM_O2}), and phase contrast for bacteria tracking [Fig.~\ref{fig:setup}(c)]. Measurements are performed at 5 locations along the $x$ axis with \SI{10}{\%} overlap, covering a distance of nearly \SI{6}{\mm} in the $x$-direction from the source at $x=0$. The acquisition sequence is as follows: a fluorescence picture is first taken at each of the 5 locations, then a movie of 100 images at \SI{20}{Hz} is acquired in phase contrast at the same locations. The sequence is repeated up to 20 times during the bacterial migration, with a time step between each scan of 3 to 10 minutes depending on the migration timescale. The maximum time lag between an oxygen measurement at a given location $x$ and the bacteria tracks at the same location is less than \SI{90}{\s}, a value comfortably smaller than the time scale of the band migration.
+
+
+
+\subsection{Bacteria tracking}
+\label{sec:bact_track}
+
+From the sequences of phase contrast images, the bacterial tracks are computed using Trackmate~\cite{tinevez2017trackmate} and post-processed using an in-house Matlab code. For each track $i$, we measure the two-dimensional positions ${\bf X}_i(t)=(X_i(t),Y_i(t))$, from which we compute the two-dimensional velocities ${\bf V}_i(t) = \delta {\bf X}_i / \delta t$ using a sampling time $\delta t$. This sampling time is chosen such as to separate the motile and non-motile populations that are naturally present in the suspension in approximately the same proportions [red and blue tracks in Fig.~\ref{fig:setup}(d) and (e)]. During the time $\delta t$, motile cells travel a distance $\simeq V_0\,\delta t$, with $V_0 \simeq \SI{20}{\um\per\s}$ the typical swimming velocity (see Fig.~\ref{fig:tracks}). During the same time $\delta t$, non-motile cells move randomly over a distance $\simeq \sqrt{D \, \delta t}$, with $D \simeq \SI{0.1}{\square\um\per\s}$  the thermal diffusion coefficient (as measured independently from the mean-square displacement~\cite{bouvard2022}). A clear separation between the two populations is obtained by using a time interval $\delta t \simeq 10^3 \, D / V_0^2  \simeq \SI{200}{\ms}$. With this value, non-motile bacteria have an effective velocity $\sqrt{D / \delta t} \simeq \SI{1}{\um\per\s}$ much smaller than that of motile bacteria, and can be filtered out by applying a velocity threshold at $\SI{6}{\um\per\s}$.  Only motile bacteria are considered in the following.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}
+%\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.38\textwidth, angle=0]{Fig02.pdf} 
+%\caption{Selection of bacterial tracks, coloured according to their instantaneous velocity. (a) $t=\SI{5}{\min}$, while the oxygen concentration is homogeneous in the glass capillary; (b) $t=\SI{75}{\min}$, when a steep oxygen gradient is formed. The starting point of the track is represented with a grey circle. The track durations are between 3 and \SI{5}{\s}. Data from the experiment at $\mathrm{OD}=0.05$, at location $x=\SI{4500\pm500}{\um}$. (c) Segmentation of tracks into a set of runs, defining the run velocity ${\bf V}_\mathrm{run}$ and run angle $\theta_\mathrm{run}$ with respect to $x$.}
+%\label{fig:tracks}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.99\textwidth, angle=0]{Fig02.pdf} 
+\caption{Characteristics of bacterial tracks without and with aerotaxis. Data from the experiment at $\mathrm{OD}=0.05$, at location $x=\SI{4500\pm500}{\um}$ from the oxygen source. (a), (b), (c) $t=\SI{5}{\min}$, while the oxygen concentration is homogeneous in the glass capillary; (d), (e), (f) $t=\SI{75}{\min}$, when a steep oxygen gradient is formed. (a), (d) Selection of bacterial tracks, coloured according to their instantaneous velocity. The starting point of a track is represented with a grey circle. The track durations are between 3 and \SI{5}{\s}. (b), (e) Histograms of the instantaneous trajectory angle $\theta$. (c), (f) Histograms of the instantaneous velocity components $V_x,V_y$. (g) Segmentation of tracks into a set of runs, defining the run velocity ${\bf V}_\mathrm{run}$ and run angle $\theta_\mathrm{run}$ with respect to $x$.}
+\label{fig:tracks}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A selection of tracks is shown in Fig.~\ref{fig:tracks}, without (a) and with (d) aerotaxis. These tracks display a succession of approximately straight runs, typically 10 to \SI{100}{\um}, separated by rapid changes in orientation. A specificity of the swimming pattern of \emph{B. contaminans} is the frequent occurrence of very sharp turning angles close to \SI{180}{\degree} (see Appendix~\ref{sec:SM_run-reverse}), contrarily to the smaller mean turning angle of $\simeq \SI{70}{\degree}$ of the classical "run-and-tumble" pattern in the model bacterium \emph{E. coli}~\cite{berg1972chemotaxis,berg1993random}. Such a "run-reverse" pattern is also encountered in some marine bacteria~\cite{barbara2003bacterial,taktikos2013motility,grognot2021multiscale}. In the presence of the oxygen gradient, runs in the direction of the oxygen source ($x<0$) are longer and more frequent. This bias is difficult to see directly in Fig.~\ref{fig:tracks}(a,d), but appears clearly in the distributions of velocity components and angle in Fig.~\ref{fig:tracks}(b,c,e,f). The instantaneous swimming angle $\theta(t)$ is defined in  Fig.~\ref{fig:tracks}(g), with $\theta=\pi$ toward the oxygen source ($x<0$). In the presence of the oxygen gradient, the distribution of angles shows a strong asymmetry, with tracks in the oxygen direction approximately 3 times more frequent than in the opposite direction. Interestingly, the distribution of $V_x$ is peaked to a negative value, but its width is comparable to that of $V_y$. This feature is robust at all times, with a ratio of standard deviations $\sigma(V_x) / \sigma(V_y) \simeq 1.00 \pm 0.01$, indicating that the bacterial motion can be approximately modelled as the sum of an isotropic diffusion and a small deterministic drift towards $x<0$.
+ 
+
+We determined the diffusivity of the bacteria without aerotaxis in two setups: in a chamber fully permeable to oxygen (with a PDMS cover) and in a fully sealed capillary (capillary glass sealed with a grease plug at both ends). In the first setup, the oxygen concentration remains at saturation level at all time, while in the second it linearly decreases in time because of bacterial respiration. From the bacterial tracks, we compute the diffusivity as $\mu = (1/2) V_c^2 T$, where $V_c$ and $T$ are determined from an exponential fit of the two-dimensional velocity correlation function (see Appendix~\ref{sec:SM_mu}). We obtain $\mu \simeq \SI{450\pm100}{\square\um\per\s}$, with no significant evolution in time in both setups as long as oxygen is available. In the sealed capillary, the motility rapidly drops when oxygen is exhausted and transitions to a brownian diffusive motion. Similarly, the mean 2D velocity stays constant throughout both experiments, and only drops when the oxygen concentration reaches zero in the sealed capillary experiment.
+
+
+
+\section{Dynamics of the aerotactic front}
+\label{sec:macro}
+
+To quantify the dynamics of the aerotactic migration of bacteria towards the oxygen source, we compute the velocity statistics conditioned on the $x$ position along the capillary. For this, we first define for each track $i$ its average position $\overline{{\bf X}}_i=(\overline{X}_i,\overline{Y_i})$ and average velocity $\overline{\bf V}_i$. Then, we average the velocity norm and $x$-component conditioned on the averaged $x$-position,
+\begin{eqnarray}
+    v(x,t) &=& \langle | \overline{\bf V}_i | ; \, x = \overline{X}_i \rangle, \label{eq:vcond} \\
+    v_x(x,t) &=& \langle  \overline{\bf V}_i \cdot {\bf e}_x ; \, x = \overline{X}_i \rangle.
+\label{eq:vxcond}
+\end{eqnarray}
+The brackets $\langle \cdot \rangle$ denote the average over all tracks $i$ satisfying this spatial conditioning. In practice, the conditioning is performed on a window size of width $\Delta x = \SI{200}{\um}$. This window size is chosen larger than the typical run length, but smaller than the characteristic length scale of the oxygen and bacterial concentration profiles. Note that the velocities in Eqs.~\eqref{eq:vcond}-\eqref{eq:vxcond} are the two-dimensional projections of the true bacteria motion. This implies that for bacteria swimming isotropically at constant (three-dimensional) velocity $V_0$, we have $v=\pi V_0/4 \simeq 0.78 V_0$, whereas for bacteria swimming in the microscope plane we simply have $v=V_0$.
+
+
+The dynamics of the migration band is depicted in Fig.~\ref{fig:figure2} along with the oxygen concentration profile, the mean velocity norm $v(x)$ and the drift velocity along the gradient $v_x(x)$. Five minutes after the sealing of the capillary [Fig.~\ref{fig:figure2}(a)], the oxygen level has slightly decreased but remains essentially homogeneous, and no measurable drift velocity nor variations in the bacterial concentration are detected. The migration band starts at $t\simeq \SI{75}{\min}$ [Fig.~\ref{fig:figure2}(b)], when the oxygen level reaches zero at the end of the measurement area ($x>\SI{5}{\mm}$). In the oxygen-depleted region, a bump of bacterial concentration appears together with a strong drift velocity, $v_x \simeq \SI{-8}{\um\per\s}$ (negative velocity is towards the oxygen source), which is up to \SI{30}{\%} of the 2D mean swimming velocity. Ten minutes later [Fig.~\ref{fig:figure2}(c)], the bacterial band is more pronounced as it approaches the oxygen source, but it travels at a smaller velocity, $v_x \simeq \SI{-3.5}{\um\per\s}$. After \SI{100}{\min}, an asymptotic state is reached, with a strong accumulation of bacteria near the $\text{O}_2$ source and $v_x \simeq \SI{0}{\um\per\s}$ [Fig.~\ref{fig:figure2}(d)].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+%\includegraphics[trim = 9mm 65mm 6mm 72mm, clip, width=0.38\textwidth, angle=0]{Fig04_t=5.pdf}
+%\includegraphics[trim = 9mm 65mm 6mm 72mm, clip, width=0.38\textwidth, angle=0]{Fig04_t=75.pdf} 
+%\includegraphics[trim = 9mm 65mm 6mm 72mm, clip, width=0.38\textwidth, angle=0]{Fig04_t=85.pdf}
+%\includegraphics[trim = 9mm 65mm 6mm 72mm, clip, width=0.38\textwidth, angle=0]{Fig04_t=100.pdf}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.38\textwidth, angle=0]{Fig03.pdf} 
+\caption{Variations of the local density of bacteria $b(x)$ (green circles), oxygen concentration $c(x)$ (blue stars), magnitude of the swimming velocity of bacteria $v(x)$ (empty orange diamonds) and drift velocity along the gradient $v_x(x)$ (filled orange diamonds) as functions of the distance from the oxygen source at four different times during the migration of the bacterial band. The capillary is initially filled with an homogeneous suspension of bacteria at a concentration $\text{OD}=0.05$. Time is counted from the sealing of the capillary.}   
+\label{fig:figure2}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The experiment was repeated with larger initial bacterial concentrations (see Appendix~\ref{sec:SM_compil_profiles}). 
+The dynamics of the traveling band is similar, but on a time scale that varies approximately as the inverse of the bacterial concentration. An example is given in Fig.~\ref{fig:Vx_x} at $\mathrm{OD}=0.2$, clearly showing the shift of the maximum drift velocity as the migration band proceeds to the oxygen source. 
+
+
+During the migration process, a significant increase of the mean 2D velocity $v$, from 18 to $\SI{26}{\um\per\s}$, is found (Fig.~\ref{fig:figure2}). This increase may originate from an intrinsic dependence of $v$ with the oxygen concentration level (chemokinesis), or may be an indirect consequence of aerotaxis. To discriminate between these two hypotheses, we measured the mean swimming velocity in homogeneous experiments, in the same setups as for the diffusivity measurements: in the chamber fully permeable to oxygen and in the fully sealed capillary. In both cases we found a constant mean swimming velocity, with no dependence neither on time nor on oxygen concentration. This shows that the temporal increase in mean velocity in Fig.~\ref{fig:figure2} is not a response to the local oxygen concentration, but rather a consequence of aerotaxis. This increase may be due in part to a projection effect: for bacteria swimming isotropically at velocity $V_0$, the projected mean velocity in the $(x,y)$ plane is $v \simeq 0.78 V_0$, whereas for a strongly biased swimming in the $x$-direction the projected velocity $v$ is equal to the true velocity $V_0$. However, this projection effect alone cannot explain the observed \SI{40}{\%} increase in velocity, suggesting that a sorting effect may also be at play: slow and fast bacteria are initially randomly distributed in the suspension, but faster bacteria first reach the oxygen source while slow bacteria remain behind in the oxygen depleted region, thereby introducing a bias in the mean velocity.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tb]
+\includegraphics[trim = 2mm 65mm 4mm 70mm, clip, width=0.48\textwidth, angle=0]{Fig04.pdf}
+\caption{Drift velocity $-v_x(x)$ as a function of the distance from the oxygen source at different times during the migration of the bacterial band. The initial bacterial concentration is $\text{OD}=0.2$.}   
+\label{fig:Vx_x}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%The consumption of oxygen by the bacteria leads to a continuous evolution of the O$_{2}$ and bacteria profiles.
+
+%To determine the aerotactic velocity, we will assume that during the measurement, the fronts have changed little enough so that the measured flux over the duration of the acquisition is constant.
+
+%To test this assumption, let's consider the position of the maximum of the aerotactic band. At that position the flux is $b v_a$ with $v_a$ of the order of few micron per second. 
+%The flux is determined from images acquired over a period of 5 seconds and profiles are constructed by analyzing data in $200\mu m$ wide windows. During the acquisition, the band has moved about 50 $\mu m$ for $v_a \sim 10\mu m.s^{-1}$. This distance is less than the 200 $\mu m$ of the analysis window. We can therefore consider that the measurement will be little affected by the displacement of the population towards the oxygen source. The temporal evolution of the oxygen profile is also a source of evolution of the bacterial profile. 
+%During image acquisition, the oxygen level at the measurement location decreases and the slope of the O$_2$ profile increases. The front also moves at a velocity of a few microns per second. It will have the same impact on the estimation of the flux.  
+
+
+%The question here is to determine during the data acqif our measurement is affected by this variation. The progression of this limit creates a flux $\phi'=b_0 v_f$ at the origin of the movement of the bacterial population towards the oxygen source.  
+%This movement results in a constant increase of the number of bacteria as the experience progresses even near the O$_2$ source. Therefore we can consider that the flow of bacteria along the cell is constant. (peut-etre faire une figure avec une superposition des profils pour (OD=0.2, t=29min), (OD=0.1, t=57min), (OD=0.05, t=85min) pour montrer que les profils sont proches alors que les vitesses de fronts sont differents.)
+
+
+We now turn to the determination of the aerotactic coefficient $\chi(c) = v_a / (\partial c/\partial x)$, where $v_a$ is the aerotactic velocity. Measurements are averaged over a duration of $\SI{5}{\s}$, which is much smaller than the timescale of the evolution of the oxygen and bacterial concentration profiles. A difficulty in inferring $v_a$ from the measured drift velocity $v_x$ is that $v_x$ is related to the {\it total} bacterial flux $J_x=bv_x$, and therefore includes both the intrinsic aerotactic contribution $bv_a$ and the diffusive contribution $\mu(c) \partial b/\partial x$ [Eq.~\eqref{eq:ks}]. Correcting for this diffusive contribution is delicate, because the dependence of  $\mu$ with $c$, which stems from the dependence of $\chi$ with $c$, is difficult to infer from the data. We therefore focus on regions where $\partial b / \partial x \simeq 0$, near the maximum of the bacterial density in the migrating band or close to the O$_2$ source. In these regions, the diffusive flux is small and we have $v_x \simeq v_a$, so the aerotactic response is simply given by
+\begin{equation}
+    \chi_\mathrm{macro}(c) = \frac{v_x}{\partial c/\partial x},
+\end{equation}
+which can be directly computed from our velocity and oxygen concentration measurements.  We note $\chi_\mathrm{macro}$ this first determination of the aerotactic coefficient, as it is obtained from the drift velocity at the macroscopic level.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tb]
+\includegraphics[trim = 1mm 54mm 8mm 60mm, clip, width=0.48\textwidth, angle=0]{Fig05.pdf}
+\caption{Aerotactic response $\chi_{\mathrm{macro}} \simeq v_x/({\partial c}/{\partial x})$  as a function of the local oxygen concentration $c$. The values are 
+computed from the drift velocity $v_x(x)$ and oxygen gradient $\partial c/\partial x$ measured in regions where $\partial b/\partial x \simeq 0$, for an initial bacterial concentration $\text{OD}=0.2$.}
+\label{fig:figure3}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Figure~\ref{fig:figure3} shows the aerotactic response $\chi_\mathrm{macro}$ as a function of $c$ at different times during the migration. The data is well described by a power law, $\chi_\mathrm{macro} \propto c^{-2}$, over the whole range of measurable oxygen concentration, from $c=0.6$ to $\SI{4}{\mg\per\liter}$. The upper bound of this range is limited by the smallest measurable drift velocity, while the lower bound is limited by the resolution of the fluorescence signal. The good collapse of the data at different times on a single curve indicates that the aerotaxis response is governed by the local oxygen concentration alone, with no measurable delay, so it can be considered as approximately instantaneous in our experiment. This scaling $\chi_\mathrm{macro} \propto c^{-2}$ is consistent with Eq.~\eqref{eq:Chi_Kd_c2} in the limit $K_d \ll c$. Although the dissociation constant $K_d$ of oxygen is not known for \emph{B. contaminans}, the absence of visible cutoff in $\chi_\mathrm{macro}(c)$ at small $c$ suggests that $K_d$ is much smaller than the minimal oxygen concentration measured in Fig.~\ref{fig:figure3} ($\simeq \SI{0.6}{\mg\per\liter}$). This is consistent with the value of $K_d \simeq \SI{0.02}{\mg\per\liter}$ determined for other strains like \emph{Escherichia coli} and \emph{Salmonella typhimurium}~\cite{shioi1987oxygen}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[b]
+\includegraphics[trim = 8mm 63mm 19mm 70mm, clip, width=0.48\textwidth, angle=0]{Fig06.pdf}
+\caption{Aerotactic response $\chi_{\mathrm{macro}} \simeq v_x/({\partial c}/{\partial x})$ where $\partial b/\partial x \simeq 0$, plotted as a function of the oxygen concentration $c$ for different initial bacterial concentrations: $\text{OD}=0.05$ (blue circles), $\text{OD}=0.1$ (orange squares) and $\text{OD}=0.2$ (yellow diamonds). The lines show the best fit $\chi_{\mathrm{macro}}=\delta/c^2$ for each OD, the coefficient $\delta$ being plotted as a function of the OD in the inset. For $c>\SI{4}{\mg\per\liter}$, the aerotactic velocity is too close to zero for a reliable measurement of $\chi_\mathrm{macro}$.}
+\label{fig:chi_macro}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We have repeated the measurement of $\chi(c)$  for the three bacterial concentrations. The curves are shown in Fig.~\ref{fig:chi_macro}, with error bars reflecting the dispersion for each OD. Here again, the data is well described by the power law $\chi \simeq \delta c^{-2}$, but with a coefficient $\delta$ that decreases as the bacterial concentration increases (see inset).  This suggests that the scaling of the aerotactic response with oxygen concentration is robust, but the level of this response also depends on other parameters related to the bacterial concentration. The delay between the measurements of the oxygen concentration and the bacterial tracks cannot explain this dependence. Because of the sequential acquisition procedure (see Sec.~\ref{sec:bact_track}), the oxygen concentration is measured approximately \SI{1}{\min} before the bacterial velocity. During this time lag, $c$ decreases while $|\partial c/\partial x|$ increases at a given $x$, at a rate which increases with the OD; this should increase the apparent $\delta$, which does not match our observations. A second possible bias is a selection of the fastest swimming bacteria as the OD is increased; however, this sorting effect would also yield an increase of the apparent, which again is not compatible with our data. We can conclude that the observed decrease of $\delta$ with the OD is a genuine feature of the aerotactic response of this strain, that may result from a secondary negative chemotactic response lowering the effect of the primary positive aerotactic response.
+%, e.g., a response to chemorepellents released by the bacteria themselves.
+
+
+
+\section{Aerotactic run time modulation}
+\label{sec:micro}
+
+Measuring the aerotactic coefficient $\chi(c)$ from the mean drift velocity $v_x$ is inherently limited by the effect of diffusion, which restricts our measurements to regions where the diffusive flux vanishes, for $\partial b/\partial x \simeq 0$. To circumvent this limitation, we now investigate the aerotaxis at the microscopic level, with the aim to characterise the modification of the swimming pattern statistics due the oxygen gradient.
+
+
+For each track, we define a run as a continuous segment between two tumbles [Fig.~\ref{fig:tracks}(g)], such that the swimming direction changes abruptly, $|\delta \theta / \delta t| > \omega_{c}$, with $\omega_c \simeq \SI{4}{\radian\per\s}$ as threshold. Runs defined in this way consist of nearly straight lines with a large coherence length. For each run $j$, we define the mean velocity $\mathbf{V}_{\mathrm{run},j}$, the mean angle $\theta_{\mathrm{run},j}$ with respect to the $x$ axis and the run time $\tau_{\mathrm{run},j}$.
+
+To characterise the aerotactic bias of the run times, we partition the runs in two sets specified by the sign of $\cos \theta_{\mathrm{run,}j}$, and define the corresponding run times as $\tau_{\mathrm{run}}^+$ (bacteria swimming towards the oxygen source) and $\tau_{\mathrm{run}}^-$ (bacteria swimming in the opposite direction). Figure~\ref{fig:taurun_distri} shows the distribution of these run times, with and without aerotaxis. At early time [Fig.~\ref{fig:taurun_distri}(a)], without significant oxygen gradient, $\tau_{\mathrm{run}}^+$ and $\tau_{\mathrm{run}}^-$ follow the same Poisson distribution, $p(\tau_\mathrm{run}^{\pm}) \simeq \exp(-\beta \tau_{\mathrm{run}}^{\pm})$, with $\beta \simeq\SI{1.47}{\per\s}$. At larger time [Fig.~\ref{fig:taurun_distri}(b)], in the migration band, the two distributions still decay exponentially but with different decay rates, confirming that bacteria swim longer when moving towards the oxygen source.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[b]
+%\includegraphics[trim = 39mm 70mm 50mm 75mm, clip, width=0.23\textwidth, angle=0]{Fig08_t=5.pdf} 
+%\includegraphics[trim = 39mm 70mm 50mm 75mm, clip, width=0.23\textwidth, angle=0]{Fig08_t=75.pdf}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.48\textwidth, angle=0]{Fig07.pdf} 
+\caption{Distributions of run times $\tau_{\mathrm{run}}^\pm$ measured at $\mathrm{OD}=0.05$, $x\simeq \SIrange{4}{5}{\mm}$, at times $t=\SI{5}{\min}$ (a), before the aerotactic front, and $t=\SI{75}{\min}$ (b), in the aerotactic front. Blue: $\tau_{\mathrm{run}}^-$, conditioned on $\cos \theta_{\mathrm{run,}j}<0$. Red: $\tau_{\mathrm{run}}^+$, conditioned on $\cos \theta_{\mathrm{run,}j}>0$. The lines show exponential fits $\exp(-\beta \tau_{\mathrm{run}}^{\pm})$, with (a) $\beta^\pm \simeq \SI{1.47}{\per\s}$, and (b) $\beta^- \simeq \SI{2.24}{\per\s}$, $\beta^+ \simeq \SI{1.83}{\per\s}$.}
+% minduratio = 0.5 s. binlen = 0.19;  trmin = .6; trmax = 3.3;
+\label{fig:taurun_distri}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To further quantify this effect, we compute, for each time $t$ and location $x$ along the capillary, the mean run duration conditioned on the mean run angle,
+\begin{equation}
+        \tau_{\mathrm{run}}(\theta_{\mathrm{run}}) = \langle  \tau_{\mathrm{run,}j} ; \, \theta_{\mathrm{run,}j} = \theta_{\mathrm{run}} \rangle,
+\end{equation}
+with $\langle \cdot \rangle$ the average over the runs $j$.
+We plot this mean run time $\tau_{\mathrm{run}}$ as a function of $\cos \theta_{\mathrm{run}}$  in Fig.~\ref{fig:taurun}, both without and with oxygen gradient. We observe a well-defined linear trend,
+\begin{equation}
+     \tau_{\mathrm{run}} (\theta_{\mathrm{run}}) = \tau_0 (1 - \alpha \cos \theta_{\mathrm{run}}),
+\label{eq:taurun}
+\end{equation}
+with $\alpha$ the run time modulation coefficient, and $\tau_0$ the mean run time at $\cos\theta_{\mathrm{run}}=0$. Such a linear dependency of $\tau_{\mathrm{run}} $ with $\cos \theta_{\mathrm{run}}$ comes from the fact that bacteria are sensitive to the time variation of the local oxygen gradient sampled along their trajectory, $d c/d t \simeq {\bf V} \cdot \nabla c = V \cos \theta \, \partial c / \partial x$ (see Appendix~\ref{app:artm}). Without oxygen gradient, we have $\alpha \simeq 0$ (isotropic swimming), whereas in the oxygen gradient, runs towards the oxygen source are $(1+\alpha)$ longer than $\tau_0$ while runs away from the oxygen source are $(1-\alpha)$ shorter than $\tau_0$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[b]
+\includegraphics[trim = 5mm 56mm 15mm 65mm, clip, width=0.48\textwidth, angle=0]{Fig08.pdf} 
+\caption{Average run time $\tau_\mathrm{run}$ as a function of $\cos\theta_\mathrm{run}$ (same data as in Fig.~\ref{fig:taurun_distri}). In the aerotactic band, the run time increases for bacteria swimming towards the oxygen source ($\cos \theta_\mathrm{run}=-1$). The green line shows the linear fit using Eq.~\eqref{eq:taurun} with $\alpha \simeq 0.28$, and the black line shows the case $\alpha=0$ (no aerotaxis).}
+\label{fig:taurun}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+From the run statistics, we extract the run time modulation coefficient $\alpha$ at each time, for each location $x$ along the capillary chamber, and for the three bacterial concentrations ($\mathrm{OD}=0.05$, 0.1 and 0.2). The time evolution of $\alpha(x)$, plotted in Fig.~\ref{fig:alpha_x} for $\mathrm{OD}=0.2$, shows a clear drift of the aerotactic response towards the oxygen source as the migration band proceeds, which is consistent with the measured drift velocity $-v_x(x)$ in Fig.~\ref{fig:Vx_x}. Assuming that the swimming velocity $V_0$ and the mean run time $\tau_0$ do not depend on $\theta_{\mathrm{run}}$, using Eq.~\eqref{eq:taurun} and averaging over all swimming directions yield (see Appendix~\ref{app:artm})
+\begin{equation}
+\label{eq:va_micro}
+    v_a = -V_0 \dfrac{\alpha}{2}.
+\end{equation}
+Interestingly, this estimate of $v_a$ from $\alpha$ is expected to hold everywhere, not only at the maximum of the migration band where the diffusion contribution vanishes. This is clearly visible by comparing Figs.~\ref{fig:Vx_x} and \ref{fig:alpha_x}: while $v_x$ drops to 0 at long time because aerotaxis is balanced by diffusion in the asymptotic state, a strong aerotactic response is still present at the bacterial scale in the run time modulation coefficient $\alpha$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[bt]
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.48\textwidth, angle=0]{Fig09.png} 
+\caption{Run time modulation coefficient $\alpha$ as function of the distance from the oxygen source at different times during the migration of the bacterial band. Same data as in Fig.~\ref{fig:Vx_x}.}
+ %%%  \com{Faire figure propre avec même notations que Fig 5}   :<
+\label{fig:alpha_x}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We finally plot in Fig.~\ref{fig:chi_micro} the aerotactic coefficient [Eq.~\eqref{eq:va}] computed using Eq.~\eqref{eq:va_micro}, which we call $\chi_{\mathrm{micro}}$. This coefficient is again compatible with the scaling $c^{-2}$ for all bacterial concentrations. Since we are not limited here to $\partial b/\partial x \simeq 0$, the range of oxygen concentration where $\chi_{\rm micro}$ can be computed is extended to lower oxygen concentrations, down to $c \simeq \SI{0,4}{\mg\per\liter}$, i.e., over nearly one decade in $c$. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tb]
+\includegraphics[trim = 8mm 63mm 19mm 70mm, clip, width=0.48\textwidth, angle=0]{Fig10.pdf}
+\caption{Aerotactic response $\chi_{\mathrm{micro}} \simeq -\alpha v/(2{\partial c}/{\partial x})$ plotted as a function of the oxygen concentration $c$ for different bacterial concentrations: $\text{OD}=0.05$ (blue circles), $\text{OD}=0.1$ (orange squares) and $\text{OD}=0.2$ (yellow diamonds). The lines show the best fit $\chi_{\mathrm{micro}}=\delta/c^2$ for each OD, the coefficient $\delta$ being plotted as a function of the OD in the inset.} %For $c>\SI{5}{\mg\per\liter}$, the data is indistinguishable from zero.
+\label{fig:chi_micro}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Although the aerotactic responses computed at the population scale (Fig.~\ref{fig:chi_macro}) and at the bacterial scale (Fig.~\ref{fig:chi_micro}) both display the same scaling $c^{-2}$, a systematic shift is observed between these two estimates, with $\chi_{\mathrm{micro}} \simeq 0.3 \, \chi_{\mathrm{macro}}$. This discrepancy may be attributed to several biases in the segmentation of tracks into runs. First, since only the two-dimensional projection of tracks can be measured, runs nearly normal to the measurement plane are perceived as low-velocity erratic motions and can be interpreted as tumbles. Second, the measurements are limited both in depth (the depth of field is \SI{30}{\um}) and acquisition time (image sequences are limited to \SI{5}{\s} to allow for a fast scan along the $x$-direction). Longer tracks are therefore truncated, resulting in a large number of small tracks without tumbles. This leads to an over-representation of short runs, and hence an underestimation of $\alpha$. The aerotactic response $\chi_{\mathrm{micro}}$ computed from the run time modulation therefore underestimates the true aerotactic response, but its overall scaling $c^{-2}$ remains unaffected by this bias.
+
+
+\section{Conclusion}
+\label{sec:ccl}
+
+In this paper, we use an original setup allowing for simultaneous measurements of oxygen concentration and bacteria tracking to investigate the scaling of the aerotactic response. Besides giving us access to multiple oxygen conditions, this setup allows us to quantitatively monitor bacteria migrating to an oxygen source, as in natural environments.
+The aerotactic response $\chi$ computed both macroscopically, from the concentration profiles of bacteria, and microscopically, from the bias in run times, yields consistent results in the form $\chi \propto c^{-2}$. To our knowledge, this is the first direct measurement of $\chi(c)$.
+
+
+The scaling $\chi \propto c^{-2}$ is consistent with the models based on the biochemistry of bacterial membrane receptors~\cite{brown1974temporal,lapidus1976model,rivero1989transport} given by Eq.~\eqref{eq:Chi_Kd_c2} for a dissociation constant $K_d$ much smaller than the typical oxygen concentration. It differs from the "log-sensing" scaling $\chi \propto c^{-1}$  reported in recent experiments using stationary oxygen gradients~\cite{kalinin2009,menolascina2017logarithmic} with other bacteria. 
+This variability may originate from a specific aerotactic response of the different bacterial species, which exhibit different oxygen receptors or swimming patterns ("run-and-tumble", "run-reverse" or "run-reverse and flick"~\cite{taktikos2013motility, grognot_2021_propellers}).
+
+The simultaneous mapping of oxygen concentration using a fluorescent O$_2$-sensor together with the bacteria tracking is a very promising approach. It would be of prime interest to extend this study to more complex chemical stimuli, when aerotaxis competes with other chemotaxis, or to the transport of bacterial populations through complex media like natural soils, as found in bacterial ecosystems.
+
+%Using Ru-micelles in a dedicated microfluidic device coupled to other chemical gradients~\cite{diao2006three,cheng2007hydrogel,ahmed2010bacterial} would open the possibility to characterise the interplay between different chemotactic stimuli, a common situation in the rhizosphere or in living organisms.
+
+%For instance, some soil bacteria are known to navigate chemotactically towards plant roots to establish symbiotic interactions~\cite{raina2019role}. Yet, the competition between chemotaxis and aerotaxis in the vicinity of roots, which may either release or consume oxygen~\cite{blossfeld2011dynamics}, remains to be elucidated.
+
+%Even more interesting, we could study an \emph{in situ} migration by inserting some plant roots in a microfluidic chip containing some bacteria~\cite{grossmann2011rootchip,nezhad2014microfluidic,jiang2014plant,massalha2017live}.  So there is a potential competition between aerotaxis and chemotaxis for the bacteria to reach the roots in the rhizosphere, competition that is yet to be studied.
+
+
+%For instance, \emph{Sinorhizobium meliloti}, a soil bacteria known for its symbiotic interaction with plant roots~\cite{raina2019role}, is believed to be approaching these roots thanks to its chemotactic behaviour~\cite{gotz1982motility,gotz1987rhizobium}. The plant is releasing chemicals which are attracting the bacteria~\cite{compton2020updated}. However, plant roots can also vary the oxygen level around their roots, by releasing~\cite{blossfeld2011dynamics} or consuming oxygen. \sout{As we experimentally observed a similar aerotactic behaviour for \emph{S. meliloti}, we can wonder if this aerotaxis reinforces or counters the chemotactic approach in the symbiosis.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\appendix
+
+
+
+\section{Oxygen measurements}
+\label{sec:SM_O2}
+
+Oxygen concentration maps are obtained from fluorescence microscopy images of Ruthenium, an organo-metallic complex quenched by oxygen. Ruthenium complex [ruthenium-tris(4,7 diphenyl-1, 10-phenanthroline) dichloride, also named Ru(dpp)$_3$Cl$_2$ or Ru(dpp)] is encapsulated in phospholipidic micelles (referred to as Ru-micelles), in order to make it soluble in water and biocompatible~\cite{douarche2009coli,morse2016}. We did not observe any influence of Ru-micelles on the bacterial motility. 
+
+\begin{figure}[b]
+\includegraphics[trim = 10mm 62mm 18mm 70mm, clip, width=0.48\textwidth, angle=0]{FigAA.pdf} 
+\caption{Temporal evolution of the dioxygen concentration $c$ in a bacterial suspension of $\mathrm{OD}=0.1$ (blue circles) and $\mathrm{OD}=0.2$ (black stars). The oxygen initially dissolved is consumed at a steady rate by \emph{B. contaminans} bacteria. The concentration is deduced from the fluorescence intensity thanks to the Stern-Volmner relation [Eq.~\eqref{eq:Stern_volmer}]. The black line shows the linear fit $c(t)=c_0-k_c t$ with $c_0=\SI{11.8\pm3}{\mg\per\liter}$ and a consumption rate $k_c$ of 0.32 and \SI{0.71}{\mg\per\liter\per\minute}.}
+\label{fig:SM_O2}
+\end{figure}
+
+%We measure the fluorescence thanks to a fluorescence filter cube (Chroma) composed of a dichroic mirror (T495LPXR), an excitation filter of wavelength \SI{450\pm 50}{\nm} (ET450/50x) and an emission filter of wavelength \SI{610\pm 60}{\nm} (ET610/60m).
+Fluorescence intensity is averaged over the $y$-direction and then converted into O$_2$ concentrations using the Stern-Volmer relation
+\begin{equation}
+\label{eq:Stern_volmer}
+    \dfrac{I_\mathrm{ref}}{I(c)} = 1 + K_q c,
+\end{equation}
+where $I(c)$ is the fluorescent intensity at oxygen concentration $c$, $I_\mathrm{ref}$ is the intensity without oxygen, and $K_q$ is the quenching constant. $I_\mathrm{ref}$ is taken as the highest intensity for each experiment. This reference level was confirmed to be equal to $c=\SI{0}{\mg\per\liter}$ when measured with an electrochemical O$_2$-probe in a closed sample where bacteria consumed the available oxygen. Figure~\ref{fig:SM_O2} shows the temporal evolution of the oxygen concentration in two bacterial suspensions of different concentrations enclosed in a glass capillary with no oxygen supply.
+
+$K_q$ was determined by measuring the fluorescent intensity of a solution containing no oxygen (a solution saturated of \emph{B. contaminans} bacteria), and comparing it to the intensity level of a solution with a known oxygen concentration. We find $K_q=\SI{0.21}{\liter\per\mg}$, which is of the same order of magnitude of values reported for similar Ruthenium-based  dyes~\cite{gerritsen1997fluorescence,sud2006time,polinkovsky2009fine,kim2016oxygen,Adler2012,menolascina2017logarithmic}.
+
+
+
+\section{"Run-reverse" swimming of \emph{B. contaminans}}
+\label{sec:SM_run-reverse}
+
+\begin{figure}[b]
+\includegraphics[trim = 5mm 72mm 18mm 79mm, clip, width=0.48\textwidth, angle=0]{FigAB.pdf} 
+\caption{Distribution of the turning angle $\delta\theta$ between two successive runs. The distribution is peaked at $\cos\delta\theta=-1$, corresponding to reverses.}
+\label{fig:SM_turning_angle_distri}
+\end{figure}
+
+\emph{B. contaminans} is a motile bacterium exhibiting a large dispersion of velocities. Its velocity (projected on the microscope plane) ranges from 0 up to \SI{60}{\um\per\s}, with a mean value around \SIrange{20}{25}{\um\per\s}. A particular feature of \emph{B. contaminans} is its "run-reverse" swimming (illustrated in Fig.~\ref{fig:tracks}), similar to some marine bacteria~\cite{barbara2003bacterial,taktikos2013motility}. 
+
+To quantify this run-reverse motion, we measure the turning angle $\delta\theta$ between two successive runs, defined as $\delta \theta = \theta_{\mathrm{run}, j+1} - \theta_{\mathrm{run},j}$ between runs $j$ and $j+1$. Its distribution, plotted in Fig.~\ref{fig:SM_turning_angle_distri}, shows that a majority of tumbles correspond to reverses. We obtain a mean value of $\langle\cos\delta\theta\rangle\simeq -0.34$, i.e., turning angles much sharper than that of \emph{E. coli} ($\langle\cos\delta\theta\rangle\simeq 0.33$~\cite{berg1993random}).
+
+
+
+\section{Diffusion coefficient}
+\label{sec:SM_mu}
+
+To measure the diffusion coefficient $\mu$, we compute the velocity correlation function~\cite{lovely1975statistical,taktikos2013motility,lauga2020}
+\begin{equation}
+    C(\Delta t) = \langle {\bf V}(t) \cdot {\bf V} (t+\Delta t) \rangle
+\end{equation}
+averaged over all the bacterial tracks.  An example of $C(\Delta t)$ is shown in Fig.~\ref{fig:mu_correlation}. We fit the exponential decrease as  \begin{equation}
+ C(\Delta t) \simeq V_c^2 \exp(-\Delta t/T),
+ \label{eq:fitC}
+\end{equation}
+with $V_c = \sqrt{2/3} V_0$, and $V_0$ the mean swimming velocity,
+from which we compute the diffusion coefficient as $\mu=(1/2) V_c^2 T$. An average over numerous experiments yields $\mu \simeq \SI{450\pm100}{\square\um\per\s}$.
+
+\begin{figure}[b]
+\includegraphics[trim = 0mm 57mm 13mm 64mm, clip, width=0.48\textwidth, angle=0]{FigAC.pdf} 
+\caption{Velocity correlation function $C(\Delta t) = \langle {\bf V}(t) \cdot {\bf V} (t+\Delta t) \rangle$ for a \emph{B. contaminans} suspension of $\mathrm{OD}=0.05$. The red line shows the exponential fit [Eq.~\eqref{eq:fitC}], with $V_c=\SI{19.4}{\um\per\s}$ and $T=\SI{2.2}{\s}$.}
+\label{fig:mu_correlation}
+\end{figure}
+
+
+
+\section{Aerotactic run time modulation}
+\label{app:artm}
+
+In this appendix, we examine the aerotactic bias in the run time distribution. We first consider non-aerotaxict run-and-tumble (homogeneous oxygen concentration). The probability $p(\tau_{\mathrm{run}})$ that a bacteria makes a run of duration $\tau_{\mathrm{run}}$ is
+\begin{equation}
+    p(\tau_{\mathrm{run}})=p(\tau_{\mathrm{run}}-\delta t) p(\delta t).
+    \label{eq:p}
+\end{equation}
+%\com{Here, $\tau_\mathrm{run}$ is a random variable which differs semantically from $\tau_\mathrm{run}(\theta_\mathrm{run})$ in the main text}.
+Noting $\beta$ the probability per unit time of a tumble, we have $p(\delta t)= 1 - \beta \delta t$, and Eq.~\eqref{eq:p} becomes
+\begin{equation}
+\frac{p(\tau_{\mathrm{run}})-p(\tau_{\mathrm{run}}-\delta t)}{p(\tau_{\mathrm{run}} - \delta t)}=-\beta \delta t.
+\end{equation}
+The probability $p(\tau_{\mathrm{run}})$ is then given by
+\begin{equation}
+    \text{ln}(p(\tau_{\mathrm{run}}))=-\int_0^{\tau_{\mathrm{run}}} \beta dt + C,
+    \label{eq:p(tau)}
+\end{equation}
+where $C$ is an integration constant defined such that  $\int_0^{+\infty}p(\tau_{\mathrm{run}})d\tau_{\mathrm{run}}=1$.
+For constant $\beta$, the solution of Eq.~\eqref{eq:p(tau)} is a Poisson law, $p(\tau_{\mathrm{run}})=\beta \exp(-\beta \tau_{\mathrm{run}})$, and the average duration of a run is
+\begin{equation}
+\overline{\tau}_{\mathrm{run}}= \int_0^{\infty} \tau_{\mathrm{run}} p(\tau_{\mathrm{run}}) d\tau_{\mathrm{run}} = 1/\beta.
+\label{Eq:tau}
+\end{equation}
+
+We consider now the run time distribution in the presence of an oxygen gradient. We derive 
+the average of the runs of bacteria moving up ($\overline{\tau}^+_{\mathrm{run}}$) or down ($\overline{\tau}^-_{\mathrm{run}}$) the oxygen gradient under the assumptions that (i) the frequency $\beta$ depends only on the local oxygen concentration $c$, and (ii) the bacteria swim at a constant velocity $V_0$.
+
+The probability to make a run of duration $\tau_{\mathrm{run}}$ is still given by Eq.~\eqref{eq:p(tau)} but with a frequency $\beta=\beta[c(t)]$ that depends on the local oxygen concentration.
+The average duration of the runs of the bacteria moving up or down the gradient are
+\begin{equation}
+    \overline{\tau}^\pm_{\mathrm{run}}=
+    \int_0^{\infty} \tau^\pm_{\mathrm{run}} p(\tau^\pm_{\mathrm{run}}) d\tau^\pm_{\mathrm{run}}.
+    \label{eq:tau_moyen}
+    \end{equation}
+
+%\begin{equation}
+%    ln(p(\tau_{run}))=-\int_0^{\tau_{run}} \beta[c(t)] dt + C
+%\end{equation}
+A Taylor expansion of $\beta[c(t)]$ around its initial value at $t=0$ gives
+\begin{equation}
+    \beta[c(t)]=\beta[c(0)] + \frac{d\beta[c(t)]}{dt}\bigg|_{t=0} t,
+    \end{equation}
+yielding
+\begin{equation}
+\begin{split}
+\text{ln}(p(\tau^{\pm}_{run}))\simeq
+-\int_0^{\tau^{\pm}_{run}} \left( \beta[c(0)]+\frac{d\beta}{dt}\bigg|_{t=0} t \right) dt + C.%\\
+%\simeq-(\beta(0)\tau + \frac{1}{2}\frac{d\beta}{dt}\bigg|_{t=0}\tau^2)+C\\
+%\simeq- \tau^* (1+\frac{1}{2 \beta(0)^2}\frac{d \beta}{dt}\bigg|_{t=0} \tau^*) +C 
+\end{split}
+\end{equation}
+%where $\tau^*=\beta(0) \tau$ is a dimensionless time. 
+%{\color{red} maybe change the sign so that a>0 when we move up the gradient i.e. towards O2}
+For a constant swimming velocity, the time derivative of $\beta$ writes
+$$\frac{d\beta[c(0)]}{dt}=V_0 \frac{d\beta[c(x)]}{dx},$$
+where $x$ is the bacteria position at time $t=0$. We define the run-time modulation coefficient as
+$$
+\alpha(x) = \left| {2}\frac{V_0}{\beta[c(x)]^2}\frac{d\beta}{dx} \right|.
+$$
+In the limit of small $\alpha$, Eq.(\ref{eq:tau_moyen}) reduces to
+\begin{equation}
+    \overline{\tau}^{\pm}_{\mathrm{run}}=\overline{\tau}_{\mathrm{run}}
+    \left(1\pm \alpha \right),
+    \label{eq:average_tau}
+\end{equation}
+where $\overline{\tau}_{\mathrm{run}} =1/\beta(c)$ is the average run duration of bacteria moving in an homogeneous oxygen concentration $c$ [Eq.~\eqref{Eq:tau}]. We note that Eq.~\eqref{eq:average_tau} can be written in a similar way than proposed by Rivero \emph{et al.}~\cite{rivero1989transport} and Berg and Brown~\cite{berg1972chemotaxis},
+\begin{equation}
+    \text{ln}(\overline{\tau}^\pm_{\mathrm{run}}(a))=\text{ln}(\overline{\tau}_{\mathrm{run}})\pm \alpha.
+    \label{eq:lntau}
+\end{equation}
+
+The calculation can be generalised by considering runs not aligned with the gradient, but making an angle $\theta_{\mathrm{run}}$ with respect to the gradient,
+\begin{equation}
+    \overline{\tau}_{\mathrm{run}}(\theta_{\mathrm{run}})=\tau_{0} (1- \alpha \cos(\theta_{\mathrm{run}})),
+    \label{eq:cos}
+\end{equation}
+where $\tau_{0}$ is the average run time measured normal to the gradient (for $\cos \theta_{\mathrm{run}}=0$). Here, we have $\theta_{\mathrm{run}}=\pi$ for runs moving up the gradient. 
+
+The aerotactic velocity can be written 
+%\begin{equation}
+%v_a = -\frac{V_0}{\beta(c)} \left( \frac{1}{\overline{\tau}_{\mathrm{run}}^-}-\frac{1}{\overline{\tau}_{\mathrm{run}}^+} \right).
+%\end{equation}
+\begin{equation}
+\label{eq:va_SM}
+    v_a = \dfrac{1}{2\pi} \dfrac{1}{\tau_0} \int_0^{2\pi}\mathbf{v}\cdot \mathbf{e}_x \overline{\tau}_\mathrm{run}(\theta_\mathrm{run})d\theta_\mathrm{run}.
+\end{equation}
+Assuming $\tau_0$ and $V_0$ do not depend on the run angle, we obtain
+\begin{equation}
+    v_a = \dfrac{-\alpha V_0}{2}
+\end{equation}
+by combining Eqs.~\eqref{eq:cos} and \eqref{eq:va_SM}.
+
+\bibliography{biblio_aerotaxis}% Produces the bibliography via BibTeX.
+
+\section{Concentration profiles}
+\label{sec:SM_compil_profiles}
+
+
+
+\begin{figure*}[ht]
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.8\textwidth, angle=0]{FigAE_01.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=5min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=50min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=75min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=80min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=85min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=90min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=95min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.05_t=100min.pdf}
+\caption{Variations of the local density of bacteria $b(x)$ (green circles), oxygen concentration $c(x)$ (blue stars), magnitude of the swimming velocity of bacteria $v(x)$ (empty orange diamonds) and drift velocity along the gradient $v_x(x)$ (filled orange diamonds) as functions of the distance from the oxygen source at four different times during the migration of the bacterial band. The capillary is initially filled with an homogeneous suspension of bacteria at a concentration $\text{OD}=0.05$. Time is counted from the sealing of the capillary.}   
+\label{fig:SM_Compil_OD=0.05}
+\end{figure*}
+
+\begin{figure*}[ht]
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.8\textwidth, angle=0]{FigAE_02.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=5min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=8min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=25min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=47min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=52min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=57min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=62min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.1_t=150min.pdf}
+\caption{Same as in Fig.~\ref{fig:SM_Compil_OD=0.05} for $\mathrm{OD}=0.1$.}  
+\label{fig:SM_Compil_OD=0.1}
+\end{figure*}
+
+\begin{figure*}[ht]
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.8\textwidth, angle=0]{FigAE_03.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.2_t=5min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.2_t=20min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.2_t=23min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.2_t=26min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.2_t=29min.pdf}
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.2_t=32min.pdf} 
+%\includegraphics[trim = 5mm 60mm 2mm 68mm, clip, width=0.4\textwidth, angle=0]{Figures/Compil_OD=0.2_t=45min.pdf}
+\caption{Same as in Fig.~\ref{fig:SM_Compil_OD=0.05} for $\mathrm{OD}=0.2$.}    
+\label{fig:SM_Compil_OD=0.2}
+\end{figure*}
+
+
+
+\end{document}

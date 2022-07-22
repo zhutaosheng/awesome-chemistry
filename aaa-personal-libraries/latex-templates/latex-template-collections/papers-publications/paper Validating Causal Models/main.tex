@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\input{preamble/preamble}
+\input{preamble/preamble_acronyms}
+\input{preamble/preamble_math}
+\input{preamble/preamble_tikz}
+
+\title{%
+\textbf{Validating Causal Models}
+}
+
+\author{
+Dustin Tran \\
+Columbia University \\
+\\
+Francisco J.~R.~Ruiz \\
+Columbia University \\
+\\
+Susan Athey \\
+Stanford University \\
+\\
+David M.~Blei \\
+Columbia University \\
+}
+
+\begin{document}
+
+\maketitle
+\bigskip
+
+\begin{abstract}
+  The goal of causal inference is to understand the outcome of
+  alternative courses of action.  However, all causal inference
+  requires assumptions---more so than for standard tasks in
+  probabilistic modeling---and testing those assumptions is important
+  to assess the validity of a causal model. We develop Bayesian model
+  criticism for causal inference, building on the idea of posterior
+  predictive checks to assess model fit. Our approach involves
+  decomposing the problem, separately criticizing the model of
+  treatment assignments and the model of outcomes.  Further we
+  discuss how and when we can check the central assumption of
+  unconfoundedness, which enables causal statements from observational
+  data.  Our approach provides a foundation for diagnosing causal
+  inferences from observational data.
+\end{abstract}
+
+\emph{Keywords:}
+Causal Inference;
+Probabilistic Models;
+Bayesian Analysis;
+Model Checking.
+
+\clearpage
+\glsresetall{}
+
+% \input{introduction}
+
+\clearpage
+\bibliographystyle{apalike}
+\bibliography{bib}
+\clearpage
+\appendix
+% \input{appendix}
+
+\end{document}

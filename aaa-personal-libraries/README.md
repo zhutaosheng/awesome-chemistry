@@ -50,6 +50,7 @@
 * [emcee](https://emcee.readthedocs.io/en/stable/) - An MIT licensed pure-Python implementation of Goodman & Weare’s Affine Invariant Markov chain Monte Carlo (MCMC) Ensemble sampler.
 
 * [Pandas Exercises from GitHub](https://github.com/guipsamora/pandas_exercises) - Practice your pandas skills!
+* N[umPy Exercises](https://github.com/Kyubyong/numpy_exercises) - Numpy exercises.
 
 ## blogs, pages, webpages
 * [al-folio template](https://github.com/alshedivat/al-folio) - A beautiful, simple, clean, and responsive Jekyll theme for academics.
