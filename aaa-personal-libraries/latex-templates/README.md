@@ -1,4 +1,4 @@
-## [LaTeX templates](https://github.com/zhutaosheng/latex-templates/blob/main/README.md)
+## [LaTeX templates](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/latex-templates/README.md)
 *A collection of LaTeX templates used for research, courses, and miscellanea.*
 
 *Personal usage, all file related LaTex will be updated here.*
@@ -7,6 +7,7 @@
   - [Keywords](#keywords)
   - [LaTeX templates Repositories](#latex-templates-repositories)
   - [About LaTeX tools](#about-latex-tools)
+  - [Convert to latex](#convert-to-latex)
   - [Other LaTeX tools](#other-latex-tools)
   - [Latex Plots](#latex-plots)
   - [LaTeX Software Tutorials](#latex-software-tutorials)
@@ -31,6 +32,17 @@
 * [TeXstudio](https://www.texstudio.org/) - TeXstudio is an integrated writing environment for creating LaTeX documents.
 * [JabRef](https://www.jabref.org/) - JabRef - Free Reference Manager.
 * [TeX Live](https://tug.org/texlive/) - LaTeX, TeX Live
+* [BEAMER](https://latex-beamer.com/)
+
+
+## Convert to latex
+*Table convert*
+* [Convert LaTeX Table to LaTeX Table](https://tableconvert.com/latex-to-latex) - 
+* [Convert Excel to LaTeX Table](https://tableconvert.com/excel-to-latex)
+* [Convert CSV to LaTeX Table](https://tableconvert.com/csv-to-latex)
+* [Convert JSON Array to LaTeX Table](https://tableconvert.com/json-to-latex)
+
+* [docx2latex.com](https://www.docx2latex.com/) - Convert your Microsoft Word / Google docs files to LaTeX seamlessly.
 
 ## Other LaTeX tools
 * 
