@@ -68,13 +68,23 @@
 - [屏幕录制 LiceCap 简单小巧 输出GIF](https://github.com/JustVita/Excellent-software/blob/master/Windows/Effectiveness/Recording/licecap123-install.exe)
 - [simplenote-electron](https://github.com/Automattic/simplenote-electron/releases) - [official website](https://simplenote.com/)
 - [AVIRA FREE SECURITY](https://www.avira.com/en/downloads)
+- VMware Workstation 16 Player
+- captura
+- Bandicam
+- SHAREit
+- ShareX
+- Grammarly
+- ScreenToGif
+- Samsung DeX
+- SumatraPDF
+- TopMost
 
 ## Configuration links
 - [win11 Restore Legacy Right Click menu](https://answers.microsoft.com/en-us/windows/forum/all/restore-legacy-right-click-menu-for-file-explorer/a62e797c-eaf3-411b-aeec-e460e6e5a82a) - old context menu in win 10.
 - [如何设置让软件开机自启动](https://zhuanlan.zhihu.com/p/265076894)
 
 ## Chinese softwares
-- [xunlei.com](https://www.xunlei.com/) - Xunlei is the pioneer of shared.
+- [xunlei.com](https://www.xunlei.com/)
 - [Wechat](https://weixin.qq.com/) - A cross-platform communication tool.
 - [Tencent QQ](https://im.qq.com/index) - An instant message applications.
 - [Tianyi cloud disk](https://cloud.189.cn/web/static/download-client/index.html) - Tianyi cloud disk.
@@ -84,7 +94,9 @@
 - [Baidu cloud disk 百度网盘](https://pan.baidu.com/)
 - [Wps Office CN](https://www.wps.cn/)
 - [Levono Computer Manager](https://guanjia.lenovo.com.cn/)
+- 快牙 PC
 
 # Phone apps
-- [apple apps](http://www.apple.com) - books, edge, outlook, qq, wechat, google podcast, reminder, simple notes, netease music, alipay, duolingo, clock, photo, sendanywhere, google map, gmail, venmo, walmart, waze, onedrive, voice google, anydesk, paypal, quora,messager facebook, whatsapp, zelle, apple podcast, payoneer, vpn super, imaging edge, zoom, pocket, freelancer, cameraconnect, snapseed, translate google, unzip, garageband, audio editor, canvas, melodista, acrobat, camscanner, astool pro, enigma, web app-wetransfer, web app-qrcode generator, web app-single mp3, 中国建设银行，中国银行，中国工行银行，中国农业银行，掌上生活，云闪付，哈喽，淘宝，美团，qq, qq 邮箱，高德地图，饿了么，迅雷,携程，去哪儿， 闲鱼，王者，wps office CN, 百度网盘， 诗歌本，剪映，铁路 12306，喜马拉雅，中国领事，电信营业厅，天翼云盘
-- android apps - 
+- apple apps - books, edge, outlook, qq, wechat, google podcast, reminder, simple notes, netease music, alipay, duolingo, clock, photo, sendanywhere, google map, gmail, venmo, walmart, waze, onedrive, voice google, anydesk, paypal, quora,messager facebook, whatsapp, zelle, apple podcast, payoneer, vpn super, imaging edge, zoom, pocket, freelancer, cameraconnect, snapseed, translate google, unzip, garageband, audio editor, canvas, melodista, acrobat, camscanner, astool pro, enigma, web app-wetransfer, web app-qrcode generator, web app-single mp3, 中国建设银行，中国银行，中国工行银行，中国农业银行，掌上生活，云闪付，哈喽，淘宝，美团，qq, qq 邮箱，高德地图，饿了么，迅雷,携程，去哪儿， 闲鱼，王者，wps office CN, 百度网盘， 诗歌本，剪映，铁路 12306，喜马拉雅，中国领事，电信营业厅，天翼云盘
+- android apps - apkpure, anydesk, capcut, cars.com, camera connect, imaging edge, cx file explorer, dealmoon, duo, earth, genius, edmunds,galaxy store, onedrive, payoneer, podcasts, samsung reader, shareit, simplenote, snapseed, spotify, uber, vanced manager, voice, verbtex, samsung voice recoder,samsung music, samsung notes, shadowsocks, vpn super, walmart, waze, wechat, wordpress, youtube vanced, zapya, zoom, utorrent, 广发易淘金， 工银e生活，小站雅思， 应用宝，微读圣经， 抖音， 掌上生活，搜狗翻译， 菜鸟，美团，诗歌本，迅雷，咸鱼，非常准。
+- [YouTube Vanced](https://apkpure.com/youtube-vanced/com.vanced.android.youtube), [microg-apk](https://vanced-manager.com/microg-apk/)
