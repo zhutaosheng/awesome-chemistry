@@ -6,6 +6,7 @@
 
 
 - [Personal Libraries Collection](#personal-libraries-collection)
+  - [Unclasfied](#unclasfied)
   - [Science Libraries Collection](#science-libraries-collection)
   - [Awesome chemistry libraries collection - to public](#awesome-chemistry-libraries-collection---to-public)
   - [Personal libraries collection - to private](#personal-libraries-collection---to-private)
@@ -25,7 +26,8 @@
 
 
 # Personal Libraries Collection
-
+## Unclasfied
+* [chemcompute.org](https://chemcompute.org/) - Computational chemistry software for undergraduate teaching and research.
 ## Science Libraries Collection
 *coming soon*
 ## Awesome chemistry libraries collection - to public
@@ -50,7 +52,7 @@
 * [emcee](https://emcee.readthedocs.io/en/stable/) - An MIT licensed pure-Python implementation of Goodman & Weare’s Affine Invariant Markov chain Monte Carlo (MCMC) Ensemble sampler.
 
 * [Pandas Exercises from GitHub](https://github.com/guipsamora/pandas_exercises) - Practice your pandas skills!
-* N[umPy Exercises](https://github.com/Kyubyong/numpy_exercises) - Numpy exercises.
+* [NumPy Exercises](https://github.com/Kyubyong/numpy_exercises) - Numpy exercises.
 
 ## blogs, pages, webpages
 * [al-folio template](https://github.com/alshedivat/al-folio) - A beautiful, simple, clean, and responsive Jekyll theme for academics.
