@@ -6,6 +6,7 @@
   - [Data Programming](#data-programming)
   - [Science Paper Software](#science-paper-software)
   - [Others](#others)
+  - [Chat](#chat)
   - [Configuration links](#configuration-links)
   - [Chinese softwares](#chinese-softwares)
 - [Phone apps](#phone-apps)
@@ -68,16 +69,25 @@
 - [屏幕录制 LiceCap 简单小巧 输出GIF](https://github.com/JustVita/Excellent-software/blob/master/Windows/Effectiveness/Recording/licecap123-install.exe)
 - [simplenote-electron](https://github.com/Automattic/simplenote-electron/releases) - [official website](https://simplenote.com/)
 - [AVIRA FREE SECURITY](https://www.avira.com/en/downloads)
-- VMware Workstation 16 Player
-- captura
+- [VMware Workstation 16 Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+- [captura](https://mathewsachin.github.io/Captura/)
 - Bandicam
-- SHAREit
-- ShareX
-- Grammarly
-- ScreenToGif
-- Samsung DeX
-- SumatraPDF
-- TopMost
+- [SHAREit](https://shareit.ushareit.com/)
+- [ShareX](https://getsharex.com/)
+- [Grammarly](https://www.grammarly.com/)
+- [ScreenToGif](https://www.screentogif.com/)
+- [Samsung DeX](https://www.samsung.com/us/apps/dex/)
+- [SumatraPDF](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
+- [TopMost](https://sourceforge.net/projects/topmost/)
+- [tor](https://www.torproject.org/download/)
+- [Proton VPN](https://account.protonvpn.com/login)
+- [ClipGrab](https://clipgrab.org/) 
+- [hp-laserjet-pro-m404-m405-series](https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-pro-m404-m405-series/19203833/model/19202536)
+- [Google Podcasts](https://podcasts.google.com/)
+ 
+
+## Chat
+- Whatsapp, Facebook, Discord, Instagram, Mail.
 
 ## Configuration links
 - [win11 Restore Legacy Right Click menu](https://answers.microsoft.com/en-us/windows/forum/all/restore-legacy-right-click-menu-for-file-explorer/a62e797c-eaf3-411b-aeec-e460e6e5a82a) - old context menu in win 10.
