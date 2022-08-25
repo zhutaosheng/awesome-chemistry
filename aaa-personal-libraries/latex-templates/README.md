@@ -26,6 +26,7 @@
 [LaTeX Templates - latextemplates.com](http://www.latextemplates.com/) - LaTeX Templates
 
 ## About LaTeX tools
+Below will not update anymore.
 * [Overleaf](https://www.overleaf.com/) - The easy to use, online, collaborative LaTeX editor. overleaf [learn Overleaf with Mathematics, figure, and more](https://www.overleaf.com/learn)
 * [JaxEdit](https://zohooo.github.io/jaxedit/) - online, The JaxEdit project is separated as two parts: one is the LaTeX editor, and the other is the LaTeX typesetter named TypeJax. [featured-templates](https://www.authorea.com/featured-templates)
 * [MiKTeX](https://miktex.org/download) - keep your TeX installation as minimal as possible (“Just enough TeX”).

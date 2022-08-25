@@ -1,6 +1,8 @@
 ## [Softwares](https://github.com/zhutaosheng/awesome-chemistry/blob/main/aaa-personal-libraries/softwares.md)
 *A curated list of all softwares and resources.*
 
+will not update to github, I will backup this locally.
+
 - [Computer Software](#computer-software)
   - [Keywords](#keywords)
   - [Data Programming](#data-programming)
@@ -27,7 +29,7 @@
 - [Vim](https://www.vim.org/download.php) - Vim is an advanced text editor.
 
 ## Science Paper Software
-*There is a back up in Awesome Chemistry - Get Your Paper Published about Science Paper Software*
+*There is a backup in Awesome Chemistry - Get Your Paper Published about Science Paper Software*
 - [Origin and OriginPro](https://www.originlab.com/Origin) - data analysis and graphing software
 - SigmaPlot
 - [MATLAB - MathWorks](https://www.mathworks.com/products/matlab.html)
@@ -84,6 +86,18 @@
 - [ClipGrab](https://clipgrab.org/) 
 - [hp-laserjet-pro-m404-m405-series](https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-pro-m404-m405-series/19203833/model/19202536)
 - [Google Podcasts](https://podcasts.google.com/)
+- [Rufus](https://rufus.ie/en/) - Create bootable USB drives the easy way
+- [Arduino](https://www.arduino.cc/en/software/)
+- [Gimp](https://www.gimp.org/downloads/) - Free & Open Source Image Editor
+- [Draw Freely | Inkscape](https://inkscape.org/)
+- [Shotcut](https://www.shotcut.org/download/) - A slick open source program for advanced video editing
+- [Notepad++](https://notepad-plus-plus.org/downloads/)
+- [OBS Studio](https://obsproject.com/)
+- [Freeplane](https://docs.freeplane.org/#/getting-started/getting-started) - Mind Mapping, Knowledge Management, Project Management. 
+- [Audacity](https://www.audacityteam.org/download/)
+- [HandBrake](https://handbrake.fr/) - The open source video transcoder
+- [AutoClicker](https://sourceforge.net/projects/orphamielautoclicker/) - simulate a mouse clicking automatically. 
+- [Haroopad](http://pad.haroopress.com/) - The Markdown enabled Next Document Processor
  
 
 ## Chat
